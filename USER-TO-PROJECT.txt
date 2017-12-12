@@ -1,0 +1,6 @@
+ User - Project - Role mapping
+-------------------------------------
+* LaurelOlson - STiR project MCFD InCare Placement Mapper ; Siteminder Bridge - developer/operator
+* Brian-22 - UX Researcher for the TFRS project
+* John McColl (jhmccoll) - Service BC Customer Flow System
+* Sean Rumsby  (sjrumsby) - Developer assigned to build the changes needed for MultiTenancy for the Service BC Customer Flow System
