@@ -3,6 +3,8 @@
 WIKI How-To Articles 
 
 
+# What is OpenShift?
+
 OpenShift is a platform to help you develop and deploy applications to one or more hosts. These can be public facing web applications, or backend applications, including micro services or databases. Applications can be implemented in any programming language you choose. The only requirement is that the application can run within a container.
 
 In terms of cloud service computing models, OpenShift implements the functionality of both a Platform as a Service (PaaS) and a Container as a Service (CaaS).
