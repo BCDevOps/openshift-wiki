@@ -3,6 +3,6 @@
     "gitbook-cli": "^1.0.0"
   },
   "scripts": {
-    "start": "gitbook serve"
+    "start": "gitbook --port 8080 serve"
   }
 }
