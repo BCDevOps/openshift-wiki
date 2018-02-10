@@ -2,4 +2,7 @@
   "dependencies": {
     "gitbook-cli": "^1.0.0"
   }
+  "scripts": {
+    "start": "gitbook serve"
+  }
 }
