@@ -1,8 +1,7 @@
 # Ignore the file test.md
-README.md
 USER-TO-PROJECT.txt
 LICENSE
 Jenkinsfile
-
-# Ignore everything in the directory "bin"
+Dockerfile
+kb-files/*
 bin/*
