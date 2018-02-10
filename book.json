@@ -1,0 +1,11 @@
+{
+    "root": "docs",
+    "title": "Pathfinder OpenShift HowTo",
+    "plugins": [],
+    "links": {
+        "sidebar": {
+            "GitBook Doc": "https://toolchain.gitbook.com"
+        }
+    },
+    "pluginsConfig": {}
+}

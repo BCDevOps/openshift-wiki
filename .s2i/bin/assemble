@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -e
+
+npm install gitbook-cli -g
+
+gitbook fetch latest
+
+cp -Rf /tmp/src/. ./
+
+# fix permissions
+fix-permissions /opt/app-root
+
