@@ -12,6 +12,6 @@
   "scripts": {
     "build": "gitbook build ./",
     "serve:book": "gitbook serve ./",
-    "start": "gitbook --lrport 8085 --port 8080 serve"
-  }
+    "start": "gitbook --no-live --port 8080 --no-watch serve"
+  },
 }

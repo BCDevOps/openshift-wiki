@@ -40,7 +40,7 @@
   * [Slave-Master communication error](Jenkins/SlaveMasterConnectionIssue.md)
   * [Slave not starting](Jenkins/SlaveStartIssue.md)
 
-### Pipeline Pipelines
+### Jenkins Pipelines
 
   * [Archive Artifacts](Jenkins/ArchiveArtifacts.md)
   * [Verify Openshift Deploy](Jenkins/VerifyDeploy.md)

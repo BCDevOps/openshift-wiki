@@ -1,0 +1,3 @@
+#!/bin/bash
+gitbook install
+exec /usr/libexec/s2i/run
