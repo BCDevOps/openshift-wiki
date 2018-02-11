@@ -42,7 +42,7 @@
             "url": "https://github.com/bcdevops/openshift-wiki"
         },
         "downloadpdf": {
-          "base": "https://github.com/bcdevops/openshift-wiki/",
+          "base": "https://github.com/bcdevops/openshift-wiki/media",
           "label": "Download PDF",
           "multilingual": false
         }
