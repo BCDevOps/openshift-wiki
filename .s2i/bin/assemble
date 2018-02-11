@@ -11,6 +11,3 @@ npm install -g gitbook-cli &>/dev/null
 echo "---> Installing gitbook dependencies"
 gitbook install
 
-echo "---> Build gitbook"
-gitbook build
-
