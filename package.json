@@ -13,5 +13,5 @@
     "build": "gitbook build ./",
     "serve:book": "gitbook serve ./",
     "start": "gitbook --no-live --port 8080 --no-watch serve"
-  },
+  }
 }
