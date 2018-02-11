@@ -12,9 +12,7 @@
         "downloadpdf"
        ],
     "links": {
-        "sidebar": {
-            "GitBook Doc": "https://toolchain.gitbook.com"
-        }
+        "sidebar": false
     },
     "pdf": {
         "fontSize": 16
