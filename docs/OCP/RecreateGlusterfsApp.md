@@ -1,8 +1,8 @@
-Issue:
+**Issue:**
 
 Container does not start. Events show errors binding to persistent storage. Glusterfs serice and endpoint do net exist.
 
-Solution:
+**Solution:**
 
 While in your project re-create glusterfs-cluster-app service and endpoint from yaml file with 'oc create -f' 
 

@@ -1,3 +1,5 @@
+# Increasing the size of an existing PVC
+
 Basic steps:
 - shut down apps using storage 
 - backup current storage content (you can use oc login + oc get pods + oc rsync <pod>:/<path> <local-path>

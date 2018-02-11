@@ -1,8 +1,8 @@
-Issue:
+**Issue:**
 
 Need to archive test results or other files
 
-Solution:
+**Solution:**
 
 Add an archive stage to your pipeline.
 Example:

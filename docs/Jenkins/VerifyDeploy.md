@@ -1,9 +1,9 @@
-Issue:
+**Issue:**
 
 Need to verify if deployment completed before running functional test
 
 
-Solution:
+**Solution:**
 
 Add line to Jenkinsfile:
 ```

@@ -20,7 +20,10 @@ Verification:
 oc rsh <jenkins-pipeline-pod>
 ```
 
-run the BDD test locally `gradlew --stacktrace --debug phantomJsTest`
+run the BDD test locally 
+```
+`gradlew --stacktrace --debug phantomJsTest`
+```
  
 Solution:
 

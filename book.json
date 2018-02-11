@@ -1,11 +1,50 @@
 {
     "root": "docs",
     "title": "Pathfinder OpenShift HowTo",
-    "plugins": [],
+    "plugins": [
+        "-livereload",
+        "-sharing",
+        "image-captions",
+        "heading-anchors@1.0.3",
+        "richquotes@0.0.9",
+        "github@2.0.0",
+        "codeblock-label",
+        "downloadpdf"
+       ],
     "links": {
         "sidebar": {
             "GitBook Doc": "https://toolchain.gitbook.com"
         }
     },
-    "pluginsConfig": {}
+    "pdf": {
+        "fontSize": 16
+    },
+    "styles": {
+        "website": "styles/website.css",
+        "ebook": "styles/ebook.css",
+        "pdf": "styles/pdf.css",
+        "mobi": "styles/mobi.css",
+        "epub": "styles/epub.css"
+    },
+    "pluginsConfig": {
+        "sharing": {
+            "facebook": false,
+            "google": false,
+            "twitter": false,
+            "weibo": false,
+            "instapaper": false,
+            "vk": false
+        },
+        "richquotes": {
+            "default": false
+        },
+        "github": {
+            "url": "https://github.com/bcdevops/openshift-wiki"
+        },
+        "downloadpdf": {
+          "base": "https://github.com/bcdevops/openshift-wiki/",
+          "label": "Download PDF",
+          "multilingual": false
+        }
+    }
 }

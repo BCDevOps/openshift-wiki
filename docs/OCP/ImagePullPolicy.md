@@ -1,8 +1,8 @@
-#Issue:
+**Issue:**
 
 Deployment fails due to image pull problem.
 
-#Solution:
+**Solution:**
 
 - Ensure that appropriate image puller permissions exist.
 

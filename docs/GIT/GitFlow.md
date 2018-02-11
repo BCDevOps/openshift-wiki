@@ -1,5 +1,7 @@
 Angelikas-MacBook-Pro:docs aehlers$ vi GIT/GitFlow.md
 
+## GitFlow
+
 Two main branches:
 
 * Master 

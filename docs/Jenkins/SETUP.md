@@ -1,8 +1,9 @@
 
-Issue:
-Use Jenkins image with OAUTH
+**Issue:**
 
-Solution:
+Setup Jenkins image with OAUTH
+
+**Solution:**
 
 Step 1:
 
