@@ -1,28 +1,71 @@
-# openshift-wiki
+# Pathfinder OpenShift WIKI
 
-WIKI How-To Articles 
+----
 
-# GitBook
+### OpenShift 
 
-Reference: https://toolchain.gitbook.com/structure.html
+  * [OpenShift](docs/OCP/OpenShift.md)
+  * [OpenShift Books](docs/OCP/openshift-books.md)
+  * [Run OpenShift on my Workstation](docs/OCP/run-openshift-on-own-computer.md)
+  * [Random User IDs](docs/OCP/AppsUserRandomID.md)
+  * [Container Native Storage](docs/OCP/CNS.md)
+  * [Node Evacuation](docs/OCP/NodeEvacuation.md)
+  * [Node Evacuation Drain Procedure](docs/OCP/EvacuationDrainProcedure.md)
+  * [Pathfinder CIDR Prod VLAN](docs/OCP/Network.md)
 
+### OpenShift 3.7 
+  
+  * [API Pod AutoScaler](docs/OCP/OCP3.7APIHorizontalPodAutoscaler.md)
+  * [Extended/Chained Builds](docs/OCP/ExtendedBuildReplace.md)
 
-# What is OpenShift?
+### OpenShift HowTo's
 
-OpenShift is a platform to help you develop and deploy applications to one or more hosts. These can be public facing web applications, or backend applications, including micro services or databases. Applications can be implemented in any programming language you choose. The only requirement is that the application can run within a container.
+  * [Request New Project](docs/OCP/RequestNewProject.md)
+  * [Pod Network Connection Check](docs/HowTo/CheckNetworkConnection.md)
+  * [Find Pod internal DNS](docs/OCP/PodServiceDns.md)
+  * [Grant User Access To Project](docs/HowTo/GrantUsersAccessToProject.md)
+  * [Set Image Puller Policies](docs/OCP/ProjectPolicySetup.md)
+  * [Image Pull Auth Issue](docs/OCP/ImagePullPolicy.md)
+  * [glusterfs app missing](docs/OCP/RecreateGlusterfsApp.md)
+  * [Increase PVC Size](docs/OCP/IncreasePVCSize.md)
+  * [Resolve 504 proxy error](docs/OCP/Proxy504Error.md)
+  * [Verify Application Up](docs/OCP/TestingApps.md)
 
-In terms of cloud service computing models, OpenShift implements the functionality of both a Platform as a Service (PaaS) and a Container as a Service (CaaS).
+### API
 
-Using OpenShift as a CaaS, you can bring a pre-existing container image built to the [OpenShift Container Initiative](https://www.opencontainers.org/) (OCI) Image Specification ([image-spec](https://github.com/opencontainers/image-spec)) and deploy it.
+  * [API Management Service - Kong API Proxy](docs/API/KongAPI.md)
 
-The PaaS capabilities of OpenShift build on top of the ability to deploy a container image, by providing a way for you to build in OpenShift your own container image direct from your application source code and have it deployed.
+### BDD Stack
 
-The application source code can include a ``Dockerfile`` with instructions to build a container image. Or, you can use a Source-to-Image (S2I) builder, which takes your application source code and converts it into a container image for you, without you needing to know how to write instructions for building a container image.
+  * [BDD failure - jQuery required](docs/BDD/BDDFailJquery.md)
 
-# OpenShift vs Kubernetes
+### Databases
 
-[Kubernetes](https://kubernetes.io/) implements a system for automating deployment, scaling and management of containerized applications. It is often referred to as being a Container as a Service (CaaS).
+  * [Postgresql Startup Issue](docs/DB/PostgresqlStartIssue.md)
+  * [Postgresql Unexpected data beyond EOF](docs/DB/PostgresqlUnexpetedDataEOF.md)
 
-Kubernetes alone does not provide any support for building the container image it runs. You need to run a build tool to create your application image on a separate system and push that to an image registry from which it can be deployed. This is because CaaS focuses on just running containers.
+### GIT
 
-OpenShift builds on top of Kubernetes to implement a Platform as Service (PaaS) environment which is more friendly to developers, as well as provide the additional tools and services needed by operations to implement a comprehensive container application platform.
+  * [Git Flow](docs/GIT/GitFlow.md)
+  * [GitHub Deployment Keys](docs/GIT/GitHubDeployKeys.md)
+
+### Jenkins
+
+  * [Best Practice](docs/Jenkins/BestPractice.md)
+  * [Setup](docs/Jenkins/SETUP.md)
+  * [Builds Timeout](docs/Jenkins/BuildTimeout.md)
+  * [Login Error](docs/Jenkins/LoginError.md)
+  * [Pipeline not starting](docs/Jenkins/PipeLineStartIssues.md)
+  * [Pipeline Stuck](docs/Jenkins/PipeLineStuck.md)
+  * [Slave-Master communication error](docs/Jenkins/SlaveMasterConnectionIssue.md)
+  * [Slave not starting](docs/Jenkins/SlaveStartIssue.md)
+  * [Add Sonarqubei Test](docs/Jenkins/Sonarqube.md)
+
+### Jenkins Pipelines
+
+  * [Archive Artifacts](docs/Jenkins/ArchiveArtifacts.md)
+  * [Verify Openshift Deploy](docs/Jenkins/VerifyDeploy.md)
+  * [User Input](docs/Jenkins/WaitingForInput.md)
+  * [Send Email](docs/Jenkins/EmailSender.md)
+
+----
