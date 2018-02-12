@@ -28,3 +28,7 @@ Note:
 openshiftVerifyDeployment doesn't really work well with Rolling deployment strategy when verifying` the replica count.
 This is because with a rolling there is always a pod running. The old Pod is shutdown when new one is available. 
 
+See
+https://github.com/BCDevOps/jenkins-pipeline-shared-lib
+
+

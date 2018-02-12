@@ -33,3 +33,9 @@ There is a trick to get around this by copying the files to be archived in a new
 	   sh 'ls -l'
 	 }
 ```
+
+
+See
+https://github.com/BCDevOps/jenkins-pipeline-shared-lib
+
+

@@ -14,3 +14,8 @@ stage('deploy-test') {
   }
 }
 ```
+
+See
+https://github.com/BCDevOps/jenkins-pipeline-shared-lib
+
+

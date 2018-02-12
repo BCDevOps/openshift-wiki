@@ -21,3 +21,7 @@ Add following cmds to your pipeline
          body: "See ${env.BUILD_URL} for details. ");`
 
 
+
+See 
+https://github.com/BCDevOps/jenkins-pipeline-shared-lib
+
