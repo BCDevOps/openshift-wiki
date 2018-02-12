@@ -26,7 +26,7 @@
   * [Image Pull Auth Issue](OCP/ImagePullPolicy.md)
   * [glusterfs app missing](OCP/RecreateGlusterfsApp.md)
   * [Increase PVC Size](OCP/IncreasePVCSize.md)
-  * [Resolve 504 proxy error](vi OCP/Proxy504Error.md)
+  * [Resolve 504 proxy error](OCP/Proxy504Error.md)
   * [Verify Application Up](OCP/TestingApps.md)
 
 ### API
@@ -40,7 +40,7 @@
 ### Databases
 
   * [Postgresql Startup Issue](DB/PostgresqlStartIssue.md)
-  * {Postgresql Unexpected data beyond EOF](DB/PostgresqlUnexpetedDataEOF.md)
+  * [Postgresql Unexpected data beyond EOF](DB/PostgresqlUnexpetedDataEOF.md)
 
 ### GIT
 
