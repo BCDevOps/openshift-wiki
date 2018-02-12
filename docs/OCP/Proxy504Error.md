@@ -3,7 +3,7 @@
 
 ***Issue:***
 
-Longer running http request return with error 504 due to a deaulyt session timeout setting of 30s on the Openshift clusetr HA-Proxy.
+Longer running http request return with error 504 due to a session timeout setting of 30s on the Openshift clusetr HA-Proxy.
 
 
 ***Resolution:***
