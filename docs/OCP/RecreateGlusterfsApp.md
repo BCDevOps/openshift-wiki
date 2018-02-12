@@ -11,10 +11,11 @@ Yaml files for endpoint and service are at
 * https://github.com/BCDevOps/openshift-tools/blob/master/resources/glusterfs-cluster-app-service.yml
 
 Run 
-* oc create -f https://raw.githubusercontent.com/BCDevOps/openshift-tools/master/resources/glusterfs-cluster-app-service.yml
-* oc create -f https://raw.githubusercontent.com/BCDevOps/openshift-tools/master/resources/glusterfs-cluster-app-endpoints.yml
+```
+oc create -f https://raw.githubusercontent.com/BCDevOps/openshift-tools/master/resources/glusterfs-cluster-app-service.yml
+oc create -f https://raw.githubusercontent.com/BCDevOps/openshift-tools/master/resources/glusterfs-cluster-app-endpoints.yml
+```
 to re-create.
-
 
 Verify:
 

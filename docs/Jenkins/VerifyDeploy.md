@@ -7,11 +7,11 @@ Need to verify if deployment completed before running functional test
 
 Add line to Jenkinsfile:
 ```
-            openshiftVerifyDeployment depCfg: '[dev-deploy-config]', namespace: '[dev-namespace]', replicaCount: 1, verbose: 'false', verifyReplicaCount: 'false'
+openshiftVerifyDeployment depCfg: '[dev-deploy-config]', namespace: '[dev-namespace]', replicaCount: 1, verbose: 'false', verifyReplicaCount: 'false'
 ```
 Example:
 ```
-            openshiftVerifyDeployment depCfg: 'platform-dev', namespace: 'devex-platform-dev', replicaCount: 1, verbose: 'false', verifyReplicaCount: 'false'
+openshiftVerifyDeployment depCfg: 'platform-dev', namespace: 'devex-platform-dev', replicaCount: 1, verbose: 'false', verifyReplicaCount: 'false'
 ```
 
 Grant access for Jenkins to dev env:

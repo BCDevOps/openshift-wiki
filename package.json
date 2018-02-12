@@ -12,6 +12,6 @@
   },
   "scripts": {
     "build": "gitbook build ./",
-    "start": "gitbook serve --no-live --port 8080 --no-watch"
+    "start": "gitbook serve --no-live --port 8080" 
   }
 }
