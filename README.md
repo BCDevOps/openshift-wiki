@@ -69,3 +69,5 @@
   * [Send Email](docs/Jenkins/EmailSender.md)
 
 ----
+GitHub Pages: https://bcdevops.github.io/openshift-wiki/
+
