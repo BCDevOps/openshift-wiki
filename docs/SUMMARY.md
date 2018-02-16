@@ -65,5 +65,9 @@
   * [Verify Openshift Deploy](Jenkins/VerifyDeploy.md)
   * [User Input](Jenkins/WaitingForInput.md)
   * [Send Email](Jenkins/EmailSender.md)
+  
+### SSL Certificates
+  * [How-to: Crete a self-signed certificate](SSLCerts/CreateSelfSignedCert.md)
+  * [How-to: Generate a Certificate Signing Request - CSR](SSLCerts/GenerateCertificateSigningRequest.md)
 
 ----
