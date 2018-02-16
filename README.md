@@ -68,6 +68,12 @@
   * [User Input](docs/Jenkins/WaitingForInput.md)
   * [Send Email](docs/Jenkins/EmailSender.md)
 
+### SSL Certificates
+  * [How-to: Crete a self-signed certificate](docs/SSLCerts/CreateSelfSignedCert.md)
+  * [How-to: Generate a Certificate Signing Request - CSR](docs/SSLCerts/GenerateCertificateSigningRequest.md)
+
+
+
 ----
 GitHub Pages: https://bcdevops.github.io/openshift-wiki/
 
