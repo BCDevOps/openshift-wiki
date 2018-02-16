@@ -1,5 +1,7 @@
 Author: Clécio Varjão
 
+# How-to: Crete a self-signed certificate 
+
 ### Using openssl
 
 # Generate a passphrase
