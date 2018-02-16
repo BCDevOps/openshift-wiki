@@ -1,6 +1,6 @@
 Author: Clécio Varjão
 
-# How-to: Crete a self-signed certificate 
+# How-to: Create a self-signed certificate 
 
 ### Using openssl
 
