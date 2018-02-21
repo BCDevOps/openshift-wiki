@@ -36,7 +36,11 @@ Select BC Gov Pathfinder Jenkins (Persistent)
 Step 3:
 
 Configure Jenkins 
-* Add env variable JAVA_OPTS value -XX:MaxMetaspaceSize=512m  to jenkins config
+* Add env variable JAVA_OPTS value 
+  `-XX:MaxMetaspaceSize=512m -Duser.timezone=America/Vancouver -Dhudson.model.DirectoryBrowserSupport.CSP=`
+to jenkins deployment config
+MetaSpace increase to support OATH, timezone change to have local dates/times in jenkis logs, directory browser support change to allow jenkins to get style files from outside container (this allows for reports to display nicely)
+
 * In jenkins
     * Maven Kubernet node (cpu, memory, namespace)
        * Environment Vars (EnvVars) : OPENSHIFT_JENKINS_JVM_ARCH = x86_64
