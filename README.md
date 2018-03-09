@@ -1,3 +1,10 @@
+
+#GITBOOK 
+Gitbook Version of the WIKI is available at 
+https://pathfinder-faq-ocio-pathfinder-prod.pathfinder.gov.bc.ca/
+
+
+
 # Pathfinder OpenShift WIKI
 
 ----
