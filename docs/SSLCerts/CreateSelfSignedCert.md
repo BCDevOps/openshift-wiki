@@ -16,7 +16,7 @@ openssl req -new -passin file:passphrase.txt -key server.key -out server.csr -su
 `
 
 # Remove Passphrase from Key
-`cp server.key server.key.org`
+`cp server.key server.key.org`  
 `openssl rsa -in server.key.org -passin file:passphrase.txt -out server.key`
 
 # Generating a Self-Signed Certificate for 100 years
