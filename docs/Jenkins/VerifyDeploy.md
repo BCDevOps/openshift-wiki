@@ -25,8 +25,7 @@ oc policy add-role-to-user view -z system:serviceaccount:devex-platform-tools:je
 
 Note:  
 
-openshiftVerifyDeployment doesn't really work well with Rolling deployment strategy when verifying` the replica count.
-This is because with a rolling there is always a pod running. The old Pod is shutdown when new one is available. 
+openshiftVerifyDeployment needs the deploy to have started, otherwise with the Rolling deployment strategy when verifying` the replica count verifyDeploy returns too early. This can be archived by adding a sleep 5 before the verifyDeploy step.
 
 See
 https://github.com/BCDevOps/jenkins-pipeline-shared-lib
