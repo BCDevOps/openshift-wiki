@@ -1,24 +1,13 @@
-def COMMIT_ID = ''
+def PR_NO = ''
 try {
   timeout(time: 5, unit: 'MINUTES') {
     userInput = input(
-                  id: 'userInput', message: 'Please enter commit ID to build: ', 
-	                parameters: [[$class: 'StringParameterDefinition', defaultValue: '', description: 'COMMIT_ID', name: 'COMMIT_ID']]
+                  id: 'userInput', message: 'Please enter PULL REQUEST NO to build: ', 
+	                parameters: [[$class: 'StringParameterDefinition', defaultValue: '', description: 'PR_NO', name: 'PR_NO']]
                 )
   }
 } catch(err) {}
 node {
    stage 'build'
-   openshiftBuild(bldCfg: 'gitbook-opeshift-wiki', commitID: COMMIT_ID)
+   openshiftBuild(bldCfg: 'gitbook-opeshift-wiki', verbose: true, env: [name: PRNO, value: PR_NO])
 }
-
-env (optional)
-Specify a list of environment variables to include in the build (see `oc start-build -e ...`).
-Array/List
-Nested Object
-name
-The name of the environment variable to set.
-Type: String
-value
-The value for the environment variable.
-Type: String
