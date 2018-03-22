@@ -1,0 +1,13 @@
+ef COMMIT_ID = ''
+try {
+  timeout(time: 5, unit: 'MINUTES') {
+    userInput = input(
+                  id: 'userInput', message: 'Please enter commit ID to build: ', 
+	                parameters: [[$class: 'StringParameterDefinition', defaultValue: '', description: 'COMMIT_ID', name: 'COMMIT_ID']]
+                )
+  }
+} catch(err) {}
+node {
+   stage 'build'
+   openshiftBuild(bldCfg: 'gitbook-opeshift-wiki', commitID: COMMIT_ID)
+}

@@ -1,0 +1,13 @@
+def PR_NO = ''
+try {
+  timeout(time: 5, unit: 'MINUTES') {
+    userInput = input(
+                  id: 'userInput', message: 'Please enter PULL REQUEST NO to build: ', 
+	                parameters: [[$class: 'StringParameterDefinition', defaultValue: '', description: 'PR_NO', name: 'PR_NO']]
+                )
+  }
+} catch(err) {}
+node {
+   stage 'build'
+   openshiftBuild(bldCfg: 'gitbook-opeshift-wiki', verbose: true, env: [name: PRNO, value: PR_NO])
+}
