@@ -2,6 +2,8 @@
 
 References:
 * https://docs.openshift.com/container-platform/3.7/architecture/networking/sdn.html
+* https://docs.openshift.com/container-platform/3.7/architecture/networking/haproxy-router.html
+* https://docs.openshift.com/container-platform/3.7/architecture/networking/routes.html#route-specific-annotations
 
 Pathfinder OpenShift specific implementation notes:
 * SDN uses the ovs-multitenant SDN plug-in for configuring the pod network.
