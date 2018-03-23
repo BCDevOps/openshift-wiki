@@ -12,7 +12,7 @@ Definitions:
 ImageStreams and ImageStreamTags are pointers to the image stored in the image registry.
 
 CLI Commands:
-oc get is
-oc describe is/<image-stream-nme>
-oc get istag
+* oc get is
+* oc describe is/{image-stream-name}
+* oc get istag
 

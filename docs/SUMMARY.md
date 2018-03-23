@@ -5,7 +5,7 @@
   * [OpenShift](OCP/OpenShift.md)
   * [OpenShift Books](OCP/openshift-books.md)
   * [Run OpenShift on my Workstation](OCP/run-openshift-on-own-computer.md)
-  * [OpenShift Networkin](OCP/Networking.md)
+  * [OpenShift Networking](OCP/Networking.md)
   * [OpenShift ImageStreams and ImageStreamTags](OCP/ImageStreams.md)
   * [Random User IDs](OCP/AppsUserRandomID.md)
   * [Container Native Storage](OCP/CNS.md)
