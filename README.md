@@ -11,76 +11,80 @@ https://pathfinder-faq-ocio-pathfinder-prod.pathfinder.gov.bc.ca/
 
 ### OpenShift 
 
-  * [OpenShift](docs/OCP/OpenShift.md)
-  * [OpenShift Books](docs/OCP/openshift-books.md)
-  * [Run OpenShift on my Workstation](docs/OCP/run-openshift-on-own-computer.md)
-  * [Random User IDs](docs/OCP/AppsUserRandomID.md)
-  * [Container Native Storage](docs/OCP/CNS.md)
-  * [Node Evacuation](docs/OCP/NodeEvacuation.md)
-  * [Node Evacuation Drain Procedure](docs/OCP/EvacuationDrainProcedure.md)
-  * [Pathfinder CIDR Prod VLAN](docs/OCP/Network.md)
+  * [OpenShift](OCP/OpenShift.md)
+  * [OpenShift Books](OCP/openshift-books.md)
+  * [Run OpenShift on my Workstation](OCP/run-openshift-on-own-computer.md)
+  * [OpenShift Networkin](OCP/Networking.md)
+  * [OpenShift ImageStreams and ImageStreamTags](OCP/ImageStreams.md)
+  * [Random User IDs](OCP/AppsUserRandomID.md)
+  * [Container Native Storage](OCP/CNS.md)
+  * [Node Evacuation](OCP/NodeEvacuation.md)
+  * [Node Evacuation Drain Procedure](OCP/EvacuationDrainProcedure.md)
+  * [Pathfinder CIDR Prod VLAN](OCP/Network.md)
 
 ### OpenShift 3.7 
   
-  * [API Pod AutoScaler](docs/OCP/OCP3.7APIHorizontalPodAutoscaler.md)
-  * [Extended/Chained Builds](docs/OCP/ExtendedBuildReplace.md)
+  * [API Pod AutoScaler](OCP/OCP3.7APIHorizontalPodAutoscaler.md)
+  * [Extended/Chained Builds](OCP/ExtendedBuildReplace.md)
 
 ### OpenShift HowTo's
 
-  * [Request New Project](docs/OCP/RequestNewProject.md)
-  * [Pod Network Connection Check](docs/HowTo/CheckNetworkConnection.md)
-  * [Find Pod internal DNS](docs/OCP/PodServiceDns.md)
-  * [Grant User Access To Project](docs/HowTo/GrantUsersAccessToProject.md)
-  * [Set Image Puller Policies](docs/OCP/ProjectPolicySetup.md)
-  * [Image Pull Auth Issue](docs/OCP/ImagePullPolicy.md)
-  * [glusterfs app missing](docs/OCP/RecreateGlusterfsApp.md)
-  * [Increase PVC Size](docs/OCP/IncreasePVCSize.md)
-  * [Resolve 504 proxy error](docs/OCP/Proxy504Error.md)
-  * [Verify Application Up](docs/OCP/TestingApps.md)
+  * [Request New Project](OCP/RequestNewProject.md)
+  * [Pod Network Connection Check](HowTo/CheckNetworkConnection.md)
+  * [Find Pod internal DNS](OCP/PodServiceDns.md)
+  * [Grant User Access To Project](HowTo/GrantUsersAccessToProject.md)
+  * [Set Image Puller Policies](OCP/ProjectPolicySetup.md)
+  * [Image Pull Auth Issue](OCP/ImagePullPolicy.md)
+  * [glusterfs app missing](OCP/RecreateGlusterfsApp.md)
+  * [Increase PVC Size](OCP/IncreasePVCSize.md)
+  * [Resolve 504 proxy error](OCP/Proxy504Error.md)
+  * [Verify Application Up](OCP/TestingApps.md)
+  * [Add ConfigMap to deployment](HowTo/CreateConfigMagForApp.md)
 
 ### API
 
-  * [API Management Service - Kong API Proxy](docs/API/KongAPI.md)
+  * [API Management Service - Kong API Proxy](API/KongAPI.md)
 
 ### BDD Stack
 
-  * [BDD failure - jQuery required](docs/BDD/BDDFailJquery.md)
+  * [BDD failure - jQuery required](BDD/BDDFailJquery.md)
 
 ### Databases
 
-  * [Postgresql Startup Issue](docs/DB/PostgresqlStartIssue.md)
-  * [Postgresql Unexpected data beyond EOF](docs/DB/PostgresqlUnexpetedDataEOF.md)
+  * [Postgresql Startup Issue](DB/PostgresqlStartIssue.md)
+  * [Postgresql Unexpected data beyond EOF](DB/PostgresqlUnexpetedDataEOF.md)
 
 ### GIT
 
-  * [Git Flow](docs/GIT/GitFlow.md)
-  * [GitHub Deployment Keys](docs/GIT/GitHubDeployKeys.md)
+  * [Git Flow](GIT/GitFlow.md)
+  * [GitHub Deployment Keys](GIT/GitHubDeployKeys.md)
 
 ### Jenkins
 
-  * [Best Practice](docs/Jenkins/BestPractice.md)
-  * [Setup](docs/Jenkins/SETUP.md)
-  * [Builds Timeout](docs/Jenkins/BuildTimeout.md)
-  * [Login Error](docs/Jenkins/LoginError.md)
-  * [Pipeline not starting](docs/Jenkins/PipeLineStartIssues.md)
-  * [Pipeline Stuck](docs/Jenkins/PipeLineStuck.md)
-  * [Slave-Master communication error](docs/Jenkins/SlaveMasterConnectionIssue.md)
-  * [Slave not starting](docs/Jenkins/SlaveStartIssue.md)
-  * [Add Sonarqubei Test](docs/Jenkins/Sonarqube.md)
+  * [Best Practice](Jenkins/BestPractice.md)
+  * [Setup](Jenkins/SETUP.md)
+  * [Builds Timeout](Jenkins/BuildTimeout.md)
+  * [Login Error](Jenkins/LoginError.md)
+  * [Pipeline not starting](Jenkins/PipeLineStartIssues.md)
+  * [Pipeline Stuck](Jenkins/PipeLineStuck.md)
+  * [Slave-Master communication error](Jenkins/SlaveMasterConnectionIssue.md)
+  * [Slave not starting](Jenkins/SlaveStartIssue.md)
+  * [Add Sonarqubei Test](Jenkins/Sonarqube.md)
 
 ### Jenkins Pipelines
 
-  * [Archive Artifacts](docs/Jenkins/ArchiveArtifacts.md)
-  * [Verify Openshift Deploy](docs/Jenkins/VerifyDeploy.md)
-  * [User Input](docs/Jenkins/WaitingForInput.md)
-  * [Send Email](docs/Jenkins/EmailSender.md)
-
+  * [Using Shared Libs](Jenkins/UsingTheSharedLib.md)
+  * [Archive Artifacts](Jenkins/ArchiveArtifacts.md)
+  * [Verify Openshift Deploy](Jenkins/VerifyDeploy.md)
+  * [User Input](Jenkins/WaitingForInput.md)
+  * [Send Email](Jenkins/EmailSender.md)
+  
 ### SSL Certificates
-  * [How-to: Crete a self-signed certificate](docs/SSLCerts/CreateSelfSignedCert.md)
-  * [How-to: Generate a Certificate Signing Request - CSR](docs/SSLCerts/GenerateCertificateSigningRequest.md)
 
-
+  * [How-to: Create a self-signed certificate](SSLCerts/CreateSelfSignedCert.md)
+  * [How-to: Generate a Certificate Signing Request - CSR](SSLCerts/GenerateCertificateSigningRequest.md)
 
 ----
+
 GitHub Pages: https://bcdevops.github.io/openshift-wiki/
 

@@ -5,6 +5,8 @@
   * [OpenShift](OCP/OpenShift.md)
   * [OpenShift Books](OCP/openshift-books.md)
   * [Run OpenShift on my Workstation](OCP/run-openshift-on-own-computer.md)
+  * [OpenShift Networkin](OCP/Networking.md)
+  * [OpenShift ImageStreams and ImageStreamTags](OCP/ImageStreams.md)
   * [Random User IDs](OCP/AppsUserRandomID.md)
   * [Container Native Storage](OCP/CNS.md)
   * [Node Evacuation](OCP/NodeEvacuation.md)
@@ -28,6 +30,7 @@
   * [Increase PVC Size](OCP/IncreasePVCSize.md)
   * [Resolve 504 proxy error](OCP/Proxy504Error.md)
   * [Verify Application Up](OCP/TestingApps.md)
+  * [Add ConfigMap to deployment](HowTo/CreateConfigMagForApp.md)
 
 ### API
 
@@ -69,7 +72,7 @@
   
 ### SSL Certificates
 
-  * [How-to: Crete a self-signed certificate](SSLCerts/CreateSelfSignedCert.md)
+  * [How-to: Create a self-signed certificate](SSLCerts/CreateSelfSignedCert.md)
   * [How-to: Generate a Certificate Signing Request - CSR](SSLCerts/GenerateCertificateSigningRequest.md)
 
 ----

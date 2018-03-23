@@ -12,3 +12,8 @@ Pathfinder OpenShift specific implementation notes:
 * OpenShift servers are in VLAN 138 in Kamloops
 * Private Network IP Range: 172.51.0.0/16
 
+* Access (ingress) points:
+  * console.pathfinder.gov.bc.ca:8443 - (142.34.208.210) API and web UI
+  * .pathfinder.gov.bc.ca:80/443 - (142.34.208.209) internet accessible application routes; there is an Entrust wildcard SSL cert for this.
+  * .pathfinder.bcgov:80/443 (142.34.143.180) - internal-only accessible routes; there is currently NO wildcard SSL cert for this
+
