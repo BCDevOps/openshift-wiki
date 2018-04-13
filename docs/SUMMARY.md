@@ -12,6 +12,7 @@
   * [Node Evacuation](OCP/NodeEvacuation.md)
   * [Node Evacuation Drain Procedure](OCP/EvacuationDrainProcedure.md)
   * [Pathfinder CIDR Prod VLAN](OCP/Network.md)
+  * [Route Annotations](OCP/RouteAnnotations.md)
 
 ### OpenShift 3.7 
   
