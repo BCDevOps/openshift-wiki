@@ -61,7 +61,7 @@
   * [Pipeline Stuck](Jenkins/PipeLineStuck.md)
   * [Slave-Master communication error](Jenkins/SlaveMasterConnectionIssue.md)
   * [Slave not starting](Jenkins/SlaveStartIssue.md)
-  * [Add Sonarqubei Test](Jenkins/Sonarqube.md)
+  * [Add Sonarqube Test](Jenkins/Sonarqube.md)
 
 ### Jenkins Pipelines
 
