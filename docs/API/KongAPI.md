@@ -1,8 +1,6 @@
 
 Author: Leo Lou (DataBC)
 
-Author: Leo Lou (DataBC)
-
 # API Management Services.
  
 ## Current gateway status
