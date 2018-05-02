@@ -1,10 +1,17 @@
 
 Author: Leo Lou (DataBC)
 
+Author: Leo Lou (DataBC)
+
 # API Management Services.
  
 ## Current gateway status
-In PRODUCTION, here are APIs already published https://catalogue.data.gov.bc.ca/dataset?tags=API
+* APIs already behind GW https://catalogue.data.gov.bc.ca/dataset?tags=API
+* BCGOV API registry (API published under OpenAPI Specs) https://catalogue.data.gov.bc.ca/group/bc-government-api-registry
+* enabled for wildcard TLS+SNI for ```*.api.gov.bc.ca```
+* current Gateway backend - Kong (https://github.com/kong/kong) API gateway 
+  * Used for common logic like rate-limit, app2app authentication like apiKeys, token, keycloak oidc.etc
+  * Current Kong Cluster version=> kong-ce.0.12.3
 
 ## Service overview
 * https://github.com/bcgov/gwa/wiki/Developer-Guide
@@ -12,10 +19,6 @@ In PRODUCTION, here are APIs already published https://catalogue.data.gov.bc.ca/
 
 ## OpenAPI specs 
 Published https://github.com/bcgov/api-specs
-
-## Kong (https://github.com/kong/kong) API gateway 
-Used for common logic like rate-limit, app2app authentication like apiKeys, token, keycloak oidc.etc
-Current Kong Cluster version=> kong-ce.0.12.1
  
 ## Samples
 * DataBC demo, this site https://data.gov.bc.ca/ is entirely driven by API https://dbcfeeds.api.gov.bc.ca/ no db backend
@@ -29,4 +32,4 @@ Current Kong Cluster version=> kong-ce.0.12.1
 ## Roadmap and future development,
 * OpenAPI Specs is version 3
 *  UI (GWA), you are welcome to connect with us directly if you need specific features assume we don’t have already, also welcome to contribute, the source code is internal at the moment and we are working with IP office to make it OSS if possible.   
-
+* IP Anonymous for API/Pods behind Gateway 
