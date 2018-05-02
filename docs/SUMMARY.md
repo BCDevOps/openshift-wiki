@@ -43,8 +43,9 @@
 
 ### Databases
 
-  * [Postgresql Startup Issue](DB/PostgresqlStartIssue.md)
-  * [Postgresql Unexpected data beyond EOF](DB/PostgresqlUnexpetedDataEOF.md)
+  * [PostgreSQL Startup Issue](DB/PostgresqlStartIssue.md)
+  * [PostgreSQL Unexpected data beyond EOF](DB/PostgresqlUnexpetedDataEOF.md)
+  * [PostgreSQL Backup and Restore](DB/PostgreSQLBackupRestore.md)
 
 ### GIT
 
