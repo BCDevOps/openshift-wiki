@@ -62,7 +62,7 @@
   * [Slave-Master communication error](Jenkins/SlaveMasterConnectionIssue.md)
   * [Slave not starting](Jenkins/SlaveStartIssue.md)
   * [Add Sonarqube Test](Jenkins/Sonarqube.md)
-  * [Automate GitHub tasks using Jenkins]()
+  * [Automate GitHub tasks using Jenkins](Jenkins/AutomateTasks.md)
 
 ### Jenkins Pipelines
 
