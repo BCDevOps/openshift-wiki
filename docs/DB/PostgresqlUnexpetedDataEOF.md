@@ -1,4 +1,4 @@
-Author: Kuan Fan 
+
 
 # Postgresql unexpected data beyond EOF in block
 
