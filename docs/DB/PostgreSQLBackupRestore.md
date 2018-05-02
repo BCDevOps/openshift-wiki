@@ -1,3 +1,5 @@
+Author: Kuan Fan 
+
 # PostgreSQL Backup and Restore
 Postgresql provides various backup and restore options. After exploring all of them, we choose the following two solutions for TFRS project:
 * SQL Dump backup and restore
