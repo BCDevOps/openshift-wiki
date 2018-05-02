@@ -1,5 +1,7 @@
 Author: Emiliano Suñé 
 
+# Automate GitHub tasks using Jenkins
+
 ## Overview
 Automate syncing of GitHub branches (e.g.: _dev_ -> _master_) and reduce the amount of required "manual" work.
 Multiple ways (including the one explained in this wiki) of achieving this are listed [here](https://developer.github.com/v3/guides/managing-deploy-keys/#deploy-keys). This particular combination was chosen because of its relative simplicity and quick setup.
