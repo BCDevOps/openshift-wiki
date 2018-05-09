@@ -1,3 +1,4 @@
+
 # What is OpenShift?
 
 OpenShift is a platform to help you develop and deploy applications to one or more hosts. These can be public facing web applications, or backend applications, including micro services or databases. Applications can be implemented in any programming language you choose. The only requirement is that the application can run within a container.
@@ -17,3 +18,14 @@ The application source code can include a ``Dockerfile`` with instructions to bu
 Kubernetes alone does not provide any support for building the container image it runs. You need to run a build tool to create your application image on a separate system and push that to an image registry from which it can be deployed. This is because CaaS focuses on just running containers.
 
 OpenShift builds on top of Kubernetes to implement a Platform as Service (PaaS) environment which is more friendly to developers, as well as provide the additional tools and services needed by operations to implement a comprehensive container application platform.
+
+# What is a container platform?
+
+A container platform is an application platform that uses containers to build, deploy, serve, and orchestrate the applications running inside it. OpenShift uses two primary tools to serve applications in containers: a container runtime (docker) to create containers in Linux and an orchestration engine (kubernetes) to manage a cluster of servers running containers. 
+
+* A container runtime works on a Linux server to create and manage containers. Containers hold everything required for the applications inside them to function.
+* A container orchestration engine, Kubernetes, employs a master/node architecture. Kubernetes master servers maintain the information about the server cluster, and nodes run the actual application work-loads.
+
+
+
+
