@@ -17,6 +17,6 @@ Pathfinder OpenShift specific implementation notes:
   * .pathfinder.gov.bc.ca:80/443 - (142.34.208.209) internet accessible application routes; there is an Entrust wildcard SSL cert for this.
   * .pathfinder.bcgov:80/443 (142.34.143.180) - internal-only accessible routes; there is currently NO wildcard SSL cert for this
 
-* BCGov IP 142 Subnets (https://whois.arin.net/rest/org/PBC-51-Z/nets)
+* BCGov IP 142 Subnets (https://whois.arin.net/rest/org/PBC-51-Z/nets): 
 142.22.0.0/16 142.23.0.0/16 142.24.0.0/16 142.25.0.0/16 142.26.0.0/16 142.27.0.0/16 142.28.0.0/16 142.29.0.0/16 142.30.0.0/16 142.31.0.0/16 142.32.0.0/16 142.33.0.0/16 142.34.0.0/16 142.35.0.0/16 142.36.0.0/16
 
