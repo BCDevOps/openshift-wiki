@@ -21,6 +21,8 @@ To Request User Access for developers to github orgs please post a request in sl
 Please add following user to github orgs provided below:
 
 github id: <username>
+    
 email: <username@mail.com>
+
 github org(s): bcgov, bcdevops
 
