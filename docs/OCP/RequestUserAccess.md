@@ -22,10 +22,10 @@ Please add following user to github orgs provided below:
 
 github id: xxx
 
-github org(s): bcgov, bcdevops
+OpenShift Access (bcdevops): yes/no
+
+GitHub bcgov repo Collaborator Access (bcgov): yes/no
 
 email: xxx@mail.com
 
 project(s): 
-
-
