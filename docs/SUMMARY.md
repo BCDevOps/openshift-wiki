@@ -46,8 +46,8 @@
 
   * [PostgreSQL Startup Issue](DB/PostgresqlStartIssue.md)
   * [PostgreSQL Unexpected data beyond EOF](DB/PostgresqlUnexpetedDataEOF.md)
-  * [PostgreSQL crash loop caused by a `tuple concurrently updated` error](DB/PostgresqlCrashLoopTupleError.md)
-  * [PostgreSQL Server stuck in recovery loop - not starting up](DB/PostgresqlStuckInRecovery.md)
+  * [PostgreSQL crash loop caused by tuple concurrently updated error](DB/PostgresqlCrashLoopTupleError.md)
+  * [PostgreSQL Server stuck in recovery loop, server not starting up](DB/PostgresqlStuckInRecovery.md)
   * [PostgreSQL Backup and Restore](DB/PostgreSQLBackupRestore.md)
 
 ### GIT
