@@ -14,7 +14,7 @@
   * [Pathfinder CIDR Prod VLAN](OCP/Network.md)
   * [Route Annotations](OCP/RouteAnnotations.md)
 
-### OpenShift 3.7 
+### OpenShift 3.7+ 
   
   * [API Pod AutoScaler](OCP/OCP3.7APIHorizontalPodAutoscaler.md)
   * [Extended/Chained Builds](OCP/ExtendedBuildReplace.md)

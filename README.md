@@ -21,8 +21,9 @@ https://pathfinder-faq-ocio-pathfinder-prod.pathfinder.gov.bc.ca/
   * [Node Evacuation](OCP/NodeEvacuation.md)
   * [Node Evacuation Drain Procedure](OCP/EvacuationDrainProcedure.md)
   * [Pathfinder CIDR Prod VLAN](OCP/Network.md)
+  * [Route Annotations](OCP/RouteAnnotations.md) 
 
-### OpenShift 3.7 
+### OpenShift 3.7+ 
   
   * [API Pod AutoScaler](OCP/OCP3.7APIHorizontalPodAutoscaler.md)
   * [Extended/Chained Builds](OCP/ExtendedBuildReplace.md)
@@ -52,8 +53,11 @@ https://pathfinder-faq-ocio-pathfinder-prod.pathfinder.gov.bc.ca/
 
 ### Databases
 
-  * [Postgresql Startup Issue](DB/PostgresqlStartIssue.md)
-  * [Postgresql Unexpected data beyond EOF](DB/PostgresqlUnexpetedDataEOF.md)
+  * [PostgreSQL Startup Issue](DB/PostgresqlStartIssue.md)
+  * [PostgreSQL Unexpected data beyond EOF](DB/PostgresqlUnexpetedDataEOF.md)
+  * [PostgreSQL crash loop caused by a `tuple concurrently updated` error] (DB/PostgresqlCrashLoopTupleError.md)
+  * [PostgreSQL Server stuck in recovery loop - not starting up] (DB/PostgresqlStuckInRecovery.md)
+  * [PostgreSQL Backup and Restore](DB/PostgreSQLBackupRestore.md)
 
 ### GIT
 
@@ -71,6 +75,7 @@ https://pathfinder-faq-ocio-pathfinder-prod.pathfinder.gov.bc.ca/
   * [Slave-Master communication error](Jenkins/SlaveMasterConnectionIssue.md)
   * [Slave not starting](Jenkins/SlaveStartIssue.md)
   * [Add Sonarqubei Test](Jenkins/Sonarqube.md)
+  * [Automate GitHub tasks using Jenkins](Jenkins/AutomateTasks.md)
 
 ### Jenkins Pipelines
 
