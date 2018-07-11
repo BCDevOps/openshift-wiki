@@ -32,6 +32,7 @@ https://pathfinder-faq-ocio-pathfinder-prod.pathfinder.gov.bc.ca/
 
   * [Request New Project](OCP/RequestNewProject.md)
   * [User Access Request](OCP/RequestUserAccess.md)
+  * [RH SSO Realm Request](OCP/RequestSSORealm.md)
   * [Pod Network Connection Check](HowTo/CheckNetworkConnection.md)
   * [Find Pod internal DNS](OCP/PodServiceDns.md)
   * [Grant User Access To Project](HowTo/GrantUsersAccessToProject.md)
