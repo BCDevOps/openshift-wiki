@@ -1,4 +1,4 @@
-# Request a SSO Realm to be createed in OpenSHift RH SSO instance.
+# Request a SSO Realm to be createed in OpenShift RH SSO instance.
 
 ## Identity Providers
 
@@ -11,14 +11,14 @@
 
 ## Realm Creation Request
 
-To Request the creation of a new REALM IN OpenShift iRH SSO please post a request in slack #requestis channel with the following info:
+To Request the creation of a new REALM IN OpenShift iRH SSO please post a request in slack #requests channel with the following info:
 
 
 * Realm Name:                           (Note: lowercase, no special chars except -)
 * Contact/Admin of Realm:
 * ID Providers:
 * Product Owner:
-* If BCeID Provider is required, have you completed the approval processi [Y/N]?
+* If BCeID Provider is required, have you completed the approval process [Y/N]?
 
 Notes:
 - At least one of contact/PO should be a Governmnet Employee
