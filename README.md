@@ -93,7 +93,7 @@ https://pathfinder-faq-ocio-pathfinder-prod.pathfinder.gov.bc.ca/
 
 ### Azure
 
-  * [How-to: Setup Subscription Event Monitoring](Azure/SubscriptionEvents.md)
+  * [How-to: Setup Subscription Event Monitoring](docs/Azure/SubscriptionEvents.md)
 
 ----
 
