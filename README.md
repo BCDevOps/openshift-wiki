@@ -91,6 +91,10 @@ https://pathfinder-faq-ocio-pathfinder-prod.pathfinder.gov.bc.ca/
   * [How-to: Create a self-signed certificate](SSLCerts/CreateSelfSignedCert.md)
   * [How-to: Generate a Certificate Signing Request - CSR](SSLCerts/GenerateCertificateSigningRequest.md)
 
+### Azure
+
+  * [How-to: Setup Subscription Event Monitoring](Azure/CreateSelfSignedCert.md)
+
 ----
 
 GitHub Pages: https://bcdevops.github.io/openshift-wiki/
