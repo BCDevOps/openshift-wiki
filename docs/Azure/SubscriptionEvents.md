@@ -104,6 +104,141 @@ az monitor log-profiles create --name "default" --location null --locations "can
 }
 ```
 
+## Sample Messages
+
+Below are some sample messages created by Azure for creating and deleting storage accounts.'
+
+### Create Storage Account
+
+```json
+[
+  {
+    "subject": "/subscriptions/09c62126-39f7-44fc-81bd-7bb17bf61abc/resourcegroups/bc-gov-aks-osba/providers/Microsoft.Storage/storageAccounts/aaabbb123xws",
+    "eventType": "Microsoft.Resources.ResourceWriteSuccess",
+    "eventTime": "2018-08-16T17:57:55.6104343Z",
+    "id": "bd96de07-6ab6-46c7-b453-c51a0554c988",
+    "data": {
+      "authorization": {
+        "scope": "/subscriptions/09c62126-39f7-44fc-81bd-7bb17bf61abc/resourcegroups/bc-gov-aks-osba/providers/Microsoft.Storage/storageAccounts/aaabbb123xws",
+        "action": "Microsoft.Storage/storageAccounts/write",
+        "evidence": {
+          "role": "Owner",
+          "roleAssignmentScope": "/subscriptions/09c62126-39f7-44fc-81bd-7bb17bf61abc",
+          "roleAssignmentId": "7c9283d62e844fb88f452ed4d221bf86",
+          "roleDefinitionId": "8e3af657a8ff443ca75c2fe8c4bcb635",
+          "principalId": "3fb3e254bb544681982c1325502ca8a9",
+          "principalType": "User"
+        }
+      },
+      "claims": {
+        "aud": "https://management.core.windows.net/",
+        "iss": "https://sts.windows.net/6fdb5200-3d0d-4a8a-b036-d3685e359adc/",
+        "iat": "1534439095",
+        "nbf": "1534439095",
+        "exp": "1534442995",
+        "http://schemas.microsoft.com/claims/authnclassreference": "1",
+        "aio": "42BgYKi7+5Pr33Fmi5cRjA797+1/b1ifz8Bbnc8aUFQbmzbH+5R3lsnNxKZqZVs7yZd/Q5iSAQ==",
+        "altsecid": "5::10030000AD1D8F18",
+        "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd",
+        "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+        "appidacr": "2",
+        "e_exp": "262800",
+        "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress": "jason.leach@fullboar.ca",
+        "http://schemas.microsoft.com/identity/claims/identityprovider": "https://sts.windows.net/aabf6335-c4c4-48ed-8cdd-cbfb4baeb603/",
+        "ipaddr": "207.194.65.204",
+        "name": "jason.leach",
+        "http://schemas.microsoft.com/identity/claims/objectidentifier": "3fb3e254-bb54-4681-982c-1325502ca8a9",
+        "puid": "1003BFFDAD2853E7",
+        "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+        "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "q5akcIxRLA00dlQpTEZRiD5Hc9LG94Kuhz6PzQqfgxY",
+        "http://schemas.microsoft.com/identity/claims/tenantid": "6fdb5200-3d0d-4a8a-b036-d3685e359adc",
+        "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "jason.leach@fullboar.ca",
+        "uti": "l78lBQsynU2PJFd8LC8qAA",
+        "ver": "1.0"
+      },
+      "correlationId": "4f8c6277-ce68-4c97-9f8f-e59aaaff2bef",
+      "resourceProvider": "Microsoft.Storage",
+      "resourceUri": "/subscriptions/09c62126-39f7-44fc-81bd-7bb17bf61abc/resourcegroups/bc-gov-aks-osba/providers/Microsoft.Storage/storageAccounts/aaabbb123xws",
+      "operationName": "Microsoft.Storage/storageAccounts/write",
+      "status": "Succeeded",
+      "subscriptionId": "09c62126-39f7-44fc-81bd-7bb17bf61abc",
+      "tenantId": "6fdb5200-3d0d-4a8a-b036-d3685e359adc"
+    },
+    "dataVersion": "2",
+    "metadataVersion": "1",
+    "topic": "/subscriptions/09c62126-39f7-44fc-81bd-7bb17bf61abc"
+  }
+]
+```
+
+### Delete Storage Account
+
+```json
+[
+  {
+    "subject": "/subscriptions/09c62126-39f7-44fc-81bd-7bb17bf61abc/resourceGroups/bc-gov-aks-osba/providers/Microsoft.Storage/storageAccounts/aaabbb123xws",
+    "eventType": "Microsoft.Resources.ResourceDeleteSuccess",
+    "eventTime": "2018-08-16T17:59:44.4653401Z",
+    "id": "94d3b126-3646-4093-a94a-489cf47d2bd8",
+    "data": {
+      "authorization": {
+        "scope": "/subscriptions/09c62126-39f7-44fc-81bd-7bb17bf61abc/resourceGroups/bc-gov-aks-osba/providers/Microsoft.Storage/storageAccounts/aaabbb123xws",
+        "action": "Microsoft.Storage/storageAccounts/delete",
+        "evidence": {
+          "role": "Owner",
+          "roleAssignmentScope": "/subscriptions/09c62126-39f7-44fc-81bd-7bb17bf61abc",
+          "roleAssignmentId": "7c9283d62e844fb88f452ed4d221bf86",
+          "roleDefinitionId": "8e3af657a8ff443ca75c2fe8c4bcb635",
+          "principalId": "3fb3e254bb544681982c1325502ca8a9",
+          "principalType": "User"
+        }
+      },
+      "claims": {
+        "aud": "https://management.core.windows.net/",
+        "iss": "https://sts.windows.net/6fdb5200-3d0d-4a8a-b036-d3685e359adc/",
+        "iat": "1534441818",
+        "nbf": "1534441818",
+        "exp": "1534445718",
+        "http://schemas.microsoft.com/claims/authnclassreference": "1",
+        "aio": "ATQAy/8IAAAAm4ZJcf3XY57cYnGCHGRGwrWVInUsXIPyiujga6JURU3qXme7yI8jUgEbG7+qg4rf",
+        "altsecid": "5::10030000AD1D8F18",
+        "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd",
+        "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+        "appidacr": "2",
+        "e_exp": "262800",
+        "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress": "jason.leach@fullboar.ca",
+        "http://schemas.microsoft.com/identity/claims/identityprovider": "https://sts.windows.net/aabf6335-c4c4-48ed-8cdd-cbfb4baeb603/",
+        "ipaddr": "207.194.65.204",
+        "name": "jason.leach",
+        "http://schemas.microsoft.com/identity/claims/objectidentifier": "3fb3e254-bb54-4681-982c-1325502ca8a9",
+        "puid": "1003BFFDAD2853E7",
+        "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+        "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "q5akcIxRLA00dlQpTEZRiD5Hc9LG94Kuhz6PzQqfgxY",
+        "http://schemas.microsoft.com/identity/claims/tenantid": "6fdb5200-3d0d-4a8a-b036-d3685e359adc",
+        "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "jason.leach@fullboar.ca",
+        "uti": "QhBuqpJgmkmHhF2F1XAhAA",
+        "ver": "1.0"
+      },
+      "correlationId": "94d3b126-3646-4093-a94a-489cf47d2bd8",
+      "httpRequest": {
+        "clientRequestId": "964331c5-5619-476e-b191-a3f8477bf041",
+        "clientIpAddress": "207.194.65.204",
+        "method": "DELETE",
+        "url": "https://management.azure.com/subscriptions/09c62126-39f7-44fc-81bd-7bb17bf61abc/resourceGroups/bc-gov-aks-osba/providers/Microsoft.Storage/storageAccounts/aaabbb123xws?api-version=2018-02-01"
+      },
+      "resourceProvider": "Microsoft.Storage",
+      "resourceUri": "/subscriptions/09c62126-39f7-44fc-81bd-7bb17bf61abc/resourceGroups/bc-gov-aks-osba/providers/Microsoft.Storage/storageAccounts/aaabbb123xws",
+      "operationName": "Microsoft.Storage/storageAccounts/delete",
+      "status": "Succeeded",
+      "subscriptionId": "09c62126-39f7-44fc-81bd-7bb17bf61abc",
+      "tenantId": "6fdb5200-3d0d-4a8a-b036-d3685e359adc"
+    },
+    "dataVersion": "2",
+    "metadataVersion": "1",
+    "topic": "/subscriptions/09c62126-39f7-44fc-81bd-7bb17bf61abc"
+  }
+]```
+
 ## Consuming Events
 
 Google around and you'll find lots of examples of how to consume events from and event hub. Here is one such [example][Event Hubs with Node] of how to do it in node.
