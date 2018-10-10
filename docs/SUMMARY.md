@@ -3,6 +3,7 @@
 ### OpenShift 
 
   * [OpenShift](OCP/OpenShift.md)
+  * [Starting a New Project](OCP/StartingANewProject.md)
   * [OpenShift Books](OCP/openshift-books.md)
   * [Run OpenShift on my Workstation](OCP/run-openshift-on-own-computer.md)
   * [OpenShift Networking](OCP/Networking.md)
@@ -20,8 +21,7 @@
   * [Extended/Chained Builds](OCP/ExtendedBuildReplace.md)
 
 ### OpenShift HowTo's
-
-  * [Request New Project](OCP/StartingANewProject.md)
+  
   * [User Access Request](OCP/RequestUserAccess.md)
   * [RH SSO Realm Request](OCP/RequestSSORealm.md)
   * [Pod Network Connection Check](HowTo/CheckNetworkConnection.md)
