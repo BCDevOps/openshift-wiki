@@ -11,7 +11,8 @@ https://pathfinder-faq-ocio-pathfinder-prod.pathfinder.gov.bc.ca/
 
 ### OpenShift 
 
-  * [OpenShift](OCP/OpenShift.md)
+  * [OpenShift](OCP/OpenShift.md) 
+  * [Starting a New Project](OCP/StartingANewProject.md)
   * [OpenShift Books](OCP/openshift-books.md)
   * [Run OpenShift on my Workstation](OCP/run-openshift-on-own-computer.md)
   * [OpenShift Networking](OCP/Networking.md)
@@ -30,7 +31,6 @@ https://pathfinder-faq-ocio-pathfinder-prod.pathfinder.gov.bc.ca/
 
 ### OpenShift HowTo's
 
-  * [Request New Project](OCP/RequestNewProject.md)
   * [User Access Request](OCP/RequestUserAccess.md)
   * [RH SSO Realm Request](OCP/RequestSSORealm.md)
   * [Pod Network Connection Check](HowTo/CheckNetworkConnection.md)

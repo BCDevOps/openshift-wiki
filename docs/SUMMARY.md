@@ -21,7 +21,7 @@
 
 ### OpenShift HowTo's
 
-  * [Request New Project](OCP/RequestNewProject.md)
+  * [Request New Project](OCP/StartingANewProject.md)
   * [User Access Request](OCP/RequestUserAccess.md)
   * [RH SSO Realm Request](OCP/RequestSSORealm.md)
   * [Pod Network Connection Check](HowTo/CheckNetworkConnection.md)
