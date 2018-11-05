@@ -1,3 +1,7 @@
+---
+title: 'Jenkins Issue: Jobs waiting for Input'
+description: How to fix this issue including code snippets.
+---
 ***Issue:***
 
 Jobs waiting for input. 
