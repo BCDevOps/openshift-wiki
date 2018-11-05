@@ -1,4 +1,7 @@
-
+---
+title: 'How To: checking networking connectivity of a pod to an external system'
+description: Code snippets on how to accomplish this
+---
 ## Checking network connectivity of a pod to an external system
 
 

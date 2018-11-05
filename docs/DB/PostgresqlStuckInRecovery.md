@@ -1,5 +1,7 @@
+---
+description: Fixing the Postgres 'server stuck in a recovery loop' issue.
+---
 # PostgreSQL Server stuck in recovery loop - not starting up
-
 
 Errors in log file observed:
 

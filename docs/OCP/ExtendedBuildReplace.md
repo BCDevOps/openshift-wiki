@@ -1,3 +1,7 @@
+---
+title: Porting From Extended Builds to Chain Builds
+description: Extended Builds were a feature available in OpenShift up to and including version 3.6. Extended Builds are no longer supported, but there are alternative ways to achieve the same functionality via "Chained Builds".
+---
 # Extended Builds, which were Technical Preview prior to 3.7 have been dropped.
 
 ## What are Extended Builds?

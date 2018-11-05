@@ -1,3 +1,7 @@
+---
+title: Jenkins Build Timeout Failure
+description: How to fix a build time out issue in Jenkins.
+---
 **Issue:**
 
 Jenkins marks a build as failed after 15 minutes, but the build succeeds in OpenShift	

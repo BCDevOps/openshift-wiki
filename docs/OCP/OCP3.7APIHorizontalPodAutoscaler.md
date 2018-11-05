@@ -1,3 +1,7 @@
+---
+description: Deployment Config Changes for Openshift 3.7+
+---
+
 # OpenShift 3.7 the API Schema change - HorizontalPodAutoscaler API Schema change
 
 What changed:

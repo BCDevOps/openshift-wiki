@@ -1,4 +1,6 @@
-
+---
+description: OpenShift is a platform to help you develop and deploy applications to one or more hosts. These can be public facing web applications, or backend applications, including micro services or databases. Applications can be implemented in any programming language you choose. The only requirement is that the application can run within a container.
+---
 # What is OpenShift?
 
 OpenShift is a platform to help you develop and deploy applications to one or more hosts. These can be public facing web applications, or backend applications, including micro services or databases. Applications can be implemented in any programming language you choose. The only requirement is that the application can run within a container.

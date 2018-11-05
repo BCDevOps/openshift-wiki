@@ -1,3 +1,6 @@
+---
+desceription: How to communicate between pods with code snippets.
+---
 # Pod to Pod communication through OpenShift internal DNS
 
 Connect to running pod:

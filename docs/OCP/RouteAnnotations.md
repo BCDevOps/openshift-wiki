@@ -1,6 +1,8 @@
+---
+description: Annotate Routes for things like timeouts or whitelisting.
+---
 # Route Annotations - Timeouts, Whitelists, etc
 
- 
 ## Increase the IP timeout for a given route (i.e if you get the 504 error):
  
 ```oc annotate route <route-name> --overwrite haproxy.router.openshift.io/timeout=180s```

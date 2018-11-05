@@ -1,3 +1,6 @@
+---
+description: Guide on creating self signing SSL certificates with OpenSSL.
+---
 Author: Clécio Varjão
 
 # How-to: Create a self-signed certificate 

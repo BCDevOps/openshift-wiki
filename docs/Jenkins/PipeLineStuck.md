@@ -1,3 +1,7 @@
+---
+title: Openshift Pipeline Build Runs for Hours Issue
+description: How to resolve this issue.
+---
 ***Issue:***
 
 OpenShift pipeline builds appear "stuck" - they start but stay at the running stage for hours. Viewing the console logs for the jenkins pod shows that there are problems deleting a Jenkins job.

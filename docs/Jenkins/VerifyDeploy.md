@@ -1,3 +1,7 @@
+---
+title: Verify Your Deployment in Jenkins Pipeline
+description: Verify deployment completes before running functional tests. 
+---
 **Issue:**
 
 Need to verify if deployment completed before running functional test

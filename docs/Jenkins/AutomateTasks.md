@@ -1,3 +1,6 @@
+---
+description: 'Automate syncing of GitHub branches (e.g.: _dev_ -> _master_) and reduce the amount of required "manual" work.'
+---
 Author: Emiliano Suñé 
 
 # Automate GitHub tasks using Jenkins

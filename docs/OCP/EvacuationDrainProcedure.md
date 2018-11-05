@@ -1,4 +1,7 @@
-
+---
+description: During regular maintenance of a node, which could include (OS) operating system or application (ie. OpenShift) upgrade tasks, a procedure is undertaken with evacuates the node of all running pods. Depending on the application deployment, this process may affect running applications. This document outlines a few key details as it pertains to running applications on an OpenShift node and strategies to ensure application uptime.
+title: Evactuation Drain Procedure
+---
 Author: Shea Stewart @ Artic
 
 

@@ -1,4 +1,6 @@
-
+---
+description: Free Openshift resources and guides.
+---
 # OpenShift Books
 
 The following free eBooks are available on OpenShift.
