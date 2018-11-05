@@ -1,6 +1,6 @@
 ---
 title: Jenkins Slave Communication Issue
-desceription: How to resolve the issue where Slaves start but are unable to communicate with Jenkins Master.
+description: How to resolve the issue where Slaves start but are unable to communicate with Jenkins Master.
 ---
 **Issue:**
 
