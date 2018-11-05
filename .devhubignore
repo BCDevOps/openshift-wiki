@@ -6,3 +6,4 @@ media
 styles
 .s2i
 docs/*.md
+docs/OCP/TestingApps.md

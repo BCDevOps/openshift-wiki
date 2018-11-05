@@ -1,3 +1,7 @@
+---
+title: Starting Up a New Openshift Project
+description: Guide and criteria for starting up a new project.
+---
 # Starting a New Project
 
 Prior to this step is a manual/human step that involves a project/product team lead / sponsor communicating with the DevOps Platform Services team and having their project/app/product accepted for deployment on the DevOps platform.

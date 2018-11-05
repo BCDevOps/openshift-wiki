@@ -1,3 +1,6 @@
+---
+description: Evacuating Pods on Nodes Evacuating pods allows you to migrate all or selected pods from a given node or nodes.
+---
 ### Node Evacuation Process
 
 Reference:

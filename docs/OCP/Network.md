@@ -1,3 +1,7 @@
+---
+title: What is the CIDR for the PROD VLAN?
+description: Information on the CIDR for PROD VLAN.
+---
 ***Issue:***
 
 What is the CIDR for the PROD VLAN?

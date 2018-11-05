@@ -1,4 +1,7 @@
-
+---
+title: Openshift Route Timeouts With 504 Error on Long Requests
+description: How to resolve this issue, including code snippets.
+---
 # Route Timeouts  504 error for longer running http requests
 
 ***Issue:***
