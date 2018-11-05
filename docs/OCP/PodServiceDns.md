@@ -1,5 +1,5 @@
 ---
-desceription: How to communicate between pods with code snippets.
+description: How to communicate between pods with code snippets.
 ---
 # Pod to Pod communication through OpenShift internal DNS
 
