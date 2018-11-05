@@ -1,3 +1,6 @@
+---
+description: What are images, image-streams and image-stream-tags in Openshift? How do they work togethor?
+---
 # Images in OpenShift
 
 References:

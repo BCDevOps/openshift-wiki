@@ -1,4 +1,7 @@
-
+---
+title: Configure Access Controls for Jenkins
+description: Configure the access controls to allow the Jenkins instance to tag imagestreams in the environment projects, and to allow the environment projects to pull images from the tools project
+---
 ## Configure the access controls to allow the Jenkins instance to tag imagestreams in the environment projects, and to allow the environment projects to pull images from the tools project
 
 ```

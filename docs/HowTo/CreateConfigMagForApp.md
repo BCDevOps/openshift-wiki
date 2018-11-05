@@ -1,3 +1,7 @@
+---
+title: 'How To: create a config map'
+description: Guide on how to create a config map
+---
 ## Create a config map
 
 1. Resources -> Config Maps -> Create Config Map

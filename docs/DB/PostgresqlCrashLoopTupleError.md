@@ -1,7 +1,8 @@
-
+---
+description: Issue and Fix for a Postgres crash loop caused by 'tuple concurrently updated' error
+---
 Author: Wade Barnes
-
-
+# Postgres Crash Loop Error and Solution
 ## Fixing a Postgres crash loop caused by a `tuple concurrently updated` error
 
 If a Postgres database pod gets terminated unexpectedly it can trigger a crash loop with the following log signature.

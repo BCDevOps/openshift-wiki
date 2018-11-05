@@ -1,3 +1,6 @@
+---
+description: How to generate a CSR.
+---
 Author: Clécio Varjão
 
 # How-to: Generate a Certificate Signing Request (CSR)

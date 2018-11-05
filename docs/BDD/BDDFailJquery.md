@@ -1,4 +1,7 @@
-
+---
+title: Jquery BDD Failure and Fix
+description: How to fix "Bootstrap's JavaScript requires jQuery" issue.
+---
 Author: Roland Stens 
 
 **Issue:**

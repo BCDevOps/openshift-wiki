@@ -1,8 +1,12 @@
+---
+title: 'Jenkins Issue: Jobs waiting for Input'
+description: How to fix this issue including code snippets.
+---
 ***Issue:***
 
 Jobs waiting for input. 
 
-**Solution:***
+**Solution:**
 Wrap the input in a timeout.
 To permit only specific users to promote set the submitter list (comma separated list of user ids).
 

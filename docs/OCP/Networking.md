@@ -1,3 +1,6 @@
+---
+description: Pathfinder Openshift specifics and resources.
+---
 # OpenShift Networking - Pathfinder Project Config
 
 References:
