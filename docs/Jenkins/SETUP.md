@@ -1,5 +1,5 @@
 ---
-title: Setupd Jenkins Image With OAUTH
+title: Setup Jenkins Image With OAUTH
 description: How To with code steps and code snippets.
 ---
 **Issue:**
