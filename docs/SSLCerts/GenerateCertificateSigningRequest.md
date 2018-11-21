@@ -11,7 +11,7 @@ Author: Clécio Varjão
 `openssl rand -base64 48 > passphrase.txt`
 
 # Generate a Private Key
-`openssl genrsa -aes128 -passout file:passphrase.txt -out server.key 2777`
+`openssl genrsa -aes128 -passout file:passphrase.txt -out server.key 2048`
 
 # Generate a CSR (Certificate Signing Request)
 `
