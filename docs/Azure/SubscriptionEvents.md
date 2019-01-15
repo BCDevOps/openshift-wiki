@@ -1,3 +1,6 @@
+---
+description: How to siphon off monitoring data for later consumption.
+---
 # Azure Subscription Event Monitoring
 
 ## Purpose

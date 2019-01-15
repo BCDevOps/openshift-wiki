@@ -1,4 +1,6 @@
-
+---
+description: Guide to resolving the Postgres unexpected data beyond EOF issue.
+---
 
 # Postgresql unexpected data beyond EOF in block
 

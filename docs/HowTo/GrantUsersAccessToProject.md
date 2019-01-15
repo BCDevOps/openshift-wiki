@@ -1,3 +1,6 @@
+---
+description: As the owner of the project, initially you are the only one who can access it and work in it. If you need to collaborate on a project with other users, you can add additional members to the project.
+---
 ## Granting a user access to a project
 
 As the owner of the project, initially you are the only one who can access it and work in it. If you need to collaborate on a project with other users, you can add additional members to the project. When adding a user to the project, they can be added in one of three primary roles.

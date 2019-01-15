@@ -1,3 +1,7 @@
+---
+description: Guide to Git Flow
+title: Gov Git Flow Practice
+---
 Angelikas-MacBook-Pro:docs aehlers$ vi GIT/GitFlow.md
 
 ## GitFlow

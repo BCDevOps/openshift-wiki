@@ -1,4 +1,6 @@
-
+---
+description: Solution for the Postgres 'instance of a server is already running' issue.
+---
 # Postgres does not start up, claiming an instance of server is already running
 
 ***Issue:***

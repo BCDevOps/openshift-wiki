@@ -1,0 +1,9 @@
+/*.md
+/*.json
+/*.yml
+kb-files
+media
+styles
+.s2i
+docs/*.md
+docs/OCP/TestingApps.md

@@ -1,3 +1,7 @@
+---
+title: Jenkins Best Practices
+description: Best practices when creating Jenkins pipelines.
+---
 **Issue:**
 
 What the best practice when creating jenkins pipelines

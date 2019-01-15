@@ -1,3 +1,7 @@
+---
+title: Jenkins Pipeline Not Starting with Chrome Extension
+description: Solution for this issue.
+---
 ***Issue:***
 
  Jenkins Pipelines not starting - Developers using a Chrome extension

@@ -1,4 +1,7 @@
-
+---
+title: Setup Jenkins Image With OAUTH
+description: How To with code steps and code snippets.
+---
 **Issue:**
 
 Setup Jenkins image with OAUTH
@@ -19,7 +22,7 @@ Deleted ALL the jenkins objects from the config
 
 Via commandline (oc) you can delete most of the objects:
 
-` oc describe dc jenkins-pipeline-svc|more      (look for the label with template=)`
+`oc describe dc jenkins-pipeline-svc|more      (look for the label with template=)`
 
 `oc get all -l template=<label-id-for-jenkins> -n <namespace>`
 

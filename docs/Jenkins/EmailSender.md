@@ -1,4 +1,7 @@
-# Sending email from Jenkins pipeline
+---
+description: How to send emails from Jenkins Pipeline including code snippets.
+---
+# Sending Email From Jenkins pipeline
 
 ***Issue:***
 

@@ -1,4 +1,7 @@
-# RH Single SIgnon OpenShift
+---
+description: Overview of Pathfinder's SSO implementation.
+---
+# RH Single Signon OpenShift
 
 Urls: 
 * https://sso-dev.pathfinder.gov.bc.ca/
