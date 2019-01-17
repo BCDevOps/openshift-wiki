@@ -2,6 +2,7 @@
 description: Quickly build API-centric applications. Leverage the latest microservice and container design patterns. And tie it all together with the Kong microservice API gateway.
 title: API Gateway (powered by Kong CE)
 image: "https://2tjosk2rxzc21medji3nfn1g-wpengine.netdna-ssl.com/wp-content/uploads/2018/08/logo-color.png"
+author: ll911
 ---
 Author: Leo Lou (DataBC)
 
