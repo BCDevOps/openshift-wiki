@@ -19,16 +19,18 @@ Notes:
 
 ## Access Request
 
+For project team members, please ask Product Owner to start the request.
+
 To Request User Access for developers to github orgs please post a request in slack #request channel with the following info:
 
 Please add following user to github orgs provided below:
 
-github id: xxx
+1. github id: xxx
 
-OpenShift Access (bcdevops): yes/no
+2. OpenShift Access (bcdevops): yes/no
 
-GitHub bcgov repo Collaborator Access (bcgov): yes/no
+3. GitHub bcgov repo Creator and Owner (bcgov): yes/no
 
-email: xxx@mail.com
+4. email: xxx@mail.com
 
-project(s): 
+5. project(s): Project name + GitHub repo (if exists)
