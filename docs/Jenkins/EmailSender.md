@@ -28,3 +28,6 @@ Add following cmds to your pipeline
 See 
 https://github.com/BCDevOps/jenkins-pipeline-shared-lib
 
+
+# Refererences
+- https://ssbc-client.gov.bc.ca/exchange/emailfirewall/applicationemail.htm
