@@ -31,3 +31,4 @@ https://github.com/BCDevOps/jenkins-pipeline-shared-lib
 
 # Refererences
 - https://ssbc-client.gov.bc.ca/exchange/emailfirewall/applicationemail.htm
+- https://ssbc-client.gov.bc.ca/servicenews/service_bulletin_988.html
