@@ -18,12 +18,11 @@ title: SSO Realm Creation
 To Request the creation of a new REALM IN OpenShift iRH SSO please post a request in Rocket.Chat #devops-requests channel with the following info:
 
 
-* Realm Name:                           (Note: lowercase, no special chars except -)
+* Realm Display Name:                           (Note: The names of realms will be auto-generated at provisioning time)
 * Contact/Admin of Realm:
 * ID Providers:
-* Product Owner:
+* Product Owner (IDIR username + email):
 * If BCeID Provider is required, have you completed the approval process [Y/N]?
 
 Notes:
 - At least one of contact/PO should be a Government Employee
-
