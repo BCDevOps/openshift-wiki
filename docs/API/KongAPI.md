@@ -9,6 +9,7 @@ Author: Leo Lou (DataBC)
 # API Management Services.
 
 ## Service overview
+![](https://raw.githubusercontent.com/bcgov/gwa/master/img/overview.png)
 * https://github.com/bcgov/gwa/wiki/Developer-Guide
 * https://catalogue.data.gov.bc.ca/dataset/api-gateway-administration
 
