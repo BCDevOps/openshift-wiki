@@ -19,9 +19,9 @@ To Request the creation of a new REALM IN OpenShift iRH SSO please post a reques
 
 
 * Realm Display Name:                           (Note: The names of realms will be auto-generated at provisioning time)
-* Contact/Admin of Realm:
+* Contact/Admin of Realm (IDIR username + email):
 * ID Providers:
-* Product Owner (IDIR username + email):
+* Product Owner:
 * If BCeID Provider is required, have you completed the approval process [Y/N]?
 
 Notes:
