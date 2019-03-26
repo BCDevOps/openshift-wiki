@@ -68,4 +68,5 @@ else
 fi
 ```
 
-Slack notifications can be set-up using the Slack plugin for Jenkins to notify the team of successful updates and/or errors.
+- Slack notifications can be set-up using the Slack plugin for Jenkins to notify the team of successful updates and/or errors.
+- Rocket.Chat notifications can be set-up using the rocket.cat for Jenkins (https://github.com/BCDevOps/platform-services/blob/master/wiki/app_rocketchat.md).

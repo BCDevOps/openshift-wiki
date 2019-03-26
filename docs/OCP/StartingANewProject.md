@@ -24,7 +24,7 @@ Criteria for acceptance onto the platform include:
 
 # Project Provisioning Request
 
-Once a project is accepted, the team product owner or technical leader should make a request via a post in the #requests channel of the Pathfinder DevOps Slack team. (Slack team URL: https://devopspathfinder.slack.com).
+Once a project is accepted, the team product owner or technical leader should make a request via a post in the #requests channel of the Pathfinder Rocket.Chat. (URL: https://chat.pathfinder.gov.bc.ca).
 
 The request should include:
 

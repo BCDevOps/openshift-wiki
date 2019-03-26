@@ -15,7 +15,7 @@ title: SSO Realm Creation
 
 ## Realm Creation Request
 
-To Request the creation of a new REALM IN OpenShift iRH SSO please post a request in slack #requests channel with the following info:
+To Request the creation of a new REALM IN OpenShift iRH SSO please post a request in Rocket.Chat #devops-requests channel with the following info:
 
 
 * Realm Name:                           (Note: lowercase, no special chars except -)
