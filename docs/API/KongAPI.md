@@ -42,6 +42,6 @@ Author: Leo Lou (DataBC)
   * C, using gateway`*.api.gov.bc.ca or your own DNS` (API Gateway Cluster) => your running app/api/svc elsewhere
  
 ## Roadmap and future development,
-* kong 1.1.1, database-less gateway support declarative configuration via yaml or json
+* kong 1.1+, database-less gateway support declarative configuration via yaml or json
 * Admin UI improvement  
 * Support `PROXY_PROTOCOL` in traffic pattern B mentioned above for better performance in TLS end to end deployment.
