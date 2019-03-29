@@ -14,12 +14,12 @@ Author: Leo Lou (DataBC)
 * https://catalogue.data.gov.bc.ca/dataset/api-gateway-administration
 
 ## Current gateway status
-* OpenAPI Specs supported version => 3.x(current), 2.x (deprecated) 
+* OpenAPI Specs supported version => 3.x(current), 2.x (deprecated)
+  * Published on https://github.com/bcgov/api-specs
 * APIs already behind GW https://catalogue.data.gov.bc.ca/dataset?tags=API
 * BCGOV API registry (API published under OpenAPI Specs) https://catalogue.data.gov.bc.ca/group/bc-government-api-registry
 * enabled for wildcard TLS+SNI for `*.api.gov.bc.ca`, `*.data.gov.bc.ca`
 * enabled for WAM siteminder agent protection for `*.apps.gov.bc.ca`
-* OpenAPI specs => Published https://github.com/bcgov/api-specs
 * current Gateway backend - Kong (https://github.com/kong/kong) API gateway 
   * Used for common logic like rate-limit, app2app authentication like apiKeys, token, keycloak oidc.etc
   * Current Kong Cluster version=> kong-ce.0.14.1
