@@ -14,6 +14,7 @@ Author: Leo Lou (DataBC)
 * https://catalogue.data.gov.bc.ca/dataset/api-gateway-administration
 
 ## Current gateway status
+* OpenAPI Specs supported version => 3.x(current), 2.x (deprecated) 
 * APIs already behind GW https://catalogue.data.gov.bc.ca/dataset?tags=API
 * BCGOV API registry (API published under OpenAPI Specs) https://catalogue.data.gov.bc.ca/group/bc-government-api-registry
 * enabled for wildcard TLS+SNI for `*.api.gov.bc.ca`, `*.data.gov.bc.ca`
@@ -41,6 +42,6 @@ Author: Leo Lou (DataBC)
   * C, using gateway`*.api.gov.bc.ca or your own DNS` (API Gateway Cluster) => your running app/api/svc elsewhere
  
 ## Roadmap and future development,
-* OpenAPI Specs is version 3
-* UX improvement  
+* kong 1.1.1, database-less gateway support declarative configuration via yaml or json
+* Admin UI improvement  
 * Support `PROXY_PROTOCOL` in traffic pattern B mentioned above for better performance in TLS end to end deployment.
