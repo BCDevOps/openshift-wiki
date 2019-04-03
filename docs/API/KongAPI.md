@@ -2,9 +2,8 @@
 description: Quickly build API-centric applications. Leverage the latest microservice and container design patterns. And tie it all together with the Kong microservice API gateway.
 title: API Gateway (powered by Kong CE)
 image: "https://2tjosk2rxzc21medji3nfn1g-wpengine.netdna-ssl.com/wp-content/uploads/2018/08/logo-color.png"
-author: ll911
+author: ll911 leo.lou@gov.bc.ca
 ---
-Author: Leo Lou (DataBC)
 
 # API Management Services.
 
@@ -14,6 +13,7 @@ Author: Leo Lou (DataBC)
 * https://catalogue.data.gov.bc.ca/dataset/api-gateway-administration
 
 ## Current gateway status
+* Current Kong Cluster version=> kong-ce.0.14.1
 * OpenAPI Specs supported version => 3.x(current), 2.x (deprecated)
   * Published on https://github.com/bcgov/api-specs
 * APIs already behind GW https://catalogue.data.gov.bc.ca/dataset?tags=API
@@ -22,7 +22,10 @@ Author: Leo Lou (DataBC)
 * enabled for WAM siteminder agent protection for `*.apps.gov.bc.ca`
 * current Gateway backend - Kong (https://github.com/kong/kong) API gateway 
   * Used for common logic like rate-limit, app2app authentication like apiKeys, token, keycloak oidc.etc
-  * Current Kong Cluster version=> kong-ce.0.14.1
+
+### Use API Gateway with OpenID Connect (e.g. BCGOV-SSO AKA Keycloak)
+#### TL;DR - see workflow diagram below
+![](https://github.com/nokia/kong-oidc/blob/master/docs/kong_oidc_flow.png)
 
 ## Where to start
 * if you are building an API, register your API in https://argg.apps.gov.bc.ca/int/ 
