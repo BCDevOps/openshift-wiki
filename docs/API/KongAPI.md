@@ -25,7 +25,7 @@ author: ll911 leo.lou@gov.bc.ca
 
 ### Use API Gateway with OpenID Connect (e.g. BCGOV-SSO AKA Keycloak)
 #### TL;DR - see workflow diagram below
-![](https://github.com/nokia/kong-oidc/blob/master/docs/kong_oidc_flow.png)
+![](https://raw.githubusercontent.com/nokia/kong-oidc/master/docs/kong_oidc_flow.png)
 
 ## Where to start
 * if you are building an API, register your API in https://argg.apps.gov.bc.ca/int/ 
