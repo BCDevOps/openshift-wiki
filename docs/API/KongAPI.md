@@ -31,6 +31,9 @@ author: ll911 leo.lou@gov.bc.ca
 * if you are building an API, register your API in https://argg.apps.gov.bc.ca/int/ 
 
 ## Use case
+* Demo, 
+  * httpbin api: https://gwa-demo.pathfinder.gov.bc.ca/
+  * source code: https://github.com/bcgov/gwa/blob/master/k8s/gateway-dbless-pod.yaml
 * DataBC, https://data.gov.bc.ca/ is entirely driven by API https://dbcfeeds.api.gov.bc.ca/ no db backend
 * WorkBC, https://www.workbc.ca/api, WorkBC manage and host their own API but proxy via our gateway for common features like ratelimit, SSL, etc.
 * GCPE/GDX, Site Analytics Services running behind Gateway using IP Anonymity for Privacy Act compliance
