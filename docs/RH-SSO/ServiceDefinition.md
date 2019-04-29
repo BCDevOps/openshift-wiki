@@ -4,9 +4,11 @@
 
 ### Summary
 
-The BC Government **Single Sign-On (SSO)** simplifies authentication and authorization by enabling development teams to secure applications through easy-to-use industry standard protocols. 
+The BC Government **Single Sign-On (SSO)** simplifies authentication and authorization by enabling development teams to secure applications.
 
-This service provides development teams with a private `realm` hosted on the [OpenShift Container Platform (OCP)](../OCP/ServiceDefinition.md) that can be self-administered and customized to the needs of one or more projects.
+Development teams will be provisioned a private `realm` hosted on the [OpenShift Container Platform (OCP)](../OCP/ServiceDefinition.md) that can be self-administered and customized to the needs of one or more projects.
+
+Each realm is configured out-of-the-box to support BCeID and IDIR as well as other 3rd-party oAuth 2.0 providers.
 
 ### Features & Functions
 
@@ -14,7 +16,7 @@ Users of this service gain access to the following:
 
 #### Private Realm(s)
 
-Each development team is given an SSO instances correlating to each of their environments (dev, test, and prod). These instances, commonly known as a `ream`, come configured out-of-the-box with following authentication providers:
+Each development team is given an SSO instances correlating to each of their environments (dev, test, and prod). These instances, commonly known as a `realm`, come configured out-of-the-box with following authentication providers:
 
 * BC Government **IDIR**
 * [BCeID](https://www.bceid.ca)
@@ -22,13 +24,13 @@ Each development team is given an SSO instances correlating to each of their env
 
 #### Access
 
-Each realm has an its own web interface that development teams can use for self-serve administration. To integrate with your Web or Mobile application you can use these industry standard protocols:
+Each realm has an its own web interface that development teams can use for self-serve administration. To integrate with your Web application the following industry standard protocols are available:
 
  * OpenID Connect
  * OAuth 2.0
  * SAML 2.0
 
-For Mobile the BC Government DevHub produced the following SDKs:
+For native mobile apps, the BC Government DevHub produced the following SDKs:
 
  * [iOS SDK](https://github.com/bcgov/mobile-authentication-ios)
  * [Android SDK](https://github.com/bcgov/mobile-authentication-android)
@@ -36,12 +38,12 @@ For Mobile the BC Government DevHub produced the following SDKs:
 
 #### Community
 
-We encourage a vibrant community of mobile focused developer through the `#sso` channel in [RocketChat](https://reggie.pathfinder.gov.bc.ca/?intention=LOGIN#error=login_required). Use your GitHub ID or IDIR to sign-up and join.
+We encourage a vibrant community around SSO that can be found on the `#sso` channel in [RocketChat](https://reggie.pathfinder.gov.bc.ca/?intention=LOGIN#error=login_required). Use your GitHub ID or IDIR to sign-up and join.
 
 
 ### Eligibility & Prerequisites
 
-This service collection is offered to BC Government development teams building cloud native web and mobile application on the [OpenShift Container Platform](../OCP/ServiceDefinition.md).
+This service collection is offered to BC Government development teams building cloud native web or mobile application on the [OpenShift Container Platform](../OCP/ServiceDefinition.md).
 
 
 ### How to Request
@@ -52,7 +54,8 @@ If for you need further information, reach out to Todd Wilson, Director of Enter
 
 ### Availability 
 
-The SSO system runs as part of a high-availability cluster of nodes on the OCP. The service is available 24/7 with best effort to restart failed systems during normal business hours: Monday to Friday 9am to 5pm.
+The SSO system runs as part of a high-availability cluster of nodes on the OCP. This service is available 24/7 with best effort to restart failed systems and realm provisions requests handled during normal business hours: Monday to Friday 9am to 5pm.
+
 
 ## How do I get help? (help and self service)
 
@@ -66,11 +69,11 @@ For help beyond this contact one of the SSO administrators via the `#devops-sos`
 
 ### Charges
 
-For you my friend, there are no changes for this these services. 
+For you my friend, there is no charge for this service. 
 
 ## Support Roles, Processes, Communications (platform ops)
 
-The team supporting this service administrates the infrastructure and `master` realm that interfaces with the 3rd-party authentications providers. When your realm is setup they will promote a development team member to be the ream administrator who will take care of the day-to-day operation and configuration of your realm.
+The team supporting this service administrates the infrastructure and `master` realm that interfaces with the 3rd-party authentications providers. When your realm is setup they will promote a development team member to be the realm administrator; this person will take care of the day-to-day operation and configuration of the realm.
 
 SSO interfaces with other BC Government services to provide authentication via IDIR or BCeID. These services are managed by different teams. For these services contact support via the standard `7-7000` support channel.
 
@@ -94,7 +97,7 @@ This section is not yet completed.
 
 ## Postface
 
-If you intend to use BCeID you must contact the team that oversee BCeID prior to a production launch. This is required so that your project can get added to the BCeID catalogue and to understand what BCeID authentication options are available to you and what ones are deprecated.
+If you intend to use BCeID you must contact the team that oversee BCeID prior to a production launch. This is required so that your project can get added to the BCeID catalogue and to understand what BCeID authentication options are available and what ones are deprecated.
 
 ---
 
