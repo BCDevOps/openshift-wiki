@@ -23,7 +23,7 @@
 ### OpenShift HowTo's
   
   * [User Access Request](OCP/RequestUserAccess.md)
-  * [RH SSO Realm Request](OCP/RequestSSORealm.md)
+  * [RH SSO Realm Request](RH-SSO/RequestSSORealm.md)
   * [Pod Network Connection Check](HowTo/CheckNetworkConnection.md)
   * [Find Pod internal DNS](OCP/PodServiceDns.md)
   * [Grant User Access To Project](HowTo/GrantUsersAccessToProject.md)
