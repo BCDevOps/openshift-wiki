@@ -2,7 +2,7 @@
 description: How to request a SSO Realm in the OpenShift RH SSO Instance.
 title: SSO Realm Creation
 ---
-# Request a SSO Realm to be created in OpenShift RH SSO Instance
+# Request a SSO Realm to be created in RH SSO Instance
 
 ## Identity Providers
 
