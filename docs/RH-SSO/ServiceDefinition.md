@@ -64,9 +64,9 @@ Realm provisioning requests will be reviewed and handled during normal business 
 
 ### Getting Help
 
-The best source of help is the vibrant community of development teams using SSO for their projects. You can find this highly talented and knowledgeable group in the `#sso` channel on [RocketChat](https://reggie.pathfinder.gov.bc.ca/?intention=LOGIN#error=login_required).
+The best source of help is the vibrant community of development teams using SSO for their projects. You can find this highly talented and knowledgeable group in the `#sso` channel on [RocketChat](https://chat.pathfinder.gov.bc.ca/channel/sso).
 
-For help beyond this contact one of the SSO administrators via the `#devops-sos` channel on [RocketChat](https://chat.pathfinder.gov.bc.ca/channel/sso).
+For help beyond this contact one of the SSO administrators via the `#devops-sos` channel on [RocketChat](https://chat.pathfinder.gov.bc.ca/channel/devops-sos).
 
 ## What does it Cost?
 
@@ -82,7 +82,7 @@ SSO interfaces with other BC Government services to provide authentication via I
 
 [RocketChat](https://chat.pathfinder.gov.bc.ca) is the primary mode of communication. Specifically the `#sso` channel should be used for engage the community for best practices, configuration and troubleshooting questions.
 
-For cluster wide service notifications that may impact SSO monitor the `#devops-alerts` channels in [RocketChat](https://chat.pathfinder.gov.bc.ca).
+For cluster wide service notifications that may impact SSO monitor the `#devops-alerts` channels in [RocketChat](https://chat.pathfinder.gov.bc.ca/channel/devops-alerts).
 
 For teams without RocketChat access, escalation, or to talk to a person IRL contact Todd Wilson, Director of Enterprise DevOps, Office of the Chief Information Officer.
 
