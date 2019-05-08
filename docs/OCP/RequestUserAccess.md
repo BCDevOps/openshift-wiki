@@ -22,7 +22,7 @@ Additionally, the project to which the user will be added:
 
 ## Access Request
 
-If the pre-requisites are complete, the product owner or a project admin associated with the project provisioining should make a request via a post in the #requests channel of the Pathfinder Rocket.Chat. (URL: https://chat.pathfinder.gov.bc.ca).
+If the pre-requisites are complete, the product owner or a project admin associated with the project provisioining should make a request via a post in the #devops-requests channel of the Pathfinder Rocket.Chat. (URL: https://chat.pathfinder.gov.bc.ca).
 ***New users may not request access for themselves.***
 
 The request should include:
@@ -49,7 +49,7 @@ OpenShift User Access Request:
 
 ## Access Removal Request
 
-When an individual no longer requires access to a project on the OpenShift platform, it is the responsibility of the associated product owner or a project admin to remove the user from the project and notify the DevOps platform team via a post in the #requests channel of the Pathfinder Rocket.Chat. (URL: https://chat.pathfinder.gov.bc.ca).
+When an individual no longer requires access to a project on the OpenShift platform, it is the responsibility of the associated product owner or a project admin to remove the user from the project and notify the DevOps platform team via a post in the #devops-requests channel of the Pathfinder Rocket.Chat. (URL: https://chat.pathfinder.gov.bc.ca).
 
 The request should include:
 
