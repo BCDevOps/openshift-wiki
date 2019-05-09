@@ -4,8 +4,7 @@ title: API Gateway (powered by Kong CE)
 image: "https://raw.githubusercontent.com/Kong/docker-official-docs/master/kong/logo.png"
 author: ll911 leo.lou@gov.bc.ca
 ---
-
-# API Management Services.
+## API Gateway (powered by Kong CE)
 
 ## Service overview
 ![](https://raw.githubusercontent.com/bcgov/gwa/master/img/overview.png)
