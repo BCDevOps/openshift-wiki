@@ -1,6 +1,5 @@
 ---
-
-title: OpenShift Container Platform Service Definition
+title: BC Government OpenShift Container Platform Service Definition
 description: This resource is a Service Definition of the BC Government OpenShift Container Platform Service and concisely describes the key elements of the service for current and prospective users of the service.
 author: sheaphillips
 image: https://cdn2.hubspot.net/hubfs/4305976/images/openshift-legacy/logos/openshift/Logotype_RH_OpenShift_wLogo_RGB_Gray.png
