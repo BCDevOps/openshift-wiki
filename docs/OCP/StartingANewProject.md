@@ -1,12 +1,12 @@
 ---
-title: How to request a new OpenShift project.
+title: How to Request a New OpenShift Project
 description: The process for getting a new project set up on the BC Gov OpenShift platform.     
 ---
-# Introduction
+## How to Request a New OpenShift Project
 
 The work of different teams within the OpenShift platform is organized into isolated "projects".  Prior to a team beginning work on the platform, they must have a set of projects provisioned for them.  Project provisioning for the OpenShift platform is managed by the OCIO Enterprise DevOps branch. This document describes the pre-requisites as well as the mechanics of the provisioning process. 
 
-# Pre-requisites
+## Pre-requisites
 
 Prior to project provisioning, a manual/human step is required that involves a project/product team lead / sponsor communicating with the Enterprise DevOps branch leadership and having their project/app/product reviewed and accepted for deployment on the DevOps platform.
 
