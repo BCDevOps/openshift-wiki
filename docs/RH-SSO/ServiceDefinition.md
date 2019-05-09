@@ -1,9 +1,10 @@
 ---
 description: The Single Sign-On (SSO) Service Definition outlines roles and responsibilities for operating the service.
 resourceType: Documentation
+title: BC Government SSO Service Definition
 ---
 
-# BC Government Single Sign-On Service Definition
+# BC Government SSO Service Definition
 
 ## Service Description
 
