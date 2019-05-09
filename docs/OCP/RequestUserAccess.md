@@ -1,15 +1,14 @@
 ---
-title: How to request new user access to OpenShift 
+title: How to Request New User Access to OpenShift 
 description: The process for granting a new user access to the BC Gov OpenShift platform.
 ---
-
-# Introduction
+## How to Request New User Access to Openshift
 
 The OpenShift platform provides platform and project-level access control. Access to the the OpenShift platform is managed by the OCIO Enterprise DevOps branch.  This document describes the pre-requisites and mechanism for granting *platform* access.  Project-level access is described [here](../HowTo/GrantUsersAccessToProject.md).
 
 Keep in mind that every team member *may not* need access to OpenShift and the security principle of least privilege should be considered prior to requesting platform access, and when granting project-level access. 
 
-# Pre-requisites
+## Pre-requisites
 
 A new user who will be granted access to OpenShift must have:
 
