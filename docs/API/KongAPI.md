@@ -30,6 +30,7 @@ author: ll911 leo.lou@gov.bc.ca
 
 ## Where to start
 * if you are building an API, register your API in https://argg.apps.gov.bc.ca/int/ 
+  * [API Registration Guide](https://github.com/bcgov/argg-ui/wiki/API-Registration-Guide)
 
 ## Use case
 * Demo, 
