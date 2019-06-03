@@ -24,7 +24,7 @@ author: ll911 leo.lou@gov.bc.ca
 * current Gateway backend - Kong (https://github.com/kong/kong) API gateway 
   * Used for common logic like rate-limit, app2app authentication like apiKeys, token, keycloak oidc.etc
 
-### Use API Gateway with OpenID Connect (e.g. BCGOV-SSO AKA Keycloak)
+### Use API Gateway with OpenID Connect (e.g. BCGOV-SSO AKA Keycloak integration without write the logic in your code)
 #### TL;DR - see workflow diagram below
 ![](https://raw.githubusercontent.com/nokia/kong-oidc/master/docs/kong_oidc_flow.png)
 
