@@ -24,10 +24,6 @@ author: ll911 leo.lou@gov.bc.ca
 * current Gateway backend - Kong (https://github.com/kong/kong) API gateway 
   * Used for common logic like rate-limit, app2app authentication like apiKeys, token, keycloak oidc.etc
 
-### Use API Gateway with OpenID Connect (e.g. BCGOV-SSO AKA Keycloak integration without write the logic in your code)
-#### TL;DR - see workflow diagram below
-![](https://raw.githubusercontent.com/nokia/kong-oidc/master/docs/kong_oidc_flow.png)
-
 ## Where to start
 * if you are building an API, register your API in https://argg.apps.gov.bc.ca/int/ 
   * [API Registration Guide](https://github.com/bcgov/argg-ui/wiki/API-Registration-Guide)
@@ -39,6 +35,10 @@ author: ll911 leo.lou@gov.bc.ca
 * DataBC, https://data.gov.bc.ca/ is entirely driven by API https://dbcfeeds.api.gov.bc.ca/ no db backend
 * WorkBC, https://www.workbc.ca/api, WorkBC manage and host their own API but proxy via our gateway for common features like ratelimit, SSL, etc.
 * GCPE/GDX, Site Analytics Services running behind Gateway using IP Anonymity for Privacy Act compliance
+* Use API Gateway with OpenID Connect (e.g. BCGOV-SSO AKA Keycloak integration without write the logic in your code)
+  * [Sample - Secure GeoServer WFS without keycloak adaptor or custom oidc plugin](https://geows-d.data.gov.bc.ca/?STYLES=&TILED=&FORMAT=image%2Fpng&BBOX=-13733176.772864%2C6186419.502904%2C-13733017.479292%2C6186496.686387&WIDTH=1067&HEIGHT=517&SRS=EPSG%3A3857&SERVICE=WMS&LAYERS=WHSE_CADASTRE.CBM_INTGD_CADASTRAL_FABRIC_SVW&TRANSPARENT=TRUE&REQUEST=GetMap&VERSION=1.1.1) 
+##### TL;DR - see workflow diagram below
+![](https://raw.githubusercontent.com/nokia/kong-oidc/master/docs/kong_oidc_flow.png)
  
 ## Hooks with OpenShift cluster in Kamloops
 * current Kong cluster is running parallel with OpenShift cluster Kamloops in Zone D plus RRDNS across from Kamloops/Calgary Datacenter
