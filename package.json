@@ -8,10 +8,14 @@
     "gitbook-plugin-codeblock-label": "^1.0.1",
     "gitbook-plugin-image-captions": "^3.1.0",
     "gitbook-plugin-include-codeblock": "^3.2.1",
-    "github": "^13.1.0"
+    "github": "^13.1.0",
+    "snyk": "^1.189.0"
   },
   "scripts": {
     "build": "gitbook build ./",
-    "start": "gitbook serve --no-live --no-watch --port 8080" 
-  }
+    "start": "gitbook serve --no-live --no-watch --port 8080",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
