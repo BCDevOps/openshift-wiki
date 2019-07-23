@@ -14,7 +14,7 @@ author: ll911 leo.lou@gov.bc.ca
 ## Current gateway status
 * Current Kong version
   * Prod Cluster version=> kong-ce.0.14.1
-  * QA Cluster version => kong-ce.1.1.x
+  * QA Cluster version => kong-ce.1.2.x
 * OpenAPI Specs supported version => 3.x(current), 2.x (deprecated)
   * Published on https://github.com/bcgov/api-specs
 * APIs already behind GW https://catalogue.data.gov.bc.ca/dataset?tags=API
