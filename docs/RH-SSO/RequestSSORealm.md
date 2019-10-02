@@ -2,7 +2,7 @@
 description: How to request a SSO Realm in the OpenShift RH SSO Instance.
 title: Requesting a SSO Realm to be created
 ---
-# Requesting a SSO Realm to be created
+# Requesting a SSO realm to be created
 
 ## Identity Providers
 
@@ -15,7 +15,7 @@ title: Requesting a SSO Realm to be created
 
 ## Realm Creation Request
 
-To Request the creation of a new REALM IN OpenShift iRH SSO please post a request in Rocket.Chat #devops-requests channel with the following info:
+To Request the creation of a new SSO realm in our Keycloak instance, please post a request in Rocket.Chat [#devops-requests]( https://developer.gov.bc.ca/Steps-to-join-Pathfinder-Rocket.Chat) channel with the following info:
 
 
 * Realm Display Name:                           (Note: The names of realms will be auto-generated at provisioning time)
