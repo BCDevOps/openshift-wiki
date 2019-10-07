@@ -1,18 +1,14 @@
 ---
-description: Pathfinder Openshift specifics and resources.
+description: BC Gov OpenShift networking overview
+title: BC Gov OpenShift networking overview
 ---
 # OpenShift Networking - Pathfinder Project Config
 
-References:
-* https://docs.openshift.com/container-platform/3.7/architecture/networking/sdn.html
-* https://docs.openshift.com/container-platform/3.7/architecture/networking/haproxy-router.html
-* https://docs.openshift.com/container-platform/3.7/architecture/networking/routes.html#route-specific-annotations
-
 Pathfinder OpenShift specific implementation notes:
 * SDN uses the ovs-multitenant SDN plug-in for configuring the pod network.
-* Pathfinder OpenShifyt is not using the F5 plugin; routing within OpenShift is using OpenShift-provided HA Proxy. The load balancer is outside OpenShift (.209) and forwards traffic to the HA Proxy instances is an F5, but it is not tightly integrated with OpenShift. 
+* Pathfinder OpenShift is *not* using the F5 plugin. `RouteS`  within OpenShift  (similar to `Ingress`) are using the OpenShift-provided HA Proxy functionality. The frontend, Internet-facing load balancer located outside of OpenShift is an F5 (on IP .209) which is simply configured to forward traffic to the HA Proxy instances. The F5 is not tightly integrated with OpenShift. 
 * CIDR Range 142.34.143.128/26; Netmask 255.255.255.192; Wildcard Bits 0.0.0.63; First IP 142.34.143.128; Last IP 142.34.143.191
-* OpenShift servers are in VLAN 138 in Kamloops
+* OpenShift servers are in `VLAN 138` in Kamloops
 * Firewall Object: `OCIO-PF-PROD-DMZ` (used as SOURCE)
 * Private Network IP Range: 172.51.0.0/16
 
