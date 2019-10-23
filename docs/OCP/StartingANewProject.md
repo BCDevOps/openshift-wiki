@@ -33,8 +33,8 @@ The request should include:
 3. Product full name (e.g. Transporation Fuels Reporting System)
 4. One sentence product description
 5. The desired "environments". Generally this will be `tools`, `dev`, `test` and `prod`, but other/different environments may be provisioned in certain circumstances, as determined by the DevOps Platform Team Services team.
-6. The GitHub ID and email address of one or more BC Gov employee who will be the technical steward(s) of the product. These should be individuals with a hands-on technical skillset - typically a DevOps specialist, developer, or architect.  This(these) individual(s) will be responsible for adding other team members to the project spaces following the process [here](../HowTo/GrantUsersAccessToProject.md).  If this(these) user(users) have not been granted access to the OpenShift platform as described [here](./RequestUserAccess.md), they will be granted platform access as part of the project provisioning process.
-7. The full name and email address of the BC Gov employee who will is the Product Owner or business sponsor of the product.
+6. The GitHub ID and email address (and RocketChat account if exists) of one or more BC Gov employee who will be the technical steward(s) of the product. These should be individuals with a hands-on technical skillset - typically a DevOps specialist, developer, or architect.  This(these) individual(s) will be responsible for adding other team members to the project spaces following the process [here](../HowTo/GrantUsersAccessToProject.md).  If this(these) user(users) have not been granted access to the OpenShift platform as described [here](./RequestUserAccess.md), they will be granted platform access as part of the project provisioning process.
+7. The full name and email address (and RocketChat account if exists) of the BC Gov employee who will is the Product Owner or business sponsor of the product.
 8. If it exists at the time the request is made, the GitHub repo(s) that will contain the product's source code. Note: this must be within repositories within the BCGov GitHub organization.
 
 A sample "good" request is provided below and should be used as a template for submitting requests:
@@ -46,8 +46,8 @@ New Project Request:
 - Product full name: Developer Hub
 - Product description: Resources for digital product teams to learn new skills, discover tools and resources, and connect with the developer community.
 - Desired environments: tools, dev, test, prod
-- Product Technical Steward: govviemcgovster / Govvie.McGovster@gov.bc.ca 
-- Product Owner: Paula.Product@gov.bc.ca
+- Product Technical Steward: govviemcgovster / Govvie.McGovster@gov.bc.ca / govvieRocketChat
+- Product Owner: Paula.Product@gov.bc.ca / paulaRocketChat
 - GitHub repo: https://github.com/bcgov/devhub-app-web
 ```
 Once the request is reviewed by a member of the Enterprise DevOps branch's Platform Team Services team, the projects will be created and the requestor will be notified when the provisioning is complete.
