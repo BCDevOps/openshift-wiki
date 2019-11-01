@@ -28,7 +28,7 @@ If new *private* repository needed temporarily (it's for closed source projects 
 
 ## Access Request
 
-If the pre-requisites are complete, the product owner should make a request via a post in the #requests channel of the Pathfinder Rocket.Chat. (URL: https://chat.pathfinder.gov.bc.ca).
+If the pre-requisites are complete, the product owner should make a request at [DevOps Request Repo](https://github.com/bcgov/devops-request-records).
 ***New users may not request access for themselves.***
 
 The request should include:
@@ -59,13 +59,13 @@ GitHub User Access Request:
 
 ## GitHub Repo Request
 
-Once a private repo request is accepted, the team product owner or technical leader should make a request via a post in the #requests channel of the Pathfinder Rocket.Chat. (URL: https://chat.pathfinder.gov.bc.ca).
+Once a private repo request is accepted, the team product owner or technical leader should make a request at [DevOps Request Repo](https://github.com/bcgov/devops-request-records).
 
 The request should include:
 
 1. Project name
 1. Project description
-1. Approver's name (and @ the person's Rocketchat account)
+1. Approver's name (and @ the person's GitHub account)
 1. GitHub ID of the repo Owner (following the `Access Request`)
 
 A sample "good" request is provided below and should be used as a template for submitting requests:
@@ -80,7 +80,7 @@ GitHub Repository Request:
 
 ## Access Removal Request
 
-When an individual is no longer working on the project, it is the responsibility of the associated product owner or a GitHub repo admin to remove the user from the repo and notify the DevOps platform team via a post in the #requests channel of the Pathfinder Rocket.Chat. (URL: https://chat.pathfinder.gov.bc.ca).
+When an individual is no longer working on the project, it is the responsibility of the associated product owner or a GitHub repo admin to remove the user from the repo and request for that at [DevOps Request Repo](https://github.com/bcgov/devops-request-records).
 
 The request should include:
 
