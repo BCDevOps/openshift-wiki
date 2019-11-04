@@ -16,18 +16,17 @@ A new user who will be invited to contribute to the BC Gov GitHub repos must hav
 If the project has a GitHub repository/repositories already:
 - the Admin/Owner of the repository can invite new users as `Collaborators` - the new users do not need to join the organization. The repository Admin/Owner can add collaborators via the "Add Collaborator" function in the repository's "Settings" area. No further requests are necessary.
 
-If a new repository needed for the projects:
+If a new repository is needed:
 - the product owner needs to make an `GitHub Repo Request` according to the instructions below, and assign *one* team member to be the repo creator/owner.
 - the product owner also needs to make an `Access Request` for the _repository owner_ GitHub user.
 - the rest of the project team can then be invited by the repository owner as collaborators.
 
-If a new *private* repository is needed temporarily (it's for closed source projects only. These projects _will go Open Source once completed_):
+If a new *private* repository is needed (Note: private repos should be temporary only as the expectation is for their contents to eventually become Open Source):
 - the product owner is required to communicate with the Enterprise DevOps branch leadership to discuss the appropriateness of a private repo.
 - if a private repository is agreed upon, please follow the `GitHub Repo Request` instructions below.
 - for new users, please follow the `Access Request` instructions below.
 
-**Note** that the platform services team will be removing GitHub Org access for users that are not active for six months. Once the access has been removed, a new `Access Request` has to be made by the product owner.
-
+**Note** that the platform services team will be review and remove GitHub Org access for users that are not active for six months. Once the access has been removed, a new `Access Request` has to be made by the product owner to re-establish access.
 
 
 ## GitHub Repo Request
@@ -56,7 +55,7 @@ GitHub Repository Request:
 
 ## Access Request
 
-If the pre-requisites are complete, the product owner should make a request by creating an issue at [DevOps Request Repo](https://github.com/bcgov/devops-request-records).
+If the pre-requisites are complete, the product owner should make a request by creating an issue in the [DevOps Request Repo](https://github.com/bcgov/devops-request-records).
 ***New users may not request access for themselves.***
 
 The request should include:
@@ -88,7 +87,7 @@ GitHub User Access Request:
 
 ## Access Removal Request
 
-When an individual is no longer working on the project, it is the responsibility of the associated product owner or a GitHub repo admin to remove the user from the repo and request by creating an issue at [DevOps Request Repo](https://github.com/bcgov/devops-request-records).
+When an individual is no longer working on the project, it is the responsibility of the associated product owner or a GitHub repo admin to remove the user from the repo and request by creating an issue in the [DevOps Request Repo](https://github.com/bcgov/devops-request-records).
 
 The request should include:
 
