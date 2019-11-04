@@ -24,6 +24,9 @@ Additionally, the project to which the user will be added:
 If the pre-requisites are complete, the product owner or a project admin associated with the project provisioning should make a request at [DevOps Request Repo](https://github.com/bcgov/devops-request-records).
 ***New users may not request access for themselves.***
 
+**Note** that the platform services team will be removing OpenShift project access for users that are not active for six months. Once the access has been removed, a new `Access Request` has to be made by the product owner.
+
+
 The request should include:
 
 1. New user's full name

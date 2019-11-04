@@ -11,7 +11,7 @@ BC Gov maintains a set of "organizations" in GitHub where BC Gov digital product
 [bcgov-c](http://github.com/bcgov-c/) - restricted org used by a small number of BC Gov project for storage of source code and artifacts that will ultimately become open source
 [bcdevops](http://github.com/bcdevops/) - organization used for providing access control to DevOps platform, and storage of a set of code and artifacts related to the platform. Not applicable for this document.    
 
-This document describes the process for requesting user access to the `bcgov` and `bcgov-c` organizations.  Access to the DevOps platform (and thereby the `bcdevops`org ) is described elsewhere.  The process for *creating* repositories is also described elsewhere. 
+This document describes the process for requesting user access to the `bcgov` and `bcgov-c` organizations.  Access to the DevOps platform (and thereby the `bcdevops`org ) is described elsewhere. The process for *creating* repositories is also described elsewhere. 
 
 # Pre-requisites
 
@@ -32,7 +32,7 @@ Currently, members of the `bcgov` GitHub organization have the ability to create
     - they may add additional users as "collaborators" via the "Collaborators and teams" settings function associated with the repository in the GitHub web interface.  
 
 - If *neither* a project's Product Owner or Technical Lead (or other similar gov resource) is a member of the `bcgov` GitHub organization:
-    - they should make a "BCGov GitHub Organization User Access Request" via a post in the #devops-requests channel of the Pathfinder Rocket.Chat. (URL: https://chat.pathfinder.gov.bc.ca).  The Product Owner may make this request for themselves, or for a Technical Lead (or similar)
+    - they should make a "BCGov GitHub Organization User Access Request" via [DevOps Request Repo](https://github.com/bcgov/devops-request-records)..  The Product Owner may make this request for themselves, or for a Technical Lead (or similar)
 
 If new repository needed:
 - the product owner need to recommend *one* team member to the repo creator/owner, and make an `Access Request` according to the template below
@@ -46,7 +46,7 @@ If new *private* repository needed temporarily (it's for closed source projects 
 
 ## Access Request
 
-If the pre-requisites are complete, the product owner should make a request via a post in the #requests channel of the Pathfinder Rocket.Chat. (URL: https://chat.pathfinder.gov.bc.ca).
+If the pre-requisites are complete, the product owner should make a request via [DevOps Request Repo](https://github.com/bcgov/devops-request-records).
 ***New users may not request access for themselves.***
 
 The request should include:
@@ -77,13 +77,13 @@ GitHub User Access Request:
 
 ## GitHub Repo Request
 
-Once a private repo request is accepted, the team product owner or technical leader should make a request via a post in the #requests channel of the Pathfinder Rocket.Chat. (URL: https://chat.pathfinder.gov.bc.ca).
+Once a private repo request is accepted, the team product owner or technical leader should make a request via [DevOps Request Repo](https://github.com/bcgov/devops-request-records).
 
 The request should include:
 
 1. Project name
 1. Project description
-1. Approver's name (and @ the person's Rocketchat account)
+1. Approver's name (and @ the person's GitHub account)
 1. GitHub ID of the repo Owner (following the `Access Request`)
 
 A sample "good" request is provided below and should be used as a template for submitting requests:
@@ -98,7 +98,7 @@ GitHub Repository Request:
 
 ## Access Removal Request
 
-When an individual is no longer working on the project, it is the responsibility of the associated product owner or a GitHub repo admin to remove the user from the repo and notify the DevOps platform team via a post in the #requests channel of the Pathfinder Rocket.Chat. (URL: https://chat.pathfinder.gov.bc.ca).
+When an individual is no longer working on the project, it is the responsibility of the associated product owner or a GitHub repo admin to remove the user from the repo and notify the DevOps platform team via [DevOps Request Repo](https://github.com/bcgov/devops-request-records).
 
 The request should include:
 

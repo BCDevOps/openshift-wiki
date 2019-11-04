@@ -14,16 +14,44 @@ A new user who will be invited to contribute to the BC Gov GitHub repos must hav
 - 2-factor authentication enabled on their GitHub account
 
 If the project has a GitHub repository/repositories created already:
-- the Admin/Owner of the repository can invite new users, they do not need to join any organization
+- the Admin/Owner of the repository can invite new users as `Collaborators`, they do not need to join any organization. To do that, repo admin could refer to the  "Add Collaborator" function in the repo "Settings" area in the Github web interface
 
 If new repository needed:
-- the product owner need to recommend *one* team member to the repo creator/owner, and make an `Access Request` according to the template below
+- the product owner need to make an `GitHub Repo Request` according to the instructions below, and recommend *one* team member to be the repo creator/owner
+- the product owner also need to make an `Access Request` for the _repo owner_ github user
 - the rest of the project team can then be invited by the repo owner as collaborators
 
-If new *private* repository needed temporarily (it's for closed source projects only. These projects will go Open Source once completed):
+If new *private* repository is needed temporarily (it's for closed source projects only. These projects _will go Open Source once completed_):
 - the product owner is required to communicate with the Enterprise DevOps branch leadership and explain the necessity of a private repo
-- after obtaining an approval from the communication, please follow the `GitHub Repo Request` template below
-- for new users, please follow the `Access Request` template below
+- after obtaining an approval from the communication, please follow the `GitHub Repo Request` instructions below
+- for new users, please follow the `Access Request` instructions below
+
+**Note** that the platform services team will be removing GitHub Org access for users that are not active for six months. Once the access has been removed, a new `Access Request` has to be made by the product owner
+
+
+
+## GitHub Repo Request
+
+For a new BCGOV GitHub repo or a private repo (with approval), the team product owner or technical leader should make a request at [DevOps Request Repo](https://github.com/bcgov/devops-request-records).
+
+The request should include:
+
+1. Project name
+1. Project description
+1. Approver's name (and @ the person's GitHub account)
+1. GitHub ID of the repo Owner (following the `Access Request`)
+1. Rational for develop as close sourced (for private repo only)
+1. Date to move to public (for private repo only)
+
+A sample "good" request is provided below and should be used as a template for submitting requests:
+
+```markdown
+GitHub Repository Request:
+- Project: Govvapp-private
+- Project description: the temporary repo for the Govvapp project, for bla
+- Approver: @Todd.Wilson
+- Repo Owner GitHub ID: govviemcgovster
+```
 
 
 ## Access Request
@@ -57,26 +85,6 @@ GitHub User Access Request:
 - Existing GitHub Repo: https://github.com/bcgov/govvie-gov, https://github.com/bcgov/govviest-gov
 ```
 
-## GitHub Repo Request
-
-Once a private repo request is accepted, the team product owner or technical leader should make a request at [DevOps Request Repo](https://github.com/bcgov/devops-request-records).
-
-The request should include:
-
-1. Project name
-1. Project description
-1. Approver's name (and @ the person's GitHub account)
-1. GitHub ID of the repo Owner (following the `Access Request`)
-
-A sample "good" request is provided below and should be used as a template for submitting requests:
-
-```markdown
-GitHub Repository Request:
-- Project: Govvapp-private
-- Project description: the temporary repo for the Govvapp project, for bla
-- Approver: @Todd.Wilson
-- Repo Owner GitHub ID: govviemcgovster
-```
 
 ## Access Removal Request
 
