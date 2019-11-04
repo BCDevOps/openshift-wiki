@@ -13,5 +13,5 @@ BC Gov maintains a set of "organizations" in GitHub where BC Gov digital product
 
 This document describes the process for requesting user access to the `bcgov` and `bcgov-c` organizations.  Access to the DevOps platform (and thereby the `bcdevops`org ) is described elsewhere. The process for *creating* repositories is also described elsewhere. 
 
-# Requesting for access
+# Requesting Access
 See the instructions [here](../OCP/RequestGitHubUserAccess.md).
