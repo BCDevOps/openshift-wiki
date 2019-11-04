@@ -38,7 +38,7 @@ Each realm has an its own web interface that development teams can use for self-
  * OpenID Connect (OIDC) 
  * SAML 2.0
  
-> OIDC is the recommended protocol, and at the time of this writing there are no BC Governement teams using the SAML protocol with Keycloak.
+> OIDC is the recommended protocol, and at the time of this writing there are no BC Government teams using the SAML protocol with Keycloak.
 
 For native mobile apps, the BC Government developer community has produced the following SDKs to provide integration with Keycloak for the purposes of authentication:
 
