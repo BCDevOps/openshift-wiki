@@ -24,7 +24,7 @@ Criteria for acceptance onto the platform include:
 
 # Project Provisioning Request
 
-Once a project is accepted, the team product owner or technical leader should make a request at [DevOps Request Repo](https://github.com/bcgov/devops-request-records).
+Once a project is accepted, the team product owner or technical leader should make a request at [DevOps Request Repo](https://github.com/BCDevOps/devops-requests).
 
 The request should include:
 

@@ -21,7 +21,7 @@ Additionally, the project to which the user will be added:
 
 ## Access Request
 
-If the pre-requisites are complete, the product owner or a project admin associated with the project provisioning should make a request at [DevOps Request Repo](https://github.com/bcgov/devops-request-records).
+If the pre-requisites are complete, the product owner or a project admin associated with the project provisioning should make a request at [DevOps Request Repo](https://github.com/BCDevOps/devops-requests).
 ***New users may not request access for themselves.***
 
 **Note** that the platform services team will be removing OpenShift project access for users that are not active for six months. Once the access has been removed, a new `Access Request` has to be made by the product owner.
@@ -51,7 +51,7 @@ OpenShift User Access Request:
 
 ## Access Removal Request
 
-When an individual no longer requires access to a project on the OpenShift platform, it is the responsibility of the associated product owner or a project admin to remove the user from the project and notify the DevOps platform team at [DevOps Request Repo](https://github.com/bcgov/devops-request-records).
+When an individual no longer requires access to a project on the OpenShift platform, it is the responsibility of the associated product owner or a project admin to remove the user from the project and notify the DevOps platform team at [DevOps Request Repo](https://github.com/BCDevOps/devops-requests).
 
 The request should include:
 

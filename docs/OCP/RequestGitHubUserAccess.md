@@ -31,7 +31,7 @@ If a new *private* repository is needed (Note: private repos should be temporary
 
 ## GitHub Repo Request
 
-For a new GitHub repository in the public `bcgov` organization or a private repo (with approval) in the `bcgov-c` organization, the product owner or technical lead should make a request by creating an issue in the [DevOps Request Repo](https://github.com/bcgov/devops-request-records).
+For a new GitHub repository in the public `bcgov` organization or a private repo (with approval) in the `bcgov-c` organization, the product owner or technical lead should make a request by creating an issue in the [DevOps Request Repo](https://github.com/BCDevOps/devops-requests).
 
 The request should include:
 
@@ -55,7 +55,7 @@ GitHub Repository Request:
 
 ## Access Request
 
-If the pre-requisites are complete, the product owner should make a request by creating an issue in the [DevOps Request Repo](https://github.com/bcgov/devops-request-records).
+If the pre-requisites are complete, the product owner should make a request by creating an issue in the [DevOps Request Repo](https://github.com/BCDevOps/devops-requests).
 ***New users may not request access for themselves.***
 
 The request should include:
@@ -87,7 +87,7 @@ GitHub User Access Request:
 
 ## Access Removal Request
 
-When an individual is no longer working on the project, it is the responsibility of the associated product owner or a GitHub repo admin to remove the user from the repo and request by creating an issue in the [DevOps Request Repo](https://github.com/bcgov/devops-request-records).
+When an individual is no longer working on the project, it is the responsibility of the associated product owner or a GitHub repo admin to remove the user from the repo and request by creating an issue in the [DevOps Request Repo](https://github.com/BCDevOps/devops-requests).
 
 The request should include:
 
