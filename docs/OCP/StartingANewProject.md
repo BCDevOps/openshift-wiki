@@ -24,16 +24,16 @@ Criteria for acceptance onto the platform include:
 
 # Project Provisioning Request
 
-Once a project is accepted, the team product owner or technical leader should make a request via a post in the #requests channel of the Pathfinder Rocket.Chat. (URL: https://chat.pathfinder.gov.bc.ca).
+Once a project is accepted, the team product owner or technical leader should make a request at [DevOps Request Repo](https://github.com/BCDevOps/devops-requests).
 
 The request should include:
 
 1. The short team/organization name. Commonly, this is the ministry name plus program area/branch, but may also be just the program area. (e.g. MOTI, OCIO, NR, EAO, DEVEX)
 2. Product acronym/short name (e.g. EPIC, TFRS, IOT, etc.)
-3. Product full name (e.g. Transporation Fuels Reporting System)
+3. Product full name (e.g. Transportation Fuels Reporting System)
 4. One sentence product description
 5. The desired "environments". Generally this will be `tools`, `dev`, `test` and `prod`, but other/different environments may be provisioned in certain circumstances, as determined by the DevOps Platform Team Services team.
-6. The GitHub ID and email address (and RocketChat account if exists) of one or more BC Gov employee who will be the technical steward(s) of the product. These should be individuals with a hands-on technical skillset - typically a DevOps specialist, developer, or architect.  This(these) individual(s) will be responsible for adding other team members to the project spaces following the process [here](../HowTo/GrantUsersAccessToProject.md).  If this(these) user(users) have not been granted access to the OpenShift platform as described [here](./RequestUserAccess.md), they will be granted platform access as part of the project provisioning process.
+6. The GitHub ID and email address (and RocketChat account if exists) of one or more BC Gov employee who will be the technical steward(s) of the product. These should be individuals with a hands-on technical skill set - typically a DevOps specialist, developer, or architect.  This(these) individual(s) will be responsible for adding other team members to the project spaces following the process [here](../HowTo/GrantUsersAccessToProject.md).  If this(these) user(users) have not been granted access to the OpenShift platform as described [here](./RequestUserAccess.md), they will be granted platform access as part of the project provisioning process.
 7. The full name and email address (and RocketChat account if exists) of the BC Gov employee who will is the Product Owner or business sponsor of the product.
 8. If it exists at the time the request is made, the GitHub repo(s) that will contain the product's source code. Note: this must be within repositories within the BCGov GitHub organization.
 

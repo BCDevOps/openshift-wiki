@@ -13,17 +13,13 @@ title: Requesting a SSO Realm to be created
 | _github              | GitHub                                                        |
 | _servicecard         | BC Service Card                                               |
 
-## Realm Creation Request
 
-An automated realm request application is available at https://realm-o-matic.pathfinder.gov.bc.ca Login with either Github or IDIR account.
+## Access to Create Realm Request
 
-If you do not have the access with your account to create a realm, please post your request in Rocket.Chat [#devops-requests]( https://developer.gov.bc.ca/Steps-to-join-Pathfinder-Rocket.Chat) channel with the following info:
-
-* Realm Display Name:                           (Note: The names of realms will be auto-generated at provisioning time)
-* Contact/Admin of Realm (IDIR username + email):
-* ID Providers:
-* Product Owner Email:
-* If BCeID or BCSC Provider is required, have you completed the approval process [Y/N]?
+- An automated realm request application is available at [Realm-O-Matic](https://realm-o-matic.pathfinder.gov.bc.ca).
+- Login with your IDIR account.
+- If you don't have access to create a realm request, visit [DevOps Request Repo](https://github.com/BCDevOps/devops-requests) and start there.
+- Once you have access on Realm-O-Matic, you could go ahead and create the request there. _Note_ that only one open request is allowed at a time. Contact [support team](https://chat.pathfinder.gov.bc.ca/channel/realm-o-matic) if you encounter issues.
 
 Notes:
 - At least one of contact/PO should be a Government Employee

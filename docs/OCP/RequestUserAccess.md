@@ -2,7 +2,7 @@
 title: How to Request New User Access to OpenShift 
 description: The process for granting a new user access to the BC Gov OpenShift platform.
 ---
-## How to Request New User Access to Openshift
+## How to Request New User Access to OpenShift
 
 The OpenShift platform provides platform and project-level access control. Access to the the OpenShift platform is managed by the OCIO Enterprise DevOps branch.  This document describes the pre-requisites and mechanism for granting *platform* access.  Project-level access is described [here](../HowTo/GrantUsersAccessToProject.md).
 
@@ -21,8 +21,11 @@ Additionally, the project to which the user will be added:
 
 ## Access Request
 
-If the pre-requisites are complete, the product owner or a project admin associated with the project provisioining should make a request via a post in the #devops-requests channel of the Pathfinder Rocket.Chat. (URL: https://chat.pathfinder.gov.bc.ca).
+If the pre-requisites are complete, the product owner or a project admin associated with the project provisioning should make a request at [DevOps Request Repo](https://github.com/BCDevOps/devops-requests).
 ***New users may not request access for themselves.***
+
+**Note** that the platform services team will be removing OpenShift project access for users that are not active for six months. Once the access has been removed, a new `Access Request` has to be made by the product owner.
+
 
 The request should include:
 
@@ -48,7 +51,7 @@ OpenShift User Access Request:
 
 ## Access Removal Request
 
-When an individual no longer requires access to a project on the OpenShift platform, it is the responsibility of the associated product owner or a project admin to remove the user from the project and notify the DevOps platform team via a post in the #devops-requests channel of the Pathfinder Rocket.Chat. (URL: https://chat.pathfinder.gov.bc.ca).
+When an individual no longer requires access to a project on the OpenShift platform, it is the responsibility of the associated product owner or a project admin to remove the user from the project and notify the DevOps platform team at [DevOps Request Repo](https://github.com/BCDevOps/devops-requests).
 
 The request should include:
 

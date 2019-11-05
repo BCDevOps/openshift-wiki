@@ -25,8 +25,11 @@ Users of this service gain access to the following:
 Development teams are provided with a set of `realms` (an isolated configuration/namespace within Keycloak), corresponding to their deployment environments (dev, test, and prod). Realms come configured out-of-the-box with one or more of the following identity providers:
 
 * BC Government **IDIR**
-* [BCeID](https://www.bceid.ca)
 * GitHub
+* [BCeID](https://www.bceid.ca)
+* [BC Services Card](https://www2.gov.bc.ca/gov/content/governments/government-id/bc-services-card)
+
+_note_: that BCeID and BC Services Card have extra setup steps in production KeyCloak, teams will be informed on details during on-boarding.
 
 #### Access
 
@@ -35,7 +38,7 @@ Each realm has an its own web interface that development teams can use for self-
  * OpenID Connect (OIDC) 
  * SAML 2.0
  
-> OIDC is the recommended protocol, and at the time of this writing there are no BC Governement teams using the SAML protocol with Keycloak.
+> OIDC is the recommended protocol, and at the time of this writing there are no BC Government teams using the SAML protocol with Keycloak.
 
 For native mobile apps, the BC Government developer community has produced the following SDKs to provide integration with Keycloak for the purposes of authentication:
 
@@ -80,7 +83,7 @@ For you my friend, there is no charge for this service.
 
 The team supporting this service administers the Keycloak application, its supporting database, as well as the `master` realm and global identity providers (IDIR, BCeID, and GitHub). When your realm is set up they will assign a member of the requesting development team to be the realm administrator; this person will take care of the day-to-day operation and configuration of the realm.
 
-SSO interfaces with other BC Government services to provide authentication via IDIR or BCeID. These services are managed by different teams from the team providing Keycloask. For these services contact support via the standard `7-7000` support channel.
+SSO interfaces with other BC Government services to provide authentication via IDIR, BCeID or BC Services Card. These services are managed by different teams from the team providing Keycloak. For these services contact support via the standard `7-7000` support channel.
 
 [RocketChat](https://chat.pathfinder.gov.bc.ca) is the primary mode of communication. Specifically the `#sso` channel should be used for engage the community for best practices, configuration and troubleshooting questions.
 
@@ -102,7 +105,7 @@ This section is not yet completed.
 
 ## Postface
 
-If you intend to use BCeID you must contact the team that oversee BCeID prior to a production launch. This is required so that your project can get added to the BCeID catalogue and to understand what BCeID authentication options are available and what ones are deprecated.
+If you intend to use BCeID or BC Services Card, you must contact the IDIM team prior to a production launch. This is required so that your project can get added to the BCeID/BC Services Card catalogue and to understand what this identity provider authentication options are available and what ones are deprecated.
 
 ---
 
