@@ -45,9 +45,9 @@ author: ll911 leo.lou@gov.bc.ca
 * backend API, you can host your API anywhere, e.g. OCP Kamloops cluster
 * Kong Cluster Production is running on a mixed of OpenShift cluster, RHEL VMs, Physical Servers across from Kamloops and Calgary datacenter.
 * traffic pattern:
-  * A, not using gateway`*.pathfinder.gov.bc.ca` (F5 VIP) => `OpenShift Router` => your running pods
-  * B, using gateway`*.api.gov.bc.ca or your own DNS` (API Gateway Cluster) => `OpenShift Router` => your running pods
-  * C, using gateway`*.api.gov.bc.ca or your own DNS` (API Gateway Cluster) => your running app/api/svc elsewhere
+  * A, self managed database-less/sidecar gateway`*.pathfinder.gov.bc.ca or your own DNS` (F5 VIP) => `OpenShift Router` => Gateway ReplicaSets => your running pods
+  * B, using DataBC managed gateway`*.api.gov.bc.ca or your own DNS` (API Gateway Cluster) => `OpenShift Router` => your running pods
+  * C, using DataBC managed gateway`*.api.gov.bc.ca or your own DNS` (API Gateway Cluster) => your running app/api/svc elsewhere
  
 ## Roadmap and future development,
 * kong 1.4+, database-less gateway support declarative configuration via yaml or json
