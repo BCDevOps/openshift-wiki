@@ -14,7 +14,9 @@ author: ll911 leo.lou@gov.bc.ca
 ## Current gateway status
 * Current Kong version
   * DataBC Cluster version=> kong-ce.0.14.1
-  * OpenShift Cluster version => kong-ce.1.4.x
+  * OpenShift Cluster version => kong-ce.1.4.2
+    * DB mode: backend support postgres or cassandra - PostgreSQL recommanded for OpenShift Cluster and PostgreSQL can be managed seperately
+    * DB-less mode: using k8s [configmaps](https://docs.openshift.com/container-platform/3.11/dev_guide/configmaps.html) or [secrets](https://docs.openshift.com/container-platform/3.11/dev_guide/secrets.html), oidc bridge not available in this mode.
 * OpenAPI Specs supported version => 3.x(current), 2.x (deprecated)
   * Published on https://github.com/bcgov/api-specs
 * APIs already behind GW https://catalogue.data.gov.bc.ca/dataset?tags=API
