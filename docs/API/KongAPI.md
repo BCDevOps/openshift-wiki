@@ -14,7 +14,7 @@ author: ll911 leo.lou@gov.bc.ca
 ## Current gateway status
 * Current Kong version
   * Prod Cluster version=> kong-ce.0.14.1
-  * QA Cluster version => kong-ce.1.2.x
+  * QA Cluster version => kong-ce.1.4.x
 * OpenAPI Specs supported version => 3.x(current), 2.x (deprecated)
   * Published on https://github.com/bcgov/api-specs
 * APIs already behind GW https://catalogue.data.gov.bc.ca/dataset?tags=API
@@ -31,7 +31,7 @@ author: ll911 leo.lou@gov.bc.ca
 ## Use case
 * Demo, 
   * httpbin api: https://gwa-demo.pathfinder.gov.bc.ca/ (it may not be always running, use the k8s specification file below to create the object anywhere that has k8s/okd running)
-  * source code: https://github.com/bcgov/gwa/blob/master/k8s/gateway-dbless-pod.yaml
+  * code: https://github.com/bcgov/gwa/blob/master/k8s/gateway-dbless-demo.yaml
 * DataBC, https://data.gov.bc.ca/ is entirely driven by API https://dbcfeeds.api.gov.bc.ca/ no db backend
 * WorkBC, https://www.workbc.ca/api, WorkBC manage and host their own API but proxy via our gateway for common features like ratelimit, SSL, etc.
 * GCPE/GDX, Site Analytics Services running behind Gateway using IP Anonymity for Privacy Act compliance
@@ -50,6 +50,6 @@ author: ll911 leo.lou@gov.bc.ca
   * C, using gateway`*.api.gov.bc.ca or your own DNS` (API Gateway Cluster) => your running app/api/svc elsewhere
  
 ## Roadmap and future development,
-* kong 1.3+, database-less gateway support declarative configuration via yaml or json
+* kong 1.4+, database-less gateway support declarative configuration via yaml or json
 * Admin UI improvement  
 * Support `PROXY_PROTOCOL` in traffic pattern B mentioned above for better performance in TLS end to end deployment.
