@@ -2,6 +2,19 @@
 title: Persistent Storage Services
 description: Documentation regarding persistent storage options supported by the platform. 
 ---
+- [Pathfinder storage solutions](#pathfinder-storage-solutions)
+- [Storage Technologies](#storage-technologies)
+  - [NetApp](#netapp)
+  - [Gluster (CNS)](#gluster-cns)
+  - [NFS Netbackup integrated](#nfs-netbackup-integrated)
+  - [Legacy Gluster (decommissioned)](#legacy-gluster-decommissioned)
+- [Tools](#tools)
+- [Storage Class FAQ](#storage-class-faq)
+  - [Which should I choose](#which-should-i-choose)
+  - [Mins and Maxes (NetApp storageClasses)](#mins-and-maxes-netapp-storageclasses)
+  - [Performance](#performance)
+  - [Pros and Cons of each](#pros-and-cons-of-each)
+  - [Other fun details](#other-fun-details)
 
 ## Pathfinder storage solutions
 
