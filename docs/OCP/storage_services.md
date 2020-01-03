@@ -56,3 +56,37 @@ There are a few tools available to help with managing your persistent storage ab
 **Database Backups**: Wade Barnes has curated a community project to help teams implement regular backups of their postgres databases hosted within the platform, please check out the repo here: [BCDevOps/Backup-Container](https://github.com/bcdevops/backup-container)
 
 **Migrating Storage**: another community supported repository is available to help with migrating data from one PVC to another (moving from one storageClass to another, moving to a larger PVC, etc).  Please check out the repo here: [BCDevOps/StorageMigration](https://github.com/BCDevOps/StorageMigration)
+
+## Storage Class FAQ
+
+### Which should I choose
+
+If you don't have a specific need, choose file. Only choose block storage if you have a specific reason to do so, preferably only in your PROD projects.
+
+As this is a shared platform with automatic provisioning enabled for your needs, the urge to provision "more" or "the best available" is contradictory to the best use of the platform.  With re-provisioning available on request, there should be no reason to order more than you know you need *today* (specifically, don't request what you *think* you need, only request what you know you currently need.  If those needs change, then simply update your storage requests.)
+
+### Mins and Maxes
+
+The minimum size is 20Mi, provisioning will fail any smaller. You no longer need to request a full 1Gi if you don't need it.
+
+Maximum size is 256Gi, provisioning will fail any bigger. Larger custom quotas won't get around this currently as we've set the provisioner to this limit to ensure the NetApp can remain properly balanced.
+
+### Speeds
+
+One question is often "how fast is each", and well, it depends on your workload.  There have been some specific performance tests done by Wade Barnes, and new comparative tests should be available in the https://github.com/bcdevops/backup-container documentation.
+
+ElasticSearch specifically does not work with NFS protocol and needs block storage.
+
+If you have specific performance needs, then we would suggest testing both types of storage with your specific workload to see which meets your needs.
+
+### Pros and Cons of each
+
+One of the biggest pros of NFS file storage is that it is re-sizeable.  Just edit your PVC to have a bigger `.spec.resources.requests.storage` and give it a few seconds.
+
+Block storage cannot be mounted during maintenance. Any pods already running will failover properly to the secondary NetApp node, but any newly launched pods will fail to start until both NetApp nodes are available.
+
+File storage ends up being a bit more flexible (re-sizeable, mountable as RWX, etc), while Block storage is generally more performant for database or other small transaction/write intensive application uses.
+
+### Other fun details
+
+All netapp-*-standard volumes are thin provisioned and have de-duplication and compression enabled.  The de-duplication and compression jobs are currently run during a nightly job at 00:10.
