@@ -38,7 +38,7 @@ The latest storage solution for the OpenShift platform is backed by a NetApp sto
 
 ### Gluster (CNS)
 
-The cluster has been using a gluster backed storage solution for the past 2 years to provide on-demand PVC provisioning for teams.  While this storage solution has helped grow our platform and has provided us with a great developer experience, it has reached the end of it's available capacity and new volume provisioning has been disabled.
+The cluster has been using a [gluster backed storage solution](CNS.md) for the past 2 years to provide on-demand PVC provisioning for teams.  While this storage solution has helped grow our platform and has provided us with a great developer experience, it has reached the end of it's available capacity and new volume provisioning has been disabled.
 
 This storage is **NOT** being decommissioned at this time, however it does mean that **new** provisioning will need to be directed to the current storage solution (NetApp), while all existing gluster storage volumes will remain available and supported on the 3.11 platform.
 
