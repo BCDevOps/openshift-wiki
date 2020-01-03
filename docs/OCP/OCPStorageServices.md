@@ -1,6 +1,6 @@
 ---
 title: Persistent Storage Services
-description: Find helpful documentation regarding persistent storage options supported by the platform. 
+description: Documentation regarding persistent storage options supported by the platform. 
 ---
 
 ## Pathfinder storage solutions
@@ -65,13 +65,13 @@ If you don't have a specific need, choose file. Only choose block storage if you
 
 As this is a shared platform with automatic provisioning enabled for your needs, the urge to provision "more" or "the best available" is contradictory to the best use of the platform.  With re-provisioning available on request, there should be no reason to order more than you know you need *today* (specifically, don't request what you *think* you need, only request what you know you currently need.  If those needs change, then simply update your storage requests.)
 
-### Mins and Maxes
+### Mins and Maxes (NetApp storageClasses)
 
 The minimum size is 20Mi, provisioning will fail any smaller. You no longer need to request a full 1Gi if you don't need it.
 
 Maximum size is 256Gi, provisioning will fail any bigger. Larger custom quotas won't get around this currently as we've set the provisioner to this limit to ensure the NetApp can remain properly balanced.
 
-### Speeds
+### Performance
 
 One question is often "how fast is each", and well, it depends on your workload.  There have been some specific performance tests done by Wade Barnes, and new comparative tests should be available in the https://github.com/bcdevops/backup-container documentation.
 
