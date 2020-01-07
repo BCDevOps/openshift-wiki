@@ -10,9 +10,7 @@ The work of different teams within the OpenShift platform is organized into isol
 
 ## Pre-requisites
 
-Prior to project provisioning, your team lead/sponsor will need to meet with the Enterprise DevOps branch leadership to have your project/app/product reviewed and accepted for deployment on the DevOps platform.
-
-**To request a meeting, please contact [Todd Wilson](mailto:Todd.Wilson@gov.bc.ca)**
+Prior to project provisioning, your project/app/product will be reviewed for suitability to be deployed on the DevOps platform.
 
 ### Criteria for acceptance onto the platform:
 
