@@ -2,21 +2,12 @@
 title: Persistent Storage Services
 description: Documentation regarding persistent storage options supported by the platform. 
 ---
-- [Pathfinder storage solutions](#pathfinder-storage-solutions)
-- [Storage Technologies](#storage-technologies)
-  - [NetApp](#netapp)
-  - [Gluster (CNS)](#gluster-cns)
-  - [NFS Netbackup integrated](#nfs-netbackup-integrated)
-  - [Legacy Gluster (decommissioned)](#legacy-gluster-decommissioned)
-- [Tools](#tools)
-- [Storage Class FAQ](#storage-class-faq)
-  - [Which should I choose](#which-should-i-choose)
-  - [Mins and Maxes (NetApp storageClasses)](#mins-and-maxes-netapp-storageclasses)
-  - [Performance](#performance)
-  - [Pros and Cons of each](#pros-and-cons-of-each)
-  - [Other fun details](#other-fun-details)
 
 ## Pathfinder storage solutions
+
+- [Storage Technologies](#storage-technologies)
+- [Tools](#tools)
+- [Storage Class FAQ](#storage-class-faq)
 
 The platform has several different storage technologies in use as we work to provide an ever-improving storage experience.  These storage technologies support in-cluster storage types.  Currently we have 2 types of in-cluster persistent storage that we are able to support:
 
@@ -94,7 +85,7 @@ If you have specific performance needs, then we would suggest testing both types
 
 ### Pros and Cons of each
 
-One of the biggest pros of NFS file storage is that it is re-sizeable.  Just edit your PVC to have a bigger `.spec.resources.requests.storage` and give it a few seconds.
+One of the biggest pros of File storage is that it is re-sizeable.  Just edit your PVC to have a bigger `.spec.resources.requests.storage` and give it a few seconds.
 
 Block storage cannot be mounted during maintenance. Any pods already running will failover properly to the secondary NetApp node, but any newly launched pods will fail to start until both NetApp nodes are available.
 
