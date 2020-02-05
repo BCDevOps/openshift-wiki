@@ -8,7 +8,7 @@ tags:
 - nfs
 - storage
 - pvc
-- persistant
+- persistent
 ---
 
 ## Pathfinder storage solutions
