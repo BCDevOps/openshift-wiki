@@ -1,6 +1,14 @@
 ---
 title: Persistent Storage Services
-description: Documentation regarding persistent storage options supported by the platform. 
+description: Documentation regarding persistent storage options supported by the platform.
+tags:
+- netapp
+- gluster
+- net app
+- nfs
+- storage
+- pvc
+- persistant
 ---
 
 ## Pathfinder storage solutions
