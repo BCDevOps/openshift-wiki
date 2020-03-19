@@ -14,8 +14,10 @@ Pathfinder OpenShift specific implementation notes:
 
 * Access (ingress) points:
   * console.pathfinder.gov.bc.ca:8443 - (142.34.208.210) API and web UI
-  * .pathfinder.gov.bc.ca:80/443 - (142.34.208.209) internet accessible application routes; there is an Entrust wildcard SSL cert for this.
-  * .pathfinder.bcgov:80/443 (142.34.143.180) - internal-only accessible routes; there is currently NO wildcard SSL cert for this
+  * .pathfinder.gov.bc.ca:80/443 - (142.34.208.209) internet accessible application Virtual IP; there is an Entrust wildcard SSL cert for this.
+  * .pathfinder.bcgov:80/443 (142.34.143.180) - Internal facing application Virtual IP; there is currently NO wildcard SSL cert for this.
+
+> **Please note:** A common misconception is that using a *{name}*.pathfinder.bcgov name will secure your application for 'internal to BCGov' traffic.  This is **NOT** the case.  Both of the external VIPs are directing traffic to the *SAME* cluster ingress.  To secure named routes you must add route whitelists. (ref: https://docs.openshift.com/container-platform/3.11/architecture/networking/routes.html#whitelist)
 
 * BCGov IP 142 Subnets (https://whois.arin.net/rest/org/PBC-51-Z/nets): 
 142.22.0.0/16 142.23.0.0/16 142.24.0.0/16 142.25.0.0/16 142.26.0.0/16 142.27.0.0/16 142.28.0.0/16 142.29.0.0/16 142.30.0.0/16 142.31.0.0/16 142.32.0.0/16 142.33.0.0/16 142.34.0.0/16 142.35.0.0/16 142.36.0.0/16
