@@ -1,6 +1,10 @@
 ---
 description: BC Gov OpenShift networking overview
 title: BC Gov OpenShift networking overview
+tags:
+  - network
+  - networking
+  - openshift network
 ---
 # OpenShift Networking - Pathfinder Project Config
 
