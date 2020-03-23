@@ -6,7 +6,7 @@ title: BC Gov OpenShift networking overview
 
 Pathfinder OpenShift specific implementation notes:
 * SDN uses the ovs-multitenant SDN plug-in for configuring the pod network.
-* Pathfinder OpenShift is *not* using the F5 plugin. `RouteS`  within OpenShift  (similar to `Ingress`) are using the OpenShift-provided HA Proxy functionality. The frontend, Internet-facing load balancer located outside of OpenShift is an F5 (on IP .209) which is simply configured to forward traffic to the HA Proxy instances. The F5 is not tightly integrated with OpenShift. 
+* Pathfinder OpenShift is *not* using the F5 plugin. `Routes`  within OpenShift  (similar to `Ingress`) are using the OpenShift-provided HA Proxy functionality. The frontend, Internet-facing load balancer located outside of OpenShift is an F5 (on IP .209) which is simply configured to forward traffic to the HA Proxy instances. The F5 is not tightly integrated with OpenShift. 
 * CIDR Range 142.34.143.128/26; Netmask 255.255.255.192; Wildcard Bits 0.0.0.63; First IP 142.34.143.128; Last IP 142.34.143.191
 * OpenShift servers are in `VLAN 138` in Kamloops
 * Firewall Object: `OCIO-PF-PROD-DMZ` (used as SOURCE)
