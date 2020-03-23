@@ -2,12 +2,13 @@
 description: The Single Sign-On (SSO) Service Definition outlines roles and responsibilities for operating the service.
 resourceType: Documentation
 title: BC Government SSO Service Definition
-- keycloak
-- realm
-- client
-- authentication
-- idir
-- bceid
+tags:
+  - keycloak
+  - realm
+  - client
+  - authentication
+  - idir
+  - bceid
 ---
 
 # BC Government SSO Service Definition
