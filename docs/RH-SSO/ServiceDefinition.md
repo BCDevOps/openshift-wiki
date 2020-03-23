@@ -2,6 +2,12 @@
 description: The Single Sign-On (SSO) Service Definition outlines roles and responsibilities for operating the service.
 resourceType: Documentation
 title: BC Government SSO Service Definition
+- keycloak
+- realm
+- client
+- authentication
+- idir
+- bceid
 ---
 
 # BC Government SSO Service Definition
@@ -91,16 +97,34 @@ For cluster wide service notifications that may impact SSO monitor the `#devops-
 
 For teams without RocketChat access, escalation, or to talk to a person IRL contact Todd Wilson, Director of Enterprise DevOps, Office of the Chief Information Officer.
 
+
 ## Service Delivery
 
-This section is not yet completed.
+### request workflow
 
-```
-* request workflow(s)
-* change management
-* service improvements
-* service level
-* security reviews
+- Start a request here: https://github.com/BCDevOps/devops-requests
+- Have an onboarding meeting with the SSO Ops team to go through KeyCloak service and common practices
+- The requester will be given access to [Realm-O-Matic](https://realm-o-matic.pathfinder.gov.bc.ca) and fill in a form with project team details, which will be used to auto generate the KeyCloak resources, i.e.: `realm`, `Admin groups` and etc.
+- Once the `realms` are created with the assigned admin user, it's up to the team to further manage them.
+
+### change management
+
+Any service change will be communicated via #sso RocketChat channel. For major service update, the SSO ops team will reach out to product owner for notice.
+
+### service improvements
+
+SSO service improvements including system upgrade, feature integration, issue fixing and etc. The SSO Ops team will be conducting the operation on a scheduled time, with advanced notice in the #sso RocketChat channel. If disruption/downtime is expected during service improvement, the team will discuss on maintenance time in the channel to minimize effects.
+
+### service level
+
+TBD
+
+### security reviews
+
+***Corporate PIA***
+The corporate Privacy Impact Assessment is now completed and signed off. This means basic deployments can refer to the corporate PIA avoiding re-work. Teams must still detail in their program PIA how they are using identity providers in their application context.
+
+
 ```
 
 ## Postface
