@@ -38,7 +38,6 @@ https://pathfinder-faq-ocio-pathfinder-prod.pathfinder.gov.bc.ca/
   * [Grant User Access To Project](docs/HowTo/GrantUsersAccessToProject.md)
   * [Set Image Puller Policies](docs/OCP/ProjectPolicySetup.md)
   * [Image Pull Auth Issue](docs/OCP/ImagePullPolicy.md)
-  * [glusterfs app missing](docs/OCP/RecreateGlusterfsApp.md)
   * [Increase PVC Size](docs/OCP/IncreasePVCSize.md)
   * [Resolve 504 proxy error](docs/OCP/Proxy504Error.md)
   * [Verify Application Up](docs/OCP/TestingApps.md)
