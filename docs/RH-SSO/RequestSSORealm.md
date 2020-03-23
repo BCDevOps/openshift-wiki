@@ -1,6 +1,10 @@
 ---
 description: How to request a SSO Realm in the OpenShift RH SSO Instance.
 title: Requesting a SSO Realm to be created
+tags:
+- keycloak
+- realm
+- request
 ---
 # Requesting a SSO realm to be created
 
