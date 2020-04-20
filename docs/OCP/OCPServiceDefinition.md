@@ -39,7 +39,7 @@ In order to use the service, teams must:
 
 ### How to Request
 
-For teams that do not have applications already on the platform and for teams with existing applications and wishing to add additional ones, the first step is to arrange a discussion with the DevOps Platform Services team.  This can be arranged by contacting [Todd Wilson](mailto:todd.wilson@gov.bc.ca), Director of Enterprise DevOps, Office of the Chief Information Officer.  This will serve to confirm prerequisites are met and to determine overall suitability of the prospective application and team for the Service.  
+For teams that do not have applications already on the platform and for teams with existing applications and wishing to add additional ones, the first step is to arrange a discussion with the DevOps Platform Services team.  This can be arranged by contacting [Olena Mitovska](mailto:Olena.Mitovska@gov.bc.ca), Product Owner for Platform Services, BCDevExchange, Office of the Chief Information Officer.  This will serve to confirm prerequisites are met and to determine overall suitability of the prospective application and team for the Service.  
 
 The request process is subject to change and can be found at the following URL:
 https://developer.gov.bc.ca/How-to-Request-a-New-OpenShift-Project
@@ -58,7 +58,7 @@ Assistance with *using* the Service (getting started, developing applications, e
 
 ### Training
 
-Periodic internally-delivered training is provided by the DevOps Platform Services team. Commercial OpenShift training is also available from Red Hat.  For details on either type of training and internal training schedule, contact [Todd Wilson](mailto:todd.wilson@gov.bc.ca), Director of Enterprise DevOps, Office of the Chief Information Officer.
+Periodic internally-delivered training is provided by the DevOps Platform Services team. The internal training schedule is available [here] (https://developer.gov.bc.ca/ExchangeLab-Course:-Openshift-101). Commercial OpenShift training is also available from Red Hat.  For details on the commercial training, contact [Olena Mitovska](mailto:olena.mitovska@gov.bc.ca), Product Owner for Platform Services.
 
 ### Support
 

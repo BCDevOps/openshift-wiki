@@ -64,7 +64,7 @@ This service is offered to BC Government development teams building cloud native
 
 Teams wishing to have realms created should follow the steps outlined at [SSO Realm Request](RequestSSORealm.md).
 
-If for you need further information, reach out to Todd Wilson, Director of Enterprise DevOps, Office of the Chief Information Officer; he can be located in the corporate directory. 
+If for you need further information, reach out to [Olena Mitovska](mailto:olena.mitovska@gov.bc.ca), Product Owner for Platform Services. 
 
 ### Availability
 
@@ -96,7 +96,7 @@ SSO interfaces with other BC Government services to provide authentication via I
 
 For cluster wide service notifications that may impact SSO monitor the `#devops-alerts` channels in [RocketChat](https://chat.pathfinder.gov.bc.ca/channel/devops-alerts).
 
-For teams without RocketChat access, escalation, or to talk to a person IRL contact Todd Wilson, Director of Enterprise DevOps, Office of the Chief Information Officer.
+For teams without RocketChat access, escalation, or to talk to a person IRL contact [Olena Mitovska](mailto:olena.mitovska@gov.bc.ca), Product Owner for Platform Services, BCDevExchange, Office of the Chief Information Officer.
 
 
 ## Service Delivery
