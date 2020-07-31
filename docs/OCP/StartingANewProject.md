@@ -22,7 +22,7 @@ Before agreeing to host your project on the OpenShift platform, the OCIO Enterpr
 
 ### Submit a project provisioning request
 
-If you meet the above criteria, have your Product Owner or technical lead submit a project provisioining request through the [DevOps Requests Repo](https://github.com/BCDevOps/devops-requests).
+If you meet the above criteria, have your Product Owner or technical lead submit a project provisioning request through the [DevOps Requests Repo](https://github.com/BCDevOps/devops-requests).
 
 A member of the Enterprise DevOps branch will be in touch to schedule a brief alignment meeting to confirm your project's suitability. 
 
