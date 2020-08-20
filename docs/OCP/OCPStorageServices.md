@@ -57,6 +57,17 @@ This storageClass **(nfs-backup)** was created to bridge the gap between in-clus
 - Slower performance
 - Deprecated for the OpenShift 4 environment.
 
+#### Enterprise Backup/Restore Requests
+
+Enterprise Backup/Restore requests (including customizing schedules, restores, etc) are currently accessed through normal restore request channels (ie: serviceDesk, 7700) You will need to include the following information:
+
+``` yaml
+Server: OCIOPF-P-150.DMZ
+Path: /srv/nfs/oscbkp/{volume-name}
+```
+
+Volume name is the PVC name without the "bk-" prefix. (or the volume name for your nfs-backup PVC)
+
 ### Legacy Gluster (decommissioned)
 
 Our first storage solution was manually managed gluster storage.  While this storage was a decent first storage solution, it was not able to provide automatic PVC provisioning, and had higher costs than were sustainable.  This storage class has since been retired and is no longer available on the platform.
