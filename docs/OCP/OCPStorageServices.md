@@ -52,21 +52,10 @@ There are 3 CNS storage classes in use:
 This storageClass **(nfs-backup)** was created to bridge the gap between in-cluster storage and the BCGov Netbackup infrastructure.  It is currently available as file storage only.  While this solution has provided us with a short term bridge for application backups, there are some caveats for it's use:
 
 - **NOT** highly available storage
-- Custom provisioning process (no direct provisioning via creating a PVC)
+- Custom provisioning process.  *See:* [GUI Provisioning Walkthrough](https://github.com/BCDevOps/provision-nfs-apb/blob/master/docs/usage-gui.md) (no direct provisioning via creating a PVC)
 - Low default quota (for larger quota needs, a discussion and proof of concept implementation are requested before any quota increases are approved)
 - Slower performance
 - Deprecated for the OpenShift 4 environment.
-
-#### Enterprise Backup/Restore Requests
-
-Enterprise Backup/Restore requests (including customizing schedules, restores, etc) are currently accessed through normal restore request channels (ie: serviceDesk, 7700) You will need to include the following information:
-
-``` yaml
-Server: OCIOPF-P-150.DMZ
-Path: /srv/nfs/oscbkp/{volume-name}
-```
-
-Volume name is the PVC name without the "bk-" prefix. (or the volume name for your nfs-backup PVC)
 
 ### Legacy Gluster (decommissioned)
 
