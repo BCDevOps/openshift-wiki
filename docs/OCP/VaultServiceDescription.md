@@ -49,8 +49,6 @@ For help beyond this contact one of the Vault administrators via the [#devops-so
 
 ## What does it Cost?
 
-### Charges
-
 There is no charge for this service.
 
 ## Support Roles, Processes, Communications (platform ops)
@@ -67,7 +65,7 @@ For teams without RocketChat access, escalation, or to talk to a person IRL cont
 
 ## Service Delivery
 
-* **request workflow(s)**
+### **request workflow(s)**
 
 There is no onboarding to use Vault.
 
@@ -78,19 +76,19 @@ As part of project onboarding Kubernetes service accounts are generated for your
 
 Project teams can choose to use Vault or etcd, but it is recommended that Vault be used for secrets.
 
-* **change management**
+### **change management**
 
 Any service change will be communicated via #vault-ops RocketChat channel. For major service update, the Vault Ops team will reach out to product owner for notice.
 
-* **service improvements**
+### **service improvements**
 
 Vault Secrets Management Service improvements including system upgrades, feature integration, issue fixing and etc. The Vault Ops team will be conducting the operation on a scheduled time, with advanced notice in the #vault-ops RocketChat channel. If disruption/downtime is expected during service improvement, the team will discuss on maintenance time in the channel to minimize effects.
 
-* **service level**
+### **service level**
 
 TBD
 
-* **security reviews**
+### **security reviews**
 
 An STRA for Vault is currently under development by the Platform Services team.
 
