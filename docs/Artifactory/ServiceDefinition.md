@@ -133,7 +133,7 @@ Any service change will be communicated via the `#devops-artifactory` RocketChat
 Artifactory service improvements include software upgrades for both Artifactory and its operator, feature integrations for the operator, bug fixes, etc. 
 Many such operations will not result in any expected disruption for users. In these cases, the team will provide notification of upcoming changes in `#devops-artifactory`, but it may be with limited notice.
 Other such operations will require turning Artifactory to "read-only" mode, which means that pulling from Artifactory will be possible, but pushes will not be.
-If such a disruption is expected, advance notice of at least a day will be given in the `#devops-artifactory` channel for the planned read-only window.
+If such a disruption is expected, advance notice of at least a day will be given in the `#devops-artifactory` and `#devops-alerts`channels for the planned read-only window.
 
 ### Service Level
 
