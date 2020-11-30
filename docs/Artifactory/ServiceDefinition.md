@@ -56,9 +56,7 @@ windward-maven-remote       http://maven-repository.windward.net/artifactory/lib
 
 #### Local (Private) Repos
 
-**This feature is not yet fully implemented**
-
-#### Community
+This feature is not yet fully implemented
 
 ### Eligibility & Prerequisites
 
