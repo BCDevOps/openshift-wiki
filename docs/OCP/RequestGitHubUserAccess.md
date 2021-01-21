@@ -5,7 +5,7 @@ description: The process for inviting new user to contribute to BC Gov GitHub Re
 
 # Introduction
 
-BC Gov project teams have their Open Source project on the GitHub `bcgov` organization repositories....
+BC Gov project teams have their Open Source project on the GitHub `bcgov` organization repositories.
 
 # Pre-requisites
 
@@ -17,8 +17,7 @@ If the project has a GitHub repository/repositories already:
 - the Admin/Owner of the repository can invite new users as `Collaborators` - the new users do not need to join the organization. The repository Admin/Owner can add collaborators via the "Add Collaborator" function in the repository's "Settings" area. No further requests are necessary.
 
 If a new repository is needed:
-- the product owner needs to make an `GitHub Repo Request` according to the instructions below, and assign *one* team member to be the repo creator/owner.
-- the product owner also needs to make an `Access Request` for the _repository owner_ GitHub user.
+- the technical lead must request access to the `bcgov` GitHub organization, if they are not a member already.
 - the rest of the project team can then be invited by the repository owner as collaborators.
 
 If a new *private* repository is needed (Note: private repos should be temporary only as the expectation is for their contents to eventually become Open Source):
@@ -31,7 +30,9 @@ If a new *private* repository is needed (Note: private repos should be temporary
 
 ## GitHub Repo Request
 
-For a new GitHub repository in the public `bcgov` organization or a private repo (with approval) in the `bcgov-c` organization, the product owner or technical lead should make a request by creating an issue in the [DevOps Request Repo](https://github.com/BCDevOps/devops-requests).
+All members of the public `bcgov` organization are able to create their own repositories, no request required. If the team does not have any users who are members of the `bcgov` org, a member must be added, and then they can create the necessary repository.
+
+For a private repo (with approval) in the `bcgov-c` organization, the product owner or technical lead should make a request by creating an issue in the [DevOps Request Repo](https://github.com/BCDevOps/devops-requests).
 
 The request should include:
 
@@ -68,7 +69,7 @@ The request should include:
 1. New user's organization (gov ministry plus division,branch,etc.) or company
 1. New user's role on the project (e.g. Developer, QA, DevOps specialist, Scrum Master)
 1. GitHub repositories if exist
-1. Expiry (optional) - it is the team's responsibility to remove users from the repo when they no longer reque 
+1. Expiry (optional) - it is the team's responsibility to remove users from the repo when they no longer require it.
 
 A sample "good" request is provided below and should be used as a reference for submitting requests:
 
@@ -87,7 +88,7 @@ GitHub User Access Request:
 
 ## Access Removal Request
 
-When an individual is no longer working on the project, it is the responsibility of the associated product owner or a GitHub repo admin to remove the user from the repo and request by creating an issue in the [DevOps Request Repo](https://github.com/BCDevOps/devops-requests).
+When an individual is no longer working on the project, it is the responsibility of the associated product owner or a GitHub repo admin to remove the user from the repo and request their removal from the organization (if appropriate) by creating an issue in the [DevOps Request Repo](https://github.com/BCDevOps/devops-requests).
 
 The request should include:
 
