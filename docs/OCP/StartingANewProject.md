@@ -29,3 +29,5 @@ If you meet the above criteria, book an alignment meeting with our Product Direc
 Once your request(s) are approved, the projects will be created and the requestor will be notified when provisioning is complete.
 
 NOTE: The names of OpenShift namespaces will be auto-generated at provisioning time, in the form of `<generated alphanumeric string>-<environment>`, we call them `project license plates`.
+
+**While you are waiting for the alignment meeting, please check out our new [OnBoarding Guide for BC Gov DevOps Platform](https://docs.google.com/presentation/d/1UcT0b2YTPki_o0et9ZCLKv8vF19eYakJQitU85TAeD4/edit?usp=sharing) to learn about the available services and the easier way to integrate with the Platform Community.**
