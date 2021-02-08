@@ -24,7 +24,7 @@ You can find further information on the operator's features and functionality he
 
 ### Eligibility & Prerequisites
 
-This service is offered to BC Government development teams building cloud native applications on the Openshift Platform.
+This service is offered to BC Government development teams building cloud native applications on the Openshift 4 Platform. The EnterpriseDB Services is available to all teams as a free community version of EnterpriseDB or as an enterprise version for those teams that have purchased an enterprise license for EnterpriseDB. 
 
 ### How to Request  
 
