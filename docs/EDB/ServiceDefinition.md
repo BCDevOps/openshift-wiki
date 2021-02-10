@@ -85,7 +85,7 @@ The team supporting this service administers the EDB operator used to install th
 
 For cluster wide service notifications that may impact the operator or your database, monitor the `#devops-alerts` channels in [RocketChat](https://chat.developer.gov.bc.ca/channel/devops-alerts).
 
-For teams without RocketChat access, escalation, or to talk to a person IRL contact [Olena Mitovska](mailto:olena.mitovska@gov.bc.ca), Product Owner for Platform Services, BCDevExchange, Office of the Chief Information Officer.
+For teams without RocketChat access, escalation, or to talk to a person IRL, contact [Olena Mitovska](mailto:olena.mitovska@gov.bc.ca), Product Owner for Platform Services, BCDevExchange, Office of the Chief Information Officer.
 
 ## Service Delivery
 
