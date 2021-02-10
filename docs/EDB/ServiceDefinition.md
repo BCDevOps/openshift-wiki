@@ -89,7 +89,7 @@ For teams without RocketChat access, escalation, or to talk to a person IRL, con
 
 ## Service Delivery
 
-Teams can create a custom resource in order to create a EDB Postgres database in the same way they typically create other Openshift objects.
+Teams can create a custom resource in order to create a EDB Postgres database in the same way they typically create other OpenShift objects.
 Please see the [Operator Documentation](https://docs.enterprisedb.io/cloud-native-postgresql) for more details on how to use the operator.
 
 ### Change Management
