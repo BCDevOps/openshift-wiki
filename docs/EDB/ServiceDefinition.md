@@ -30,7 +30,7 @@ This service is offered to BC Government development teams building cloud native
 
 Teams do not need to request anything from the platform team in order to make use of this operator in order to install Postgres community edition.
 If a team wishes to purchase a license in order to make use of the enterprise edition of the operator, 
-teams should contact the [Olena Mitovska](mailto:olena.mitovska@gov.bc.ca) in order to discuss options - licenses are purchased collectively for ease of administration.
+they should contact [Olena Mitovska](mailto:olena.mitovska@gov.bc.ca) in order to discuss options - licenses are purchased collectively for ease of administration.
 
 ### Availability
 
