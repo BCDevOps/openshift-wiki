@@ -18,25 +18,39 @@ tags:
 
 ### Features & Functions
 
-The Enterprise DB service is provided as one of the Shared Services on the BC Gov's DevOps OpenShift 4 Platform. This service enables product teams to use the EnterpriseDB version of PostgreSQL to create HA database instances in their app. The service is enabled by an operator built by EDB and installed in OCP 4 Silver cluster, which is used to install and update instances of Postgres in various namespaces.
+The Enterprise DB service is provided as one of the Shared Services on the BC Gov's DevOps OpenShift 4 Platform. 
+This service enables product teams to use the EnterpriseDB version of PostgreSQL to create HA database instances in their app. 
+The service is enabled by an operator built by EDB and installed in OCP 4 Silver cluster, which is used to install and update instances of Postgres in various namespaces.
 
 You can find further information on the operator's features and functionality here: https://docs.enterprisedb.io/cloud-native-postgresql
 
+Associated with the operator is the RemoteDBA (RDBA) support service, also offered by EDB. 
+They are involved in providing support for the operator and support for database clusters belonging to teams which have purchased their additional support packages.
+
 ### Eligibility & Prerequisites
 
-This service is offered to BC Government development teams building cloud native applications on the OpenShift 4 Platform. The EnterpriseDB Services is available to all teams as a free community version of EnterpriseDB or as an enterprise version for those teams that have purchased an enterprise license for EnterpriseDB. 
+This service is offered to BC Government development teams building cloud native applications on the OpenShift 4 Platform. 
+The EnterpriseDB Service is available to all teams who have purchased a license. 
+
+Those without a license can use the operator to build a database cluster to test, which will operate for 30 days. 
+If there is no license added to the database cluster before the end of the 30 period, the operator will no longer perform work on the database pods.
+This means that the database version will not be updated, and new pods will not automatically spin up to join the cluster if necessary.
+Please see EDB's documentation for more details about what may happen to an operator-built database without a license after the trial period has expired.
 
 ### How to Request  
 
-Teams do not need to request anything from the platform team in order to make use of this operator in order to install Postgres community edition.
-If a team wishes to purchase a license in order to make use of the enterprise edition of the operator, 
-they should contact [Olena Mitovska](mailto:olena.mitovska@gov.bc.ca) in order to discuss options - licenses are purchased collectively for ease of administration.
+Teams do not need to request anything from the platform team in order to make use of this operator. 
+Licenses are required in order to ensure that your database maintains its HA status after 30 days.
+If a team wishes to purchase a license, they should contact [Olena Mitovska](mailto:olena.mitovska@gov.bc.ca) in order to discuss options - 
+licenses are purchased collectively for ease of administration.
 
 ### Availability
 
 The operator is available to permit installation at all hours on the Silver cluster. Availability on Gold is to follow.
+Teams with RDBA support should contact them first, in the event of an issue with the operator. 
+Hours of availability for RDBA depend on your team's SLA with them.
 
-If something goes wrong with the operator and support is required, support is available during business hours.
+If something goes wrong with the operator that requires the platform team's intervention, platform support is available during business hours.
 
 ## How do I get help? (help and self service)
 
@@ -73,15 +87,22 @@ If you are certain that it is a cluster-level issue, please contact the team via
 
 ## What Does It Cost?
 
-For the community edition? No charge!
+The platform team does not charge anything for this service. EDB licenses, however, are required for long-term use of the operator.
 
-If you wish to purchase an enterprise edition and/or support license, contact [Olena Mitovska](mailto:olena.mitovska@gov.bc.ca) to discuss costs.
+There are three total licenses available for purchase:
+- An enterprise EDB cluster unicore license provides a license for up to 1 core of use of the full-featured enterprise version of EDB's database.
+- A community cluster unicore license provides a license for up to 1 core of use of the Postgres opensource database with EDB's operator in order to make use of full HA features.
+- An RDBA license provides more active and preventative support from RDBA for your databases, at a rate of one database cluster per license.
+
+If you wish to purchase a database and/or support license, contact [Olena Mitovska](mailto:olena.mitovska@gov.bc.ca) to discuss costs.
 
 ## Support Roles, Processes, Communications (platform ops)
 
 The team supporting this service administers the EDB operator used to install the database, but does not administer your database itself.
 
-[RocketChat](https://chat.developer.gov.bc.ca) is the primary mode of communication. Specifically the `#edb` channel should be used for engage the community for best practices, configuration and troubleshooting questions.
+[RocketChat](https://chat.developer.gov.bc.ca) is the primary mode of communication. 
+Specifically the `#edb` channel should be used for engage the community for best practices, configuration and troubleshooting questions.
+You may also wish to keep an eye on the `#patroni` channel as well to keep up with database problems, as Patroni also uses Postgres and thus some issues may cross over between the two HA solutions.
 
 For cluster wide service notifications that may impact the operator or your database, monitor the `#devops-alerts` channels in [RocketChat](https://chat.developer.gov.bc.ca/channel/devops-alerts).
 
