@@ -18,7 +18,7 @@ tags:
 
 ### Features & Functions
 
-This Enterprise DB service is provided as one of the Shared Services on the BC Gov's DevOps Openshift 4 Platform. This service enables product teams to use EnterpriseDB version of PostgreSQL to create HA database istances in their app. The service is enabled by an operator built by EDB and installed in OCP 4 Silver cluster, which is used to install and update instances of Postgres in various namespaces.
+The Enterprise DB service is provided as one of the Shared Services on the BC Gov's DevOps OpenShift 4 Platform. This service enables product teams to use the EnterpriseDB version of PostgreSQL to create HA database instances in their app. The service is enabled by an operator built by EDB and installed in OCP 4 Silver cluster, which is used to install and update instances of Postgres in various namespaces.
 
 You can find further information on the operator's features and functionality here: https://docs.enterprisedb.io/cloud-native-postgresql
 
