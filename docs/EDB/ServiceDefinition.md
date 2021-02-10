@@ -111,7 +111,7 @@ TBD
 
 ### Security Reviews
 
-EDB is covered by the existing Openshift PIA.
+EDB is covered by the existing OpenShift PIA.
 
 A STRA is currently underway.
 
