@@ -29,7 +29,7 @@ The Enterprise DB's RDBA team assist the Platform Services Team with providing s
 
 ### Eligibility & Prerequisites
 
-This service is offered to BC Government development teams building cloud native applications on the OpenShift 4 Platform. 
+This service is currently offered to BC Government development teams building cloud native applications on the OpenShift 4 Platform. 
 The EnterpriseDB Service is available to all teams who have purchased a license. 
 
 Those without a license can use the operator to build a database cluster to test, which will operate for 30 days. 
