@@ -50,7 +50,7 @@ The operator is available to permit installation at all hours on the Silver clus
 Teams with RDBA support should contact them first, in the event of an issue with the operator. 
 Hours of availability for RDBA depend on your team's SLA with them.
 
-If something goes wrong with the operator that requires the platform team's intervention, platform support is available during business hours.
+If something goes wrong with the operator that requires the Platform Services Team's intervention, platform support is available during business hours.
 
 ## How do I get help? (help and self service)
 
