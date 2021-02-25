@@ -69,7 +69,7 @@ If, for example, the RDBA team requires admin privileges on a namespace but your
 an admin from the your team should work directly with RDBA to take the necessary action.
 
 If the elevated privileges required to deal with the problem are beyond what the project team can provide, 
-please contact the platform services team directly. 
+please contact the Platform Services team directly in #edb channel in Rocketchat if the problem is not urgent or in #devops-sos if it is urgent and is impacting production workloads. 
 It is very unlikely that the platform services team should be involved in any issue that is not directly related to the operator itself.
 Please be sure that this level of cluster-wide privileges are needed before contacting platform services.
 
