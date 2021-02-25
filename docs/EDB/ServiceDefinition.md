@@ -25,7 +25,7 @@ The service is enabled by an operator built by EDB and installed in OCP 4 Silver
 You can find further information on the operator's features and functionality here: https://docs.enterprisedb.io/cloud-native-postgresql
 
 Associated with the operator is the RemoteDBA (RDBA) support service offered by the EnterpriseDB vendor under a separate license. 
-They are involved in providing support for the operator and support for database clusters belonging to teams which have purchased their additional support packages.
+The Enterprise DB's RDBA team assist the Platform Services Team with providing support for the EDB operator and can also provide support for database clusters belonging to the product teams which have purchased a license for their service. 
 
 ### Eligibility & Prerequisites
 
