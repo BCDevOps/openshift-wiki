@@ -47,7 +47,7 @@ licenses are purchased collectively for ease of administration.
 ### Availability
 
 The operator is available to permit installation at all hours on the Silver cluster. Availability on Gold is to follow.
-Teams with RDBA support should contact them first, in the event of an issue with the operator. 
+Teams with RDBA support should contact the the EDB's RDBA team first, in the event of an issue with the operator. 
 Hours of availability for RDBA depend on your team's SLA with them.
 
 If something goes wrong with the operator that requires the Platform Services Team's intervention, platform support is available during business hours.
