@@ -72,7 +72,7 @@ TBD
 
 ## Security Reviews
 
-Sysdig Service is covered by the existing Openshift PIA and has a STRA complete (contact Nick Corcoran if you need a copy).
+Sysdig Service is covered by the existing Openshift PIA and has a STRA complete (contact Nick Corcoran if you need a copy). 
 
 
 
