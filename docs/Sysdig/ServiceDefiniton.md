@@ -56,7 +56,7 @@ The team supporting this service administers the Sysdig agents and the Sysdig op
 
 For cluster wide service notifications that may impact Sysdig availability, monitor the `#devops-alerts` channels in [RocketChat](https://chat.developer.gov.bc.ca/channel/devops-alerts).
 
-For teams without RocketChat access, escalation, or to talk to a person IRL contact [Olena Mitovska](mailto:olena.mitovska@gov.bc.ca), Product Owner for Platform Services, BCDevExchange, Office of the Chief Information Officer.
+For teams without RocketChat access, please refer to [RC Registration Process](https://developer.gov.bc.ca/Steps-to-join-Rocket.Chat), or to talk to a person IRL contact [Olena Mitovska](mailto:olena.mitovska@gov.bc.ca), Product Owner for Platform Services, BCDevExchange, Office of the Chief Information Officer.
 
 ## Change Management
 
