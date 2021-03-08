@@ -1,4 +1,15 @@
-#Platform Services Sprint Review Demos
+---
+description: The demo collection from Platform Services Team's Sprint Reviews.
+resourceType: Documentation
+title: Platform Services Sprint Review Demo Collection
+tags:
+  - platform services demo
+  - demos
+  - demo collections
+  - sprint review
+---
+
+# Platform Services Sprint Review Demos
 
 This page contains links to the demos presented at BC Gov's Platform Services Team's Sprint Reviews. The collections includes demos not only by the Platform Services Team but by many product teams working together as the Platform Community.
 
