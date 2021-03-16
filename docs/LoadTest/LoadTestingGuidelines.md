@@ -1,3 +1,15 @@
+---
+description: Load Testing Guidelines for Ministry Apps Hosted in Silver and Gold cluster of BC Gov's Openshift 4 Platform
+resourceType: Documentation
+title: Load Testing Guidelines
+tags:
+- Load
+- Testing
+- Guidelines
+- Silver
+- Gold
+- Openshift
+---
 # Load Testing Guidelines for Ministry Apps Hosted in Silver and Gold cluster of BC Gov's Openshift 4 Platform
 
 So you want to load-test your app? That sounds like a great idea!
