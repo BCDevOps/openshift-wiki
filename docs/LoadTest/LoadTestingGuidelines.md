@@ -11,7 +11,6 @@ tags:
 - HA
 - High Availability
 - Fail over
-
 - Testing
 - Guidelines
 - Silver
@@ -41,4 +40,3 @@ First, you'll need to create a **load test plan** which outlines the duration of
 Second, you'll need to speak to the Platform Services Team about scheduling your test (for after 5:30pm on a weekday, remember!) - we'll need to take a look at your load test plan, make sure we have all the information we need for the test, and make sure that we have someone available during your chosen testing window. We'll work with you if we need to request any alterations to either the time/date or the plan! Contact [@olena.mitovska](https://chat.developer.gov.bc.ca/direct/olena.mitovska) in RocketChat.
 
 Assuming all goes well, your plan will be green-lit, and... that's it! Off you go to perform your load test!
-
