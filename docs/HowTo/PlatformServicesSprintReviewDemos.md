@@ -32,6 +32,9 @@ The Platform Services Team piloted the use of the new Project Registry that impl
 The JAG/NTT Data product team presents an integration pattern for Platform hosted apps that leverages BC Services Card as an identity provider through the KeyCloak SSO service.
 The pattern addresses a security requirement of not storing (even temporarily) any user data  neither in the app itself or in the KeyCloak SSO while allowing to share a user session across multiple apps.
 
+[Demo #6: Using BC Service Card Self Service Onboarding Application](https://www.youtube.com/watch?v=H2tKvOQ8x4k)
+Provincial Identity Information Management Program team demonstrated the use of the BC Service Card Self Service Onboarding Application and the repo that product teams wishing to integrate their application using the BC Services Card as an OIDC authentication mechanism can use to generate sample integration code.
+
 We keep adding demos to the collection as they get released to YouTube so keep checking for the new additions time to time.
 
 Love, Your Platform Services Team, xo
