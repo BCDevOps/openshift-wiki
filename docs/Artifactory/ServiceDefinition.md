@@ -34,9 +34,6 @@ boundlessgeo-maven-remote   http://repo.boundlessgeo.com/main/
 docker-remote               https://registry-1.docker.io/
 geosolutions-maven-remote   http://maven.geo-solutions.it/
 jasperreports-maven-remote  http://jasperreports.sourceforge.net/maven2
-jaspersoft3p-maven-remote   https://jaspersoft.artifactoryonline.com/jaspersoft/third-party-ce-artifacts/
-jaspersoftjr-maven-remote   http://jaspersoft.artifactoryonline.com/jaspersoft/jr-ce-releases/
-jaspersoftjrs-maven-remote  http://jaspersoft.artifactoryonline.com/jaspersoft/jrs-ce-releases/
 jcenter-maven-remote        http://jcenter.bintray.com
 jenkins-remote              https://updates.jenkins.io/download/
 jenkinspub-maven-remote     http://repo.jenkins-ci.org/public
@@ -49,6 +46,7 @@ oracle-maven-remote         https://maven.oracle.com
 osgeo-maven-remote          http://download.osgeo.org/webdav/geotools/
 primefaces-maven-remote     http://repository.primefaces.org
 pypi-remote                 https://files.pythonhosted.org/
+python-remote               https://www.python.org
 redhat-docker-remote        https://registry.redhat.io/
 vivid-maven-remote          http://mvn.vividsolutions.com/artifactory/repo
 windward-maven-remote       http://maven-repository.windward.net/artifactory/libs-release
