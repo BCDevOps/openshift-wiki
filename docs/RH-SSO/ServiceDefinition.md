@@ -17,11 +17,11 @@ tags:
 
 ### Summary
 
-The BC Government **Single Sign-On (SSO)** service, based on the Open Source Keycloak (aka Red Hat SSO) product, provides an industry standard (OIDC) and enterprise-policy compliant means of implementing authentication and authorization within applications that is also simple for development teams to provision, utilize and manage.
+The BC Government **Single Sign-On (SSO)** service, based on the Open Source Keycloak (aka Red Hat SSO) product, provides an industry standard (OIDC) and enterprise-policy compliant means of implementing authentication and authorization within applications that are also simple for development teams to provision, utilize and manage.
 
 Development teams are provisioned a set of `realm`s within a multi-tenant instance of Keycloak running in the [OpenShift Container Platform (OCP)](../OCP/ServiceDefinition.md) platform that can be self-administered and customized to the needs of one or more applications.
 
-Each realm will be configured with a set of centrally-managed identity providers (such as BCeID, IDIR, and GitHub) based on the needs of the team. Teams may add integrations with other identity providers within their realms based on their needs.
+Each realm will be configured with a set of centrally-managed identity providers (such as BCeID, IDIR, and GitHub) based on the needs of the team. Teams may add integrations with other identity providers within their realms based on their needs (e.g. BC Services Card).
 
 ### Features & Functions
 
@@ -29,42 +29,40 @@ Users of this service gain access to the following:
 
 #### Private Realm(s)
 
-Development teams are provided with a set of `realms` (an isolated configuration/namespace within Keycloak), corresponding to their deployment environments (dev, test, and prod). Realms come configured out-of-the-box with one or more of the following identity providers:
+Development teams are provided with a set of realms (an isolated configuration/namespace within Keycloak), corresponding to their deployment environments (dev, test, and prod). Realms come configured out-of-the-box with one or more of the following identity providers:
 
 * BC Government **IDIR**
 * GitHub
-* [BCeID](https://www.bceid.ca)
+* [BCeID](https://www.bceid.ca) (Business and Basic, Basic, Business)
 * [BC Services Card](https://www2.gov.bc.ca/gov/content/governments/government-id/bc-services-card)
 
-_note_: that BCeID and BC Services Card have extra setup steps in production KeyCloak, teams will be informed on details during on-boarding.
+Note: Both the BCeID and BC Services Card identity providers both require additional steps for SSO implementation. Details will be provided during onboarding.
 
 #### Access
 
-Each realm has an its own web interface that development teams can use for self-serve administration. To integrate with an application the following industry standard protocols are available:
+Each realm has its own web interface that development teams can use for self-serve administration. To integrate with an application the following industry standard protocols are available:
 
- * OpenID Connect (OIDC) 
+ * OpenID Connect (OIDC) - _Recommended_
  * SAML 2.0
  
-> OIDC is the recommended protocol, and at the time of this writing there are no BC Government teams using the SAML protocol with Keycloak.
-
-For native mobile apps, the BC Government developer community has produced the following SDKs to provide integration with Keycloak for the purposes of authentication:
+For native mobile apps, the BC Government developer community has produced the following Software Development Kits (SDK) to provide integration with the SSO solution for the purposes of authentication:
 
  * [iOS SDK](https://github.com/bcgov/mobile-authentication-ios)
  * [Android SDK](https://github.com/bcgov/mobile-authentication-android)
 
-#### Community
+#### SSO Community
 
-There is a vibrant community around the SSO service that can be found on the `#sso` channel in the BC Government Pathfinder [RocketChat](https://chat.pathfinder.gov.bc.ca/channel/sso).  This is the forum for asking questions and following developments on the service.
+There is an online chat community around the SSO service that can be found on the #sso channel within the BC Government’s Pathfinder [RocketChat](https://urldefense.com/v3/__https://chat.developer.gov.bc.ca__;!!AaIhyw!8bUQ-ueqvwzSt81KSGr1CpWd8zBn0y92QL20XIp0Y88YgiBHYT_0O7nu4V5puhvJwQ$). This online forum is used for asking questions, resolving possible issues and following developments on the service.
 
 ### Eligibility & Prerequisites
 
-This service is offered to BC Government development teams building cloud native web or mobile applications.  Teams wishing to use this service should connect with the Enterprise DevOps Team to discuss their needs and ensure alignment prior to making a request.
+This Single Sign-On (SSO) service is offered to BC Government teams who are building cloud native web or mobile applications. Teams wishing to use this service should initially connect with the Enterprise DevOps Team (BCDevExchange: https://bcdevexchange.org/) to discuss their needs and ensure alignment prior to making an SSO implementation request.
+
+Note: This SSO service is undergoing upgrades in 2021 and is currently not recommended for critical applications. Support is currently available only during business hours and only on a best efforts basis. If your application is critical, please contact Web Access Management (WAM) and/or Provincial Identity Information Management Program (IDIM).
 
 ### How to Request  
 
-Teams wishing to have realms created should follow the steps outlined at [SSO Realm Request](RequestSSORealm.md).
-
-If for you need further information, reach out to [Olena Mitovska](mailto:olena.mitovska@gov.bc.ca), Product Owner for Platform Services. 
+Teams wishing to have realms created should follow the steps outlined on the [SSO Realm Request](https://github.com/BCDevOps/openshift-wiki/blob/master/docs/RH-SSO/RequestSSORealm.md) webpage. If for you need further information, connect with the Enterprise DevOps Team through the following link for the BCDevExchange: https://bcdevexchange.org/
 
 ### Availability
 
