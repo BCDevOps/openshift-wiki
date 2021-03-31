@@ -13,7 +13,7 @@ tags:
 | Global Realm         | Description                                                   |
 |----------------------|---------------------------------------------------------------|
 | _idir                | BC IDIR                                                       |
-| _bceid               | BCeID - Basic, Business                                       |
+| _bceid               | BCeID - Basic, Business, Basic and Business                   |
 | _github              | GitHub                                                        |
 | _servicecard         | BC Service Card                                               |
 
