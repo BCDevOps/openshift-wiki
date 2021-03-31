@@ -52,17 +52,17 @@ For native mobile apps, the BC Government developer community has produced the f
 
 #### SSO Community
 
-There is an online chat community around the SSO service that can be found on the #sso channel within the BC Government’s Pathfinder [RocketChat](https://urldefense.com/v3/__https://chat.developer.gov.bc.ca__;!!AaIhyw!8bUQ-ueqvwzSt81KSGr1CpWd8zBn0y92QL20XIp0Y88YgiBHYT_0O7nu4V5puhvJwQ$). This online forum is used for asking questions, resolving possible issues and following developments on the service.
+There is an online chat community around the SSO service that can be found on the #sso channel within the BC Government’s Pathfinder [RocketChat](https://chat.developer.gov.bc.ca/home). This online forum is used for asking questions, resolving possible issues and following developments on the service.
 
 ### Eligibility & Prerequisites
 
-This Single Sign-On (SSO) service is offered to BC Government teams who are building cloud native web or mobile applications. Teams wishing to use this service should initially connect with the Enterprise DevOps Team (BCDevExchange: https://bcdevexchange.org/) to discuss their needs and ensure alignment prior to making an SSO implementation request.
+This Single Sign-On (SSO) service is offered to BC Government teams who are building cloud native web or mobile applications. Teams wishing to use this service should initially connect with the Enterprise DevOps Team (mailto:BCDevExchange@gov.bc.ca) to discuss their needs and ensure alignment prior to making an SSO implementation request.
 
 Note: This SSO service is undergoing upgrades in 2021 and is currently not recommended for critical applications. Support is currently available only during business hours and only on a best efforts basis. If your application is critical, please contact Web Access Management (WAM) and/or Provincial Identity Information Management Program (IDIM).
 
 ### How to Request  
 
-Teams wishing to have realms created should follow the steps outlined on the [SSO Realm Request](RequestSSORealm.md) webpage. If for you need further information, connect with the Enterprise DevOps Team through the following link for the BCDevExchange: https://bcdevexchange.org/
+Teams wishing to have realms created should follow the steps outlined on the [SSO Realm Request](RequestSSORealm.md) webpage. If for you need further information, connect with the Enterprise DevOps Team through the following email address: (mailto:BCDevExchange@gov.bc.ca)
 
 ### Availability
 
@@ -72,7 +72,7 @@ Realm provisioning requests will be reviewed and handled during normal business 
 
 ### Getting Help
 
-SSO support is currently available through the previously mentioned [RocketChat](https://urldefense.com/v3/__https://chat.developer.gov.bc.ca__;!!AaIhyw!8bUQ-ueqvwzSt81KSGr1CpWd8zBn0y92QL20XIp0Y88YgiBHYT_0O7nu4V5puhvJwQ$).
+SSO support is currently available through the previously mentioned [RocketChat](https://chat.developer.gov.bc.ca/home).
 
 ## What Does it Cost?
 
@@ -84,58 +84,46 @@ The team supporting this service, administer the SSO application, its supporting
 
 SSO only interfaces with other BC Government services to provide authentication via IDIR, BCeID or BC Services Card. These services are separately managed by dedicated identity provider (IDP) teams. For these services contact support via the standard BC Government 7-7000 support channel.
 
-[RocketChat](https://urldefense.com/v3/__https://chat.developer.gov.bc.ca__;!!AaIhyw!8bUQ-ueqvwzSt81KSGr1CpWd8zBn0y92QL20XIp0Y88YgiBHYT_0O7nu4V5puhvJwQ$) (#sso channel) is the primary mode of communication as related to the SSO solution. Use this channel to engage the community for best practices, configuration and troubleshooting questions.
+[RocketChat](https://chat.developer.gov.bc.ca/home) (#sso channel) is the primary mode of communication as related to the SSO solution. Use this channel to engage the community for best practices, configuration and troubleshooting questions.
 
 For cluster wide service notifications that may impact SSO monitor the **#devops-alerts** channels in [RocketChat](https://chat.developer.gov.bc.ca/channel/devops-alerts).
 
-For teams without RocketChat access, escalation, or to speak to a contact please use the following link: BCDevExchange: BCDevExchange@gov.bc.ca
+For teams without RocketChat access, escalation, or to speak to a contact, send us an email to the following address: (mailto:BCDevExchange@gov.bc.ca).
 
 ## Service Delivery
 
-### request workflow
+### SSO Access Workflow
 
-- Start a request here: https://github.com/BCDevOps/devops-requests
-- Have an onboarding meeting with the SSO Ops team to go through KeyCloak service and common practices
-- The requester will be given access to [Realm-O-Matic](https://realm-o-matic.pathfinder.gov.bc.ca) and fill in a form with project team details, which will be used to auto generate the KeyCloak resources, i.e.: `realm`, `Admin groups` and etc.
-- Once the `realms` are created with the assigned admin user, it's up to the team to further manage them.
+1. Initiate a Request [here](RequestSSORealm.md).
+2. Onboarding meeting with the SSO Operations representative to review the SSO service and common practices.
+3. Upon approval, the requester will be given access to [Realm-O-Matic](https://realm-o-matic.developer.gov.bc.ca) which will be used to enter requested. 
+4. Once the realms are created with the assigned admin user, it's up to the team to further manage them.
 
-### change management
+### Change Management
 
-Any service change will be communicated via #sso RocketChat channel. For major service update, the SSO ops team will reach out to product owner for notice.
+Any service change will be communicated via the #sso [RocketChat](https://chat.developer.gov.bc.ca/channel/sso) channel. For major service updates, the SSO operations team will reach out to primary contacts for all implemented SSO organizations.
 
-### service improvements
+### Service Improvements
 
-SSO service improvements including system upgrade, feature integration, issue fixing and etc. The SSO Ops team will be conducting the operation on a scheduled time, with advanced notice in the #sso RocketChat channel. If disruption/downtime is expected during service improvement, the team will discuss on maintenance time in the channel to minimize effects.
+SSO service improvements can include system upgrades, feature integrations, issue resolution and more. The SSO Operations team would carry out the operation at a scheduled time with advanced notice communicated through the #sso [RocketChat](https://chat.developer.gov.bc.ca/channel/sso) channel. If disruptions or downtimes are expected during service improvement implementation, a change window with minimal impacts will be selected.
 
-### service level
+### Service Level
 
-TBD
+This service is available 24/7 with best efforts support, during business hours only, to restart failed systems and address open issues. 
 
-### security reviews
+### Security Reviews
 
 ***Corporate PIA***
-The corporate Privacy Impact Assessment is now completed and signed off. This means basic deployments can refer to the corporate PIA avoiding re-work. Teams must still detail in their program PIA how they are using identity providers in their application context.
+The Corporate Privacy Impact Assessment (PIA) is completed and signed off. This means basic deployments can refer to the corporate PIA avoiding re-work. Teams must still detail in their program PIA how they are using identity providers in their application context.
 
+### Additional Information
 
-```
+If you intend to use BCeID or BC Services Card, you must contact the Identity Information Management (IDIM) team prior to a production launch. This is required so that your project can get added to the BCeID/BC Services Card catalogue and to understand available identity provider authentication options.
 
-## Postface
-
-If you intend to use BCeID or BC Services Card, you must contact the IDIM team prior to a production launch. This is required so that your project can get added to the BCeID/BC Services Card catalogue and to understand what this identity provider authentication options are available and what ones are deprecated.
-
----
-
-# License
-
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
-
-```
 Copyright 2019 Province of British Columbia
 
 This work is licensed under the Creative Commons Attribution 4.0 International License.
 To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.
-```
 
-# Template
 
-This document is based heavily on [Service Definition Questions and Checklist](https://its.ucsc.edu/itsm/checklist.html) from UC Santa Cruz.
+
