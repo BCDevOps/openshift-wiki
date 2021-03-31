@@ -56,13 +56,13 @@ There is an online chat community around the SSO service that can be found on th
 
 ### Eligibility & Prerequisites
 
-This Single Sign-On (SSO) service is offered to BC Government teams who are building cloud native web or mobile applications. Teams wishing to use this service should initially connect with the Enterprise DevOps Team (mailto:BCDevExchange@gov.bc.ca) to discuss their needs and ensure alignment prior to making an SSO implementation request.
+This Single Sign-On (SSO) service is offered to BC Government teams who are building cloud native web or mobile applications. Teams wishing to use this service should initially connect with the [Enterprise DevOps Team](mailto:BCDevExchange@gov.bc.ca) to discuss their needs and ensure alignment prior to making an SSO implementation request.
 
 Note: This SSO service is undergoing upgrades in 2021 and is currently not recommended for critical applications. Support is currently available only during business hours and only on a best efforts basis. If your application is critical, please contact Web Access Management (WAM) and/or Provincial Identity Information Management Program (IDIM).
 
 ### How to Request  
 
-Teams wishing to have realms created should follow the steps outlined on the [SSO Realm Request](RequestSSORealm.md) webpage. If for you need further information, connect with the Enterprise DevOps Team through the following email address: (mailto:BCDevExchange@gov.bc.ca)
+Teams wishing to have realms created should follow the steps outlined on the [SSO Realm Request](RequestSSORealm.md) webpage. If for you need further information, connect with the [Enterprise DevOps Team](mailto:BCDevExchange@gov.bc.ca).
 
 ### Availability
 
@@ -88,7 +88,7 @@ SSO only interfaces with other BC Government services to provide authentication 
 
 For cluster wide service notifications that may impact SSO monitor the **#devops-alerts** channels in [RocketChat](https://chat.developer.gov.bc.ca/channel/devops-alerts).
 
-For teams without RocketChat access, escalation, or to speak to a contact, send us an email to the following address: (mailto:BCDevExchange@gov.bc.ca).
+For teams without RocketChat access, escalation, or to speak to a contact, send us an email to the following address: [BCDevExchange](mailto:BCDevExchange@gov.bc.ca).
 
 ## Service Delivery
 
