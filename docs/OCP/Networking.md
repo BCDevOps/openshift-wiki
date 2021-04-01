@@ -3,10 +3,17 @@ description: BC Gov OpenShift networking overview
 title: BC Gov OpenShift networking overview
 tags:
   - network
-  - networking
+  - SDN
+  - ingress
+  - egress
   - openshift network
 ---
-# OpenShift Networking - Pathfinder Project Config
+
+## Openshift Silver 4.x Networking
+
+The Openshift 4 networking config is protected. You may view it on [documize](https://docs.developer.gov.bc.ca/s/bn6v0ac6f9gue7hhirbg/protected-platform-services/d/bsg9q3nu3u14r4kded80/ocp-4-platform-network-topology) with the appropriate level of access. 
+
+## OpenShift Pathfinder 3.11 Networking
 
 Pathfinder OpenShift specific implementation notes:
 * SDN uses the ovs-multitenant SDN plug-in for configuring the pod network.
