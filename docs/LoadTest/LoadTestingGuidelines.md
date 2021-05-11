@@ -35,7 +35,16 @@ The third is for both the benefit of your team and the benefit of the Platform a
 
 In practice, we have a few steps that we'll need you to follow before you perform a load test!
 
-First, you'll need to create a **load test plan** which outlines the duration of the test, ramp up time, speed, and any other relevant information you feel the platform team should have going in. Make sure it follows the requirements above!
+First, you'll need to create a **load test plan** which outlines the following: 
+- Duration of the test and desired weekday to run it
+- Which app namespaces will be targeted e.g. prod only or both test and prod 
+- Ramp up time and speed
+- What constitutes a success/failure of the test? e.g. response time shall be under 2 seconds at all times, less than 10% errors in the response, etc
+- Where will the generated traffic be coming from? e.g. outside of the BC Gov network or internally
+- Does the app rely on anything off cluster? e.g. a backend DB in ZoneB or an external API that is called out to, etc.
+- Include any other relevant information you feel the Platform Services Team should have going in. 
+ 
+Providing a comprehensive test plan that includes all abovementioned  information  increases your chances of getting it approved quickly. 
 
 Second, you'll need to speak to the Platform Services Team about scheduling your test (for after 5:30pm on a weekday, remember!) - we'll need to take a look at your load test plan, make sure we have all the information we need for the test, and make sure that we have someone available during your chosen testing window. We'll work with you if we need to request any alterations to either the time/date or the plan! Contact [@olena.mitovska](https://chat.developer.gov.bc.ca/direct/olena.mitovska) in RocketChat.
 
