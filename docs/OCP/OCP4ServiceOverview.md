@@ -1,32 +1,45 @@
-#Service Overview: Private Cloud Platform as a Service (aka DevOps Openshift 4 Platform)
+---
+title: BC Government Private Cloud as a Service/Openshift 4 Platform Service Overview
+description: This resource is a Service Overview for the BC Government's Private Cloud as a Service also knows as DevOps Openshift 4 Platform  and concisely describes in a plain language the key elements of the service for current and prospective users of the service.
+tags:
+  - openshift
+  - service overview
+  - service definition
+  - platform
+  - devops
+  - private cloud
+---
+
+
+# Service Overview: Private Cloud Platform as a Service (aka DevOps Openshift 4 Platform)
 
   
-##Our service definition 
+## Our service definition 
 
-We help ministries get secure[^1] digital services to citizens with ease and speed[^2] on our cloud-native application hosting platform.   
+We help ministries get secure <sup>[^1](#myfootnote1)</sup> digital services to citizens with ease and speed <sup>[^2](#myfootnote2)</sup> on our cloud-native application hosting platform.   
 
 
-##Our products 
+## Our products 
 
-###OpenShift Container Platform 
+### OpenShift Container Platform 
 
 **Silver Tier** offers application and data hosting for cloud-native apps in Kamloops Data Center and is suitable for most government services (up to and including Protected B data classification) 
 
 Shared automation, security, monitoring and communications tools built into the Platform 
 
-###Support 
+### Support 
 
-####Private Cloud Platform as a Services Support 
+#### Private Cloud Platform as a Services Support 
 
 Private Cloud Platform Services Team provides ongoing training, virtual events and developer documentation for the OpenShift Platform, and Next Gen Security tools installed on the Platform.  
 
 Private Cloud Platform Operations Team powered by DXC Advanced Solutions staff provides technical support for the Platform including software and hardware maintenance. 
 
-####Community DevOps Support 
+#### Community DevOps Support 
 
 We’re stewards of a community of users who frequently collaborate with us and each other to solve common problems. While we don’t provide application development support, the strong community of Platform users helps each other solve app-level questions. 
 
-####Coming Soon! 
+#### Coming Soon! 
 
 We’re continuously improving our service offering to keep up with the needs of our digital teams: 
 
@@ -40,7 +53,7 @@ Comes with longer testing windows for Platform software and hardware updates
 
 Offers a secure connectivity between containers running in OpenShift, virtual machines, and physical servers 
 
-##Our value 
+## Our value 
 
 We could tell you what we think our value is, but you’re probably more interested in what the product owners and developers who use our platform say. Here’s how they describe the key benefits of our service: 
 
@@ -65,7 +78,7 @@ We could tell you what we think our value is, but you’re probably more interes
 10.  Iterative and continuously improving 
 
 
-##Our users and user relationships 
+## Our users and user relationships 
 
 Our service is available to any digital service team in BC government. The teams most likely to be successful are product teams with DevOps capabilities. Developers, DevOps specialists, and tech leads are the primary users of our service. 
 
@@ -85,7 +98,7 @@ To foster a community of openness and collaboration, we engage in a variety of c
 
 *  1 on 1 communications (personalized support for the teams that need it) 
 
-##Our stakeholders 
+## Our stakeholders 
 
 While our closest partners are the developer community and members of our team of teams, we also work closely with the DevExchange Lab and Enterprise Hosting Services to deliver our services. 
 
@@ -93,7 +106,7 @@ We have a number of stakeholders who have input and interest in our service, inc
 
 External contractors also help us with our mission, notably DXC Advanced Solutions (through the agreement with the Hosting Services Branch), Arctiq, RedHat and our tool/feature vendors. 
 
-##How we run and maintain our service 
+## How we run and maintain our service 
 
 Our work can be divided into three main categories: 
 
@@ -105,7 +118,7 @@ Our work can be divided into three main categories:
 
 Skilled people, modern technology and our vendor partners help us do this work, and we also rely on significant executive buy-in in the form of support, advocacy, trust and willingness to allow us to take managed risks. 
 
-##Funding our service 
+## Funding our service 
 
 The Private Cloud Platform as a Service is currently funded through core OCIO funding, with technology improvements funded through capital. Based on requests from ministries, the funding model for all OCIO shared services is currently being reviewed to make sure that it aligns with client needs and sustainable service delivery. As part of this review, we’ve explored funding questions with our team and our users. 
 
@@ -123,9 +136,9 @@ OCIO as a whole and the Platform Services Team will continue working with our us
 
   
 
-[^1] The OpenShift 4 Platform and all its services have STRA completed and signed-off by the government’s Chief Security Office 
+<sub><sup><a name="myfootnote1">1</a>: The OpenShift 4 Platform and all its services have STRA completed and signed-off by the government’s Chief Security Office </sup></sub>
 
-[^2] Most Platform projects average 7 days or less of development effort to launch the first iteration of the new service (according to the survey in summer 2020) 
+<sub><sup><a name="myfootnote2">2</a>: Most Platform projects average 7 days or less of development effort to launch the first iteration of the new service (according to the survey in summer 2020) </sup></sub>
 
  
  
