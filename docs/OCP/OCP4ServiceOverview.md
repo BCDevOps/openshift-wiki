@@ -90,11 +90,11 @@ To foster a community of openness and collaboration, we engage in a variety of c
 
 *  Documentation and knowledge sharing platforms (DevHub at https://developer.gov.bc.ca, GitHub at http://www.github.com) 
 
-*  Online collaboration tools (MS Teams, Rocket.Chat) 
+*  Online collaboration tools (MS Teams, [Rocket.Chat](http://chat.developer.gov.bc.ca/)) 
 
 *  Virtual events (e.g., Platform Community Meetups meetings, Live Help Sessions and developer workshops) 
 
-*  Email mailing lists (sign up to the Platform Services Comms Subscription Service at https://subscribe.developer.gov.bc.ca) 
+*  Email mailing lists (sign up with the [Platform Services Comms Subscription Service](https://subscribe.developer.gov.bc.ca))
 
 *  1 on 1 communications (personalized support for the teams that need it) 
 
@@ -110,7 +110,7 @@ External contractors also help us with our mission, notably DXC Advanced Solutio
 
 Our work can be divided into three main categories: 
 
-*  Platform administration: Approving and setting up namespaces for users, running the Platform Registry, development and maintenance of the OpenShift 4 Platform itself, building and maintaining Platform’s Next Gen Security tools (Vault, Aqua, Artifactory, Sysdig, EnterpriseDB, repo-mountie, etc.) 
+*  Platform administration: Approving and setting up namespaces for users, running the Platform Registry, development and maintenance of the OpenShift 4 Platform itself, building and maintaining Platform’s Next Gen Security tools ([Vault Secret Management Service](https://developer.gov.bc.ca/BC-Government-Vault-Secrets-Management), Aqua Container Scanning Service, [Artifactory](https://developer.gov.bc.ca/BC-Government-Artifact-Repository-Service-Definition), [Sysdig App Monitoring Service](https://developer.gov.bc.ca/BC-Government-Sysdig-Monitoring-Service-Definition), [EnterpriseDB HA Service for PostgreSQL databases](https://developer.gov.bc.ca/BC-Government-EDB-Operator-Service-Definition)) 
 
 *  Platform leadership: Customer relationship management, stakeholder engagement, cost management 
 
