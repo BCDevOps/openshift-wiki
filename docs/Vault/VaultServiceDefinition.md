@@ -1,3 +1,9 @@
+---
+description: Summary of the Vault service
+tags:
+- security
+- stra
+---
 # BC Government Vault Secrets Management  
 
 ## Service Definition
