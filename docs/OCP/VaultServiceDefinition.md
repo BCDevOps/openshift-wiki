@@ -1,6 +1,6 @@
 # BC Government Vault Secrets Management  
 
-## Service Description
+## Service Definition
 
 ### Summary
 
