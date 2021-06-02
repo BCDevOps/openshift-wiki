@@ -21,11 +21,11 @@ We help ministries get secure <sup>[^1](#myfootnote1)</sup> digital services to 
 
 ## Our products 
 
-### OpenShift Container Platform 
+### OpenShift Container Platform Hosting
 
-**Silver Tier** offers application and data hosting for cloud-native apps in Kamloops Data Center and is suitable for most government services (up to and including Protected B data classification) 
+* **Silver Tier** offers application and data hosting for cloud-native apps in Kamloops Data Center and is suitable for most government services (up to and including Protected B data classification) 
 
-Shared automation, security, monitoring and communications tools built into the Platform 
+* Shared automation, security, monitoring and communications tools built into the Platform 
 
 ### Support 
 
