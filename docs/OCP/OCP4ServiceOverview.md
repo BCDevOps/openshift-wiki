@@ -14,12 +14,12 @@ tags:
 # Service Overview: Private Cloud Platform as a Service (aka DevOps Openshift 4 Platform)
 
   
-## Our service definition 
+## Our Service Overview 
 
 We help ministries get secure <sup>[^1](#myfootnote1)</sup> digital services to citizens with ease and speed <sup>[^2](#myfootnote2)</sup> on our cloud-native application hosting platform.   
 
 
-## Our products 
+## Our Products 
 
 ### OpenShift Container Platform Hosting
 
@@ -53,7 +53,7 @@ Comes with longer testing windows for Platform software and hardware updates
 
 Offers a secure connectivity between containers running in OpenShift, virtual machines, and physical servers 
 
-## Our value 
+## Our Value 
 
 We could tell you what we think our value is, but you’re probably more interested in what the product owners and developers who use our platform say. Here’s how they describe the key benefits of our service: 
 
@@ -78,7 +78,7 @@ We could tell you what we think our value is, but you’re probably more interes
 10.  Iterative and continuously improving 
 
 
-## Our users and user relationships 
+## Our Platform Community 
 
 Our service is available to any digital service team in BC government. The teams most likely to be successful are product teams with DevOps capabilities. Developers, DevOps specialists, and tech leads are the primary users of our service. 
 
@@ -98,7 +98,7 @@ To foster a community of openness and collaboration, we engage in a variety of c
 
 *  1 on 1 communications (personalized support for the teams that need it) 
 
-## Our stakeholders 
+## Our Stakeholders 
 
 While our closest partners are the developer community and members of our team of teams, we also work closely with the DevExchange Lab and Enterprise Hosting Services to deliver our services. 
 
@@ -118,7 +118,7 @@ Our work can be divided into three main categories:
 
 Skilled people, modern technology and our vendor partners help us do this work, and we also rely on significant executive buy-in in the form of support, advocacy, trust and willingness to allow us to take managed risks. 
 
-## Funding our service 
+## Funding Our Service 
 
 The Private Cloud Platform as a Service is currently funded through core OCIO funding, with technology improvements funded through capital. Based on requests from ministries, the funding model for all OCIO shared services is currently being reviewed to make sure that it aligns with client needs and sustainable service delivery. As part of this review, we’ve explored funding questions with our team and our users. 
 
