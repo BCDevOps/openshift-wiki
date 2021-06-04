@@ -117,6 +117,10 @@ Users of our service have also told us that any funding model should be transpar
 
 OCIO as a whole and the Platform Services Team will continue working with our users to develop funding model options. Our goal is to start consultations with the Platform Community about funding model changes, if any, in late summer 2021, with an implementation target of the fiscal year 2022/2023. 
 
+##Links:
+
+* [The Private Cloud's Business Model Canvas](https://app.mural.co/t/platformservices5977/m/platformservices5977/1619472379005/5093102fa1dc792dc97de91e305c92bab1114d43?sender=u75519d3f4c4e0d53cae99474)
+
 <sub><sup><a name="myfootnote1">1</a>: Most Platform projects average 7 days or less of development effort to launch the first iteration of the new service (according to the survey in summer 2020) </sup></sub>
 
 <sub><sup><a name="myfootnote2">2</a>: The OpenShift 4 Platform and all its services have STRA completed and signed-off by the government’s Chief Security Office </sup></sub>
