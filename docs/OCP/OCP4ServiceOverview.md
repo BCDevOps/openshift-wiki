@@ -1,5 +1,5 @@
 ---
-title: BC Government Private Cloud as a Service/Openshift 4 Platform Service Overview
+title: Service Overview for BC Government Private Cloud as a Service/Openshift 4 Platform
 description: This resource is a Service Overview for the BC Government's Private Cloud as a Service also knows as DevOps Openshift 4 Platform  and concisely describes in a plain language the key elements of the service for current and prospective users of the service.
 tags:
   - openshift
