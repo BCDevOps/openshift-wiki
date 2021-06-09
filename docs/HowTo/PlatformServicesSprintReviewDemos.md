@@ -35,6 +35,9 @@ The pattern addresses a security requirement of not storing (even temporarily) a
 [Demo #6: Using BC Service Card Self Service Onboarding Application](https://www.youtube.com/watch?v=H2tKvOQ8x4k)
 Provincial Identity Information Management Program team demonstrated the use of the BC Service Card Self Service Onboarding Application and the repo that product teams wishing to integrate their application using the BC Services Card as an OIDC authentication mechanism can use to generate sample integration code.
 
+[Demo #7: Stayin' Alive: PodDisruptionBudgets for Maintenance and Upgrades](https://www.youtube.com/watch?v=0AGZ5no6-yo)
+PodDisruptionBudgets concept in Openshift 4 can be a power tool to aid in building resilient apps but if not used correctly it can disrupt Openshift upgrades. Our own Technical Account Manager (TAM), Matt Robson with RedHat, shares some of the best practices for how to leverage PodDisruptionBudgets effectively and without negatively impacting the Openshift upgrade process.
+
 We keep adding demos to the collection as they get released to YouTube so keep checking for the new additions time to time.
 
 Love, Your Platform Services Team, xo
