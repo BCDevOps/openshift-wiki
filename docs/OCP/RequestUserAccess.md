@@ -21,33 +21,9 @@ Additionally, the project to which the user will be added:
 
 ## Access Request
 
-If the pre-requisites are complete, the product owner or a project admin associated with the project provisioning should make a request at [DevOps Request Repo](https://github.com/BCDevOps/devops-requests).
-***New users may not request access for themselves.***
+If the pre-requisites are complete, the product owner or a project admin associated with the project provisioning should make a request via the [Platform Services Github Access Managment Tool](https://just-ask-web-bdec76-prod.apps.silver.devops.gov.bc.ca/)
 
-**Note** that the platform services team will be removing OpenShift project access for users that are not active for six months. Once the access has been removed, a new `Access Request` has to be made by the product owner.
-
-
-The request should include:
-
-1. New user's full name
-1. New user's GitHub ID
-1. New user's email address
-1. New user's organization (gov ministry plus division,branch,etc.) or company
-1. New user's role on the project (e.g. Developer, QA, DevOps specialist, Scrum Master)
-1. OpenShift project name(s) that the user will be granted access to. (project level access must still be granted by the project admin)
-1. Expiry (optional) - it is the team's responsibility to remove users from projects when they no longer reque 
-
-A sample "good" request is provided below and should be used as a template for submitting requests:
-
-```markdown
-OpenShift User Access Request:
-- Full name: Govvie McGovster
-- GitHub ID: govviemcgovster
-- Email address: Govvie.Mcgovster@gov.bc.ca
-- Organization: OCIO, Service BC
-- Project role: Full-stack Developer
-- OpenShift projects: xyz123-tools, xyz123-test, xyz123-test, xyz123-prod  
-```
+For more information you can view a demo video on [YouTube](https://www.youtube.com/watch?v=IvdPyx2-qm0)
 
 ## Access Removal Request
 
