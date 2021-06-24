@@ -13,16 +13,16 @@ tags:
 
 ### Summary
 
-The Aqua Cloud service is a security tool that helps secure images by scanning them for vulnerabalities. It also is able to audit and enforce security policies.
+The Aqua Cloud service is a security tool that helps secure images and containers by scanning them for vulnerabilities. It also is able to audit and enforce security policies. Read more about Aqua [here](https://www.aquasec.com/aqua-cloud-native-security-platform/).
 
 ### Features & Functions
 
-At this stage the Aqua service is only utilizaeble by having a meeting with Nick to perform image scans. In addition, image enforcement is __not enabled__ at this time. 
+The first iteration of Aqua Vulnerability Scanning Service in Openshift 4 Platform includes [container scanning](https://www.aquasec.com/products/container-security/) only. At this moment the access to scanning UI is limited to the Platform Services Team only (contact our Security Architect Nick Corcoran at Nick.Corcoran@gov.bc.ca to scan your namespaces). Aqua Service on the Platform is currently running in the `audit` mode producing vulnerability scan results for manual remediation by the product team,  the `enforcement` mode is __not enabled__ at this time. 
 
-User access will initially be allowed through the Aqua CLI and pipeline (ci/cd) integration with the hope of UI accesss arriving at later date.
+We are working on opening developer access to the Aqua CLI that will allow the product teams integrate Aqua scanning in app's CI/CD pipeline (coming in summer 2021). Developer Access to the Aqua UI will be rolled out in fall 2021.
 
 The Aqua architecture comprises of several components:
-1) Aqua Enforcers installed on each node
+1) Aqua Enforcers installed on each node of the Silver Openshift 4 cluster
 2) A front end service that allows interacting with the Aqua API as well as the console
 3) Scanners to offload image scanning from the front end service
 
@@ -32,7 +32,8 @@ This service is offered to BC Government development teams building cloud native
 
 ### Availability
 
-This service is available 24/7 with best effort to restart failed systems. 
+This service is available 24/7 with best effort to restart failed systems. We address incidents, issues and requests between 5pm and 9am on Monday to Friday excluding statutory holidays. 
+
 The service is not highly available yet.
 
 More detailed SLAs are being developed and will be added in the near future.
@@ -41,7 +42,8 @@ More detailed SLAs are being developed and will be added in the near future.
 
 ### Getting Help
 
-The best source of help is the vibrant community of development teams using Sysdig for their projects. 
+The best source of help is the vibrant community of development teams using AQUA for their projects.  Contact @NickCorcoran to run a vulnerability scan for your namespaces and also to learn how to address found vulnerabilities.
+
 You can find this highly talented and knowledgeable group in the `#devops-aqua` channel on [RocketChat](https://chat.developer.gov.bc.ca/channel/devops-aqua).
 
 For urgent help beyond this contact one of the Aqua administrators via the `#devops-sos` channel on [RocketChat](https://chat.developer.gov.bc.ca/channel/devops-sos).
@@ -67,14 +69,15 @@ Any service change will be communicated via the #devops-aqua and #devops-alerts 
 
 The Aqua Service is in a period of rapid development. Some of our roadmap items include:
 
-- user access to the UI
-- user access to the aqua cli
+- developer access to the Aqua UI for better UX with accessing scan results 
+- developer access to the AQUA CLI to enable CI/CD pipeline integration
 - deploy Aqua in active-active (HA) mode
 - create training materials to be delivered in future OCP 20x workshops
+
 ## Service Level
 
 TBD
 
 ## Security Reviews
 
-Aqua Service is covered by the existing Openshift PIA and has a STRA complete (contact Nick Corcoran if you need a copy)..
+Aqua Service is covered by the existing Openshift PIA and has a STRA complete (contact Nick Corcoran if you need a copy).
