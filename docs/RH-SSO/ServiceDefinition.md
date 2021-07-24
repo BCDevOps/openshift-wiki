@@ -87,7 +87,7 @@ Any service change will be communicated via the #sso [RocketChat](https://chat.d
 
 ### Service Improvements
 
-SSO service improvements can include system upgrades, feature integrations, issue resolution and more. The SSO Operations team carry out change operations at a scheduled time with advanced notice communicated through the #sso [RocketChat](https://chat.developer.gov.bc.ca/channel/sso) channel. If disruptions or downtimes are expected during service improvement implementation, one of the following standard change windows will be selected. Monday or Wednesday - 7:00 PM PST to 9:00 PM PST
+SSO service improvements can include system upgrades, feature integrations, issue resolution and more. The SSO Operations team carry out change operations at a scheduled time with advanced notice communicated through the #sso [RocketChat](https://chat.developer.gov.bc.ca/channel/sso) channel. If disruptions or downtimes are expected during service improvement implementation, one of the following standard change windows will be selected. Tuesday or Thursday - 7:00 PM PST to 9:00 PM PST
 
 Further, if the change is more significant a Technical Information Bulletins (TIBs) will be posted in the BC Gov My Service Center located at [Service Now](https://ociomysc.service-now.com/sp?id=ocio_tibs&kb_id=e925c3d71b499490776c8734ec4bcbb9&kb_category=e9850dfb1b0d1490a43c3333cc4bcbb3). 
 
