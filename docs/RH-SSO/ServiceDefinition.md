@@ -1,7 +1,7 @@
 ---
-description: The Single Sign-On (SSO) Service Definition outlines roles and responsibilities for operating the service.
+description: Pathfinder SSO Service Definition outlines roles and responsibilities for operating the service.
 resourceType: Documentation
-title: BC Government SSO Service Definition
+title: Pathfinder SSO Service Definition
 tags:
   - keycloak
   - client
@@ -10,17 +10,17 @@ tags:
   - bceid
 ---
 
-# BC Government SSO Service Definition
+# Pathfinder SSO Service Definition
 
 ## Service Description
 
 ### Summary
 
-The BC Government **Single Sign-On (SSO)** service, based on the Open Source Keycloak (aka Red Hat SSO) product, provides an industry standard (OIDC) and enterprise-policy compliant means of implementing authentication within applications that are also simple for development teams to provision and utilize.
+The BC Government **Pathfinder SSO** service, based on the Open Source Keycloak (aka Red Hat SSO) product, provides an industry standard (OIDC) and enterprise-policy compliant means of implementing authentication within applications that are also simple for development teams to provision and utilize.
 
 Development teams are provisioned a set of clients within a multi-tenant instance of Keycloak running in the [OpenShift Container Platform (OCP)](../OCP/ServiceDefinition.md) platform that provide a simple authentication mechanism suitable for web and mobile applications. 
 
-Each client exists in one of the "standard" realms based on the needs of the team. Each "standard" realm is configured with a set of centrally-managed identity providers (such as BCeID, IDIR, and GitHub).
+Each client exists in one of the "standard" realms based on the needs of the team. Each "standard" realm is configured with a set of centrally-managed identity providers (such as BCeID and IDIR).
 
 ### Features & Functions
 
@@ -31,8 +31,8 @@ Users of this service gain access to the following:
 Development teams are provided with a set of clients (an isolated configuration within Keycloak), corresponding to their deployment environments (dev, test, and prod). Clients come configured out-of-the-box with an appropriate combination of the following identity providers:
 
 * BC Government **IDIR**
-* GitHub
 * [BCeID](https://www.bceid.ca) Business and/or Basic (Personal BCeID is no longer supported)
+* GitHub (in the DEV and TEST environments for rapid prototype testing)
 
 Note: BCeID requires additional steps for SSO implementation. Details will be provided during onboarding.
 Note: BC Services Card integration is not available through OCP-SSO through the "standard" realms. See [BC Services Card Integration](https://github.com/bcgov/ocp-sso/wiki/BC-Service-Card-Integration) for explanation and tips.
@@ -43,13 +43,13 @@ There is an online chat community around the SSO service that can be found on th
 
 ### Eligibility & Prerequisites
 
-This Single Sign-On (SSO) service is offered to BC Government teams who are building cloud native web or mobile applications. Teams wishing to use this service should initially connect with the [SSO Product Owner](mailto:Vardhman.Shankar@gov.bc.ca) to discuss their needs and ensure alignment prior to making an SSO implementation request.
+The Pathfinder SSO service is offered to BC Government teams who are building cloud native web or mobile applications. Teams wishing to use this service should initially connect with the [SSO Product Owner](mailto:BCGov.SSO@gov.bc.ca) to discuss their needs and ensure alignment prior to making an SSO implementation request.
 
-Note: This SSO service is undergoing upgrades in 2021 and is currently not recommended for critical applications. Support is currently available only during business hours and only on a best efforts basis. If your application is critical, please contact Web Access Management (WAM) and/or Provincial Identity Information Management Program (IDIM).
+Note: The Pathfinder SSO service is undergoing upgrades in 2021 and is currently not recommended for critical applications. Support is currently available only during business hours and only on a best efforts basis. If your application is critical, please contact Web Access Management (WAM) and/or Provincial Identity Information Management Program (IDIM).
 
 ### How to Request  
 
-Teams wishing to have realms created should follow the steps outlined on the [SSO Client Request](RequestSSOClient.md) wiki page. If for you need further information, connect with the [SSO Product Owner](mailto:Vardhman.Shankar@gov.bc.ca).
+Teams wishing to have realms created should follow the steps outlined on the [SSO Client Request](RequestSSOClient.md) wiki page. If for you need further information, connect with the [SSO Product Owner](mailto:BCGov.SSO@gov.bc.ca).
 
 ### Availability
 
@@ -73,7 +73,7 @@ SSO only interfaces with other BC Government services to provide authentication 
 
 For cluster-wide service notifications that may impact SSO monitor the **#devops-alerts** channels in [RocketChat](https://chat.developer.gov.bc.ca/channel/devops-alerts).
 
-For teams without RocketChat access please send us an email to the [SSO Product Owner](mailto:Vardhman.Shankar@gov.bc.ca).
+For teams without RocketChat access please send us an email to the [SSO Product Owner](mailto:BCGov.SSO@gov.bc.ca).
 
 ## Service Delivery
 
