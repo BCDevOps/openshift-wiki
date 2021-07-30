@@ -1,8 +1,13 @@
 ---
-title: BC Government OpenShift Container Platform Service Definition
-description: This resource is a Service Definition of the BC Government OpenShift Container Platform Service and concisely describes the key elements of the service for current and prospective users of the service.
-author: sheaphillips
-image: https://cdn2.hubspot.net/hubfs/4305976/images/openshift-legacy/logos/openshift/Logotype_RH_OpenShift_wLogo_RGB_Gray.png
+title: BC Gov PaaS OpenShift Platform Service Definition
+description: This resource is a Service Definition of the BC Government Private Cloud as a Service/OpenShift Container Platform Service and concisely describes the key elements of the service for current and prospective users of the service.
+tags:
+  - openshift
+  - service overview
+  - service definition
+  - platform
+  - devops
+  - private cloud
 ---
 
 
@@ -12,86 +17,112 @@ image: https://cdn2.hubspot.net/hubfs/4305976/images/openshift-legacy/logos/open
 
 ### Summary
 
-The BC Gov OpenShift Container Platform Service is a multi-tenant container platform that government application development teams may use to develop and deploy modern, cloud native software applications. The service provides development teams with a set of isolated project spaces (namespaces) with associated resource quotas in which they can develop and deploy their applications and tools supporting their development lifecycle - from day-to-day development through to production.  
+The BC Gov's Private Cloud Platform as a Service (PaaS) is a reliable and security-compliant<sup>[^1](#myfootnote1)</sup>  application hosting platform for running government services in the on-premises private cloud. It is available for use by ministries, agencies and crown corporations working with the Government of British Columbia. 
+The Private Cloud PaaS is powered by RedHat's OpenShift Container Platform (OCP) technology, and is hosted on in the government's Data Centers in Kamloops (main operations) and Calgary (disaster recovery only).
 
 ### Features & Functions
 
-The core of the service is an instance of Red Hat's OpenShift Container Platform (OCP) running in the government data centre in Kamloops.  Details of the configuration of the BC Gov OCP instance are as follows:
+BCGov’s Private Cloud PaaS offers tools to help product teams that are digital teams in the BC Government building online services for citizens, develop and run modern, cloud native software applications. We maintain and secure the infrastructure, so your team can focus on building and improving your applications!
+Product teams are offered a choice of two hosting tiers on the Private Cloud Platform - Silver and Gold. The Silver tier provides application hosting on the "Silver Kamloops" production cluster. The Gold tier provides application hosting across the pair of “Gold Kamloops” and “Gold Calgary” production clusters.
 
-* multi-tenant deployment, with RBAC and software defined network providing isolation between teams' environments
-* highly-available OCP deployment with ability to perform maintenance with no/minimal impact to applications running on it
-* 2 factor authentication and authorization provided via GitHub OAuth integration
-* standard set of project spaces provided to teams is `tools` (for development lifecycle support tools such as CI, automated testing, and code quality tools), `dev`, `test`, and `prod` - each corresponding to a deployment stage.
-* dynamically provisioned persistent storage backed by containerized Gluster (aka CNS and OCS) and/or dedicated NetApp storage
-* resource quotas associated with each project space; these quotas have been set at levels adequate to support the development activities and production deployment workloads for many typical government applications
-* a catalog of pre-defined technology stacks/tools to provide "application quick starts" or fully functional services to applications
+|   | Silver  | Gold  |
+|---|---|---|
+| Who should use it?| Recommended for the majority of government services supported by Product teams **with junior to intermediate DevOps skills** |  Recommended for business mission critical government services supported by a fully funded Product team with **advanced DevOps skills** |
+| How much does it cost? |  Free in 2021/2022 fiscal.  Cost recovery model may be implemented in 2022/2023 fiscal as part of the Enterprise Services cost review directed by Treasury Board, and will continue to consult with clients in that space on <em>whether</em> there will be cost recovery for Private Cloud, as well as  what it will look like if there is one. |  Free in 2021/2022 fiscal. Cost recovery model may be implemented in 2022/2023 fiscal as part of the Enterprise Services cost review directed by Treasury Board, and will continue to consult with clients in that space on <em>whether</em> there will be cost recovery for for Private Cloud, as well as what it will look like if there is one. |
+| Maintenance Schedule | Private Cloud PaaS upgrades and patches will be applied in this production cluster first after testing in LAB clusters	| All Private Cloud PaaS upgrades and patches are applied in Silver first; these will be delayed in Gold. |
+| High Availability | App horizontal scaling within Silver cluster, set up and managed by the Product team.	| App horizontal scaling within Gold Kamloops cluster AND a requirement to set up a geographic failover to Gold Calgary, both set up and managed by the Product team. |
+| Network Services | Standard OpenShift routing. **Custom TLS certificates are mandatory for Product Teams to bring with the application**.	| Standard OpenShift routing AND Global Site Load Balancing which is required for failover.  **Custom TLS certificates are mandatory for Product Teams to bring with the application.** |
+| Platform Service Availability Level |	**90% for single-node application deployments<sup>[^2](#myfootnote2)</sup> 99.5% for multi-node application deployments<sup>[^3](#myfootnote3)</sup>** | **99.95%<sup>[^4](#myfootnote4)</sup>  for multi-node application deployments with geographic failover<sup>[^5](#myfootnote5)</sup>** |
 
-### Eligibility & Prerequisites
+BC Gov's Private Cloud as a Platform Service includes:
 
-The service is offered to BC government development teams who are engaged in building modern, custom, open source software for internal or citizen-facing applications using modern technology architecture, stacks and development approaches such as cloud native/12 factor, DevOps and continuous delivery.
+* a set of four project namespaces with self-serve developer access:  <em>tools</em> (for development of lifecycle support tools such as CI/CD pipelines, automated testing, and code quality tools), <em>dev</em>, <em>test</em>, and <em>prod</em> - each corresponding to a deployment stage in the application life cycle,
+* "small" project resource quota by default (a bundle of CPU, RAM and storage resources) with ability to upgrade to "medium" and "large" as required. (See the project resource quota sizes [here](https://developer.gov.bc.ca/Project-Resource-Quotas-in-BC-Gov's-PaaS-(Openshift-4-Platform)) ),
+* access to the DevSecOps tools to help teams build "Secure by Design" applications:
+  * [Sysdig App Monitoring Service](https://developer.gov.bc.ca/BC-Government-Sysdig-Monitoring-Service-Definition) allows building robust dashboards for applications to monitor their health, availability and resource usage
+  * [Artifactory Repository Service](https://developer.gov.bc.ca/BC-Government-Artifact-Repository-Service-Definition) provides access to a trusted and secure repository for storing images, packages, libraries and other artifacts
+  * [Vault Secret Management Service](https://developer.gov.bc.ca/BC-Government-Vault-Secrets-Management) provides a secure way to store and manage credentials, API tokens and other sensitive app information
+  * [AQUA Container Scanning Service](https://developer.gov.bc.ca/BC-Government-Aqua-Cloud-Service-Definition) allows teams to scan their running containers to find security vulnerabilities
+  * [EnterpriseDB HA service for PostgreSQL](https://developer.gov.bc.ca/BC-Government-EDB-Operator-Service-Definition) – a vendor-supported product for running highly available PostgreSQL clusters (a product team must purchase their own license in order to use this service)
 
-In order to use the service, teams must:
+Other security features include:
+* The majority of Private Cloud PaaS maintenance has no/minimal impact on the applications configured as multi-node deployments running on it and is run daily as required in a containerized environment.
+* Multi-tenant hosting model in OpenShift and the build-in software defined network using Kubernetes Network Policies provides isolation between teams' environments so that they can't read or change each other's code, data or logs
+* Developers receive self-serve access to create and manage application's network security rules for their own apps.  The Platform Community has a vast collection of design patterns that follow best security practices, for building integrations between the OpenShift applications and external systems. In addition, new technology and design patterns are being developed in partnership with ministries to ease this work even more.
+  * Authenticated SSH access to application containers to debug problems i.e. rsh into a pod
+  * Platform and application namespace access through org-restricted GitHub IDs (2FA required)
+  * Single sign-on service for end-user authentication for apps through the BC Gov's Single Sign-On Service based on KeyCloak (https://oidc.gov.bc.ca)
+  * The Private Cloud PaaS is piping core Platform log files into the central Security Information and Event Management (SIEM) system in OCIO for additional forensics and security audits.  Application log shipping and developer access to SIEM are coming soon.
 
-* ensure their proposed application is architecturally suitable to run within a containerized environment
-* commit to building their applications "in the open" meaning the underlying code is stored within the public 'bcgov' GitHub organization's repositories
-* commit a named individual for the lifetime of the application who is responsible, and qualified to keep the application's code, libraries, and supporting tools (CI pipeline, etc.) functional, current and, secure.
-* able to operate in an environment of continuous improvement and change.  The former implies that teams will continue to enhance their applications after it is in production and the latter implies that the teams will set themselves up to be responsive to changes in the service, related technology/tools, or other factors such as security vulnerabilities.
+### Requesting Access and Onboarding
 
-### How to Request
+Access to the Private Cloud Services is managed through a central application, the [Openshift 4 Platform’s Product Registry](https://registry.developer.gov.bc.ca/public-landing).  This application that we manage as a part of the Platform Service uses automation for the creation of your hosting space.  A team can have an environment created following an approval in as little as 10 minutes.  If you are net new to this service, **you will need to have an onboarding session with us first**.  Please reach out to Olena Mitovska, Product Director of the Private Cloud PaaS to get that started.  If you have any questions around the Platform Project Registry, she can answer those too.   If you are looking to leverage the Private Cloud PaaS, we are looking forward to welcoming you. 
 
-For teams that do not have applications already on the platform and for teams with existing applications and wishing to add additional ones, the first step is to arrange a discussion with the DevOps Platform Services team.  This can be arranged by contacting [Olena Mitovska](mailto:Olena.Mitovska@gov.bc.ca), Product Owner for Platform Services, BCDevExchange, Office of the Chief Information Officer.  This will serve to confirm prerequisites are met and to determine overall suitability of the prospective application and team for the Service.  
+### Service Availability and Communication
 
-The request process is subject to change and can be found at the following URL:
-https://developer.gov.bc.ca/How-to-Request-a-New-OpenShift-Project
+Much like we know you pride yourselves on the services you provide in your application development as part of your Product Team, we pride ourselves on the Private Cloud PaaS we provide.  Real-time uptime information for the DevOps Security services and the OpenShift clusters that we support can be found on the PaaS Reliability Dashboard at https://status.developer.gov.bc.ca , to compliment the SLA objectives above. More information about the Reliability Dashboard and what powers it underneath the hood, can be found [here] (https://developer.gov.bc.ca/Openshift-4-Platform-Services-Reliability-Dashboard-with-Uptime-Robot)
 
-### Availability
+As a member of the Private Cloud, you must join the [BCDevExchange](https://bcdevexchange.org/ExchangeLab), the Province of British Columbia’s vibrant developer community, also known as the Platform Community.  We leverage that community as part of our support model which is described below. The Platform Community relies on [Rocket.Chat](https://chat.developer.gov.bc.ca/), an open-source communication platform, to connect and stay in touch with each other and us, the Platform Services Team. You can read about how to join the RocketChat [here](https://developer.gov.bc.ca/Steps-to-join-Rocket.Chat).
 
-The Service is designed to be highly available such that maintenance activities can be completed while remaining operational.  As such, there are no scheduled change windows.  Planned and standard maintenance such as upgrades are generally performed *during business hours* with advance notice given to teams using the platform.  
+We also provide additional communication channels for you to subscribe to for staying up to date on the Private Cloud PaaS offering and learn about major upcoming changes ahead of time.  Please sign up to the [Platform Updates Subscription service](https://subscribe.developer.gov.bc.ca ) to join our email distribution list.  In addition, once you join the community and service offering, we also encourage you to join our monthly Private Cloud PaaS Community Meetup Series where we share platform improvements, demos from ourselves and the community, and opportunities to engage with our service design research team. Please, ping mailto:Olena.Mitovska@gov.bc.ca to get a meeting invite.
 
-The Service also provides capabilities for applications hosted on it to be highly available.  It is the responsibility of the development teams using the platform to ensure their applications leverage these capabilities appropriately and otherwise design their applications in a manner to be resilient to maintenance of the Service, and to provide the level of availability required for the lines of business they serve.
+### Support and Maintenance
 
-## How do I get help?
+The Platform Services Team with the help from Platform Operations and Data Center support teams monitors the infrastructure, OpenShift Container Platform and the critical DevOps Security services such as Vault and Artifactory, 24/7.
 
-### General Assistance
+We also manage the patching of the platform's operating systems and infrastructure components. When we update the platform, we use zero downtime maintenance, so this won't interfere with the running of your application **if and only if your application is [designed for resiliency](https://developer.gov.bc.ca/Resiliency-Guidelines)**.
 
-Assistance with *using* the Service (getting started, developing applications, etc.) is provided via the self-service links below. Peer/community assistance is also provided via a vibrant community on the DevOps Platform group messaging service's `#general` and `#devops-how-to` channels.
+All non-critical Platform services and DevOps Security services are supported during business hours 9am-5pm Mon-Fri excluding statutory holidays.
+
+### Shared Responsibility Model
+
+The Platform Services team follows a team of teams model made up of the Platform Experience Team, and Platform Operations Team. Have a look at our org chart [here](https://docs.developer.gov.bc.ca/s/bk07fg8i4dscrcq7posg/devops-platform-services/d/bpp916b0acqjm3hnvd10/platform-services-org-chart?currentPageId=bpp91db0acqjm3hnvd1g).  While the Platform Services Team manages infrastructure, OpenShift Container Platform and the Platform critical services as part of the Private Cloud PaaS, the Product Team bears the responsibility for the functionality and operations of their application(s) hosted on the Platform.
+
+| Resource  | Responsibility for: Operational Support, Monitoring, Troubleshooting and Access Management  |
+|---|---|---|
+| Application data | Product Team | 
+| Application support and operations | Product Team |
+| Application network security | Product Team together with their MISO |
+| Application monitoring | Product Team |
+| Application Integration with DevSecOps tools | Product Team | 
+| Application Integration with KeyCloak SSO Service | Product Team |
+| Platform Physical Infrastructure and OpenShift Software |	Platform Services Team: Operations Team (DXC/Advanced Solutions) |
+| DevSecOps Tools (AQUA, Artifactory, Sysdig, EnterpriseDB Operator and Vault) | Platform Services Team: Platform Experience and Platform Operations Teams |
+| BC Gov SSO Service | KeyCloak SSO Support Team (contact Stephanie.Bacon@gov.bc.ca for more details) |
+
+If you have any questions about the shared responsibilities above, please contact Justin Hewitt, Sr Director of DevOps Platform Services at mailto:Justin.Hewitt@gov.bc.ca.
+
+The diagram below shows the responsibilities that different groups within the government have in supporting the OpenShift 4 Platform, its infrastructure and the Ministry apps .
+
+![image](https://user-images.githubusercontent.com/28309901/127689729-1e98ae3c-8780-4bb0-80ee-4c47a2cccae3.png)
+
+### Community-based User Support Model
+
+The Platform Community includes 2,000+ participants across all ministries of BC Government and is a mix of government employees and contracted resources.  While the Platform Services Team doesn’t provide direct application development support, the strong community of Platform users helps each other solve app-level questions. Read more about the Community-based User Support Model [here](https://developer.gov.bc.ca/Welcome-to-our-Platform-Community!)
+
+The Platform team uses the open-source communication platform [Rocket.Chat](https://chat.developer.gov.bc.ca/) to connect with each other and help each other troubleshoot issues.  Refer to the [chat channel convention](https://developer.gov.bc.ca/Chat-Channel-Conventions) to find an appropriate channel to post your question.
+
+If a team believes that an issue with the Private Cloud PaaS and not with the app itself, they can engage with the Platform Services Team in [#devops-sos](https://chat.developer.gov.bc.ca/channel/devops-sos) channel (if it is an urgent and critical production issue) or in [#devops-operations channel](https://chat.developer.gov.bc.ca/channel/devops-operations) (for non-urgent and non critical production issues) in RocketChat. Teams can also reach out to the Platform Community with general questions in [#devops-how-to](https://chat.developer.gov.bc.ca/channel/devops-how-to) channel.
+
+We currently do not offer a Tiered Service Desk model on the Private Cloud PaaS, RocketChat is the primary communication tool to contact Platform Services Team to ask questions and get help.
+
+    
 
 ### Training
 
 Periodic internally-delivered training is provided by the DevOps Platform Services team. The internal training schedule is available [here] (https://developer.gov.bc.ca/ExchangeLab-Course:-Openshift-101). Commercial OpenShift training is also available from Red Hat.  For details on the commercial training, contact [Olena Mitovska](mailto:olena.mitovska@gov.bc.ca), Product Owner for Platform Services.
 
-### Support
+**Welcome to the DevOps Platform and to the Platform Community!**
 
-During business hours, support for production issues with the *Service itself* are handled through the group messaging service's `#devops-how-to` and `#devops-operations` channels, which are monitored by the OCIO DevOps Plaform Services team, and the Platform Technical Operations team, made up of DXC staff and their contracted platform operations experts.  Outside of business hours, support requests can be submitted via the SSBC Help Desk (aka "77000").
+<em>Love, Platform Services Team, xo</em>
 
-Business hour support for issues with applications, components and services deployed by teams using the service will be provided by the DevOps Platform Services Team on a best effort, based on availability and priority.  In general, teams should develop sufficient knowledge of the tools they deploy on the Service to be self-sufficient.
+<sub><sup><a name="myfootnote1">1</a>: The OpenShift 4 Platform and all its services have STRA completed and signed-off by the government’s Chief Security Office</sup></sub>
 
+<sub><sup><a name="myfootnote2">2</a>: Product team configured all applications pods to be deployed to a single cluster node within an OpenShift cluster</sup></sub>
 
-## Self-service support
+<sub><sup><a name="myfootnote3">3</a>:Product team configured applications pods to be deployed to multiple nodes within an OpenShift cluster</sup></sub>
 
-Below is a set of recommended resources that provide background materials related to developing and deploying applications on the OpenShift platform, which is the foundation of the Service.
+<sub><sup><a name="myfootnote4">4</a>:99.95% uptime is on par with most Public Cloud Service Providers</sup></sub>
 
-* [DevOps with OpenShift](https://www.openshift.com/promotions/devops-with-openshift.html)
-* [Deploying to OpenShift](https://assets.openshift.com/hubfs/pdfs/Deploying_to_OpenShift.pdf)
-* [Get Started with the OpenShift Command Line](https://docs.openshift.com/container-platform/3.11/cli_reference/get_started_cli.html)
-* [OpenShift Developer Guide](https://docs.openshift.com/container-platform/3.11/dev_guide/index.html)
+<sub><sup><a name="myfootnote5">5</a>: Product team configures the application with a Global Service Load Balancing service to failover to an application instance in Calgary Data Center</sup></sub>
 
-## What does it Cost?
-
-There is currently no cost for use of the Service.
-
-## Support Roles, Processes, Communications (platform ops)
-
-* roles
-* resources for support - documentation, training, tools, monitoring
-* escalation
-* what communication channels are used
-* what types of messages/notices are distributed?
-
-## Service Delivery
-
-* request workflow(s)
-* change management
-* service improvements
-* service level
-* security reviews
