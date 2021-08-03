@@ -1,3 +1,13 @@
+---
+title: Openshift Useful Pro Tips
+resourceType: Documentation
+tags:
+  - openshift
+  - tips
+  - FAQ
+description: Openshift useful tips and FAQ
+---
+
 Export of Github issues for [BCDevOps/OpenShift4-Migration](https://github.com/BCDevOps/OpenShift4-Migration). Generated on 2021.08.03 at 09:16:45.
 
 # [\#76 Issue](https://github.com/BCDevOps/OpenShift4-Migration/issues/76) `open`: I changed my GitHub ID and now I cannot see my namespaces in Openshift
