@@ -73,7 +73,7 @@ SSO only interfaces with other BC Government services to provide authentication 
 
 For cluster-wide service notifications that may impact SSO monitor the **#devops-alerts** channels in [RocketChat](https://chat.developer.gov.bc.ca/channel/devops-alerts).
 
-For teams without RocketChat access please send us an email to the [SSO Product Owner](mailto:BCGov.SSO@gov.bc.ca).
+For teams without RocketChat access please send us an email to the [SSO Product Owner](mailto:zorin.samji@gov.bc.ca).
 
 ## Service Delivery
 
