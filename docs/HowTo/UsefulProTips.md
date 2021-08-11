@@ -5,8 +5,67 @@ tags:
   - openshift
   - tips
   - FAQ
+  - Openshift access
+  - GitHub ID
+  - Project Registry
+  - Internal DNS Wildcard
+  - Timezone cronjobs
+  - Project edit
+  - Project update
+  - internal DNS Wildcard
+  - Certificate
+  - Timezone
+  - Cronjob
+  - Role Binding
+  - Sysdig 
+  - Patroni connectivity
+  - jenkins account
+  - Artifactory documentation
+  - S2I documentation
+  - graceful termination
+  - ArtifactoryServiceAccount 
+  - move data between clusters
+  - storage
+  - S3 Object store
+  - best development practices
+  - Pod status
+  - UID injection
+  - Docker Auth
+  - Image registry
+  - Bcgov custom domain
+  - Patroni
+  - RedHat Images
+  - PostgreSQL initialization 
+  - Namespace access
+  - Jenkins image
+  - egress
+  - Secrets
+  - Quota Increase
+  - NetworkPolicies
+  - Backup storage volumes
+  - Firewall rule
+  - Health checks 
+  - oc CLI console
+  - DNS Vanity URL
+  - GitHub Actions
+  - KeyCloak SSO 
+  - customize Openshift Console
+  - Kibana 
+  - Build Entitlements
+  - Cluster registry
+  - OpenShift CLI
+  - securityContext
+  - HELM
+  - RabbitMQ
+  - Minio
+  - RBAC Access
+  - Patroni Network Issue 
 description: Openshift useful tips and FAQ
 ---
+
+## YOU CAME ACROSS THIS PAGE BECAUSE IT CONTAINS ONE OR MORE OF THE KEYWORDS THAT YOU ARE SEARCHING FOR. TO FIND THE PRO TIPS ON THIS PAGE THAT INCLUDE THE INFORMATION RELATED TO THE KEYWORD(S), USE PAGE SEARCH IN THE BROWSER (CTRL-F + ENTER THE KEYWORD + ENTER). 
+
+# BC Gov's Openshift 4 Platform Q&A and Useful Pro Tips
 
 Export of Github issues for [BCDevOps/OpenShift4-Migration](https://github.com/BCDevOps/OpenShift4-Migration). Generated on 2021.08.03 at 09:16:45.
 
