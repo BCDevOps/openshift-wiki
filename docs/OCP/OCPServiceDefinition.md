@@ -22,7 +22,7 @@ The Private Cloud PaaS is powered by RedHat's OpenShift Container Platform (OCP)
 
 ### Features & Functions
 
-BCGov’s Private Cloud PaaS offers tools to help product teams that are digital teams in the BC Government building online services for citizens, develop and run modern, cloud native software applications. We maintain and secure the infrastructure, so your team can focus on building and improving your applications!
+BCGov’s Private Cloud PaaS offers tools to help product teams in the BC Government that are building online services for citizens develop and run modern, cloud native software applications. We maintain and secure the infrastructure, so your team can focus on building and improving your applications!
 Product teams are offered a choice of two hosting tiers on the Private Cloud Platform - Silver and Gold. The Silver tier provides application hosting on the "Silver Kamloops" production cluster. The Gold tier provides application hosting across the pair of “Gold Kamloops” and “Gold Calgary” production clusters.
 
 |   | Silver  | Gold  |
