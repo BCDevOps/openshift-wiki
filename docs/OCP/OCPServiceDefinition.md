@@ -18,7 +18,7 @@ tags:
 ### Summary
 
 The BC Gov's Private Cloud Platform as a Service (PaaS) is a reliable and security-compliant<sup>[^1](#myfootnote1)</sup>  application hosting platform for running government services in the on-premises private cloud. It is available for use by ministries, agencies and crown corporations working with the Government of British Columbia. 
-The Private Cloud PaaS is powered by RedHat's OpenShift Container Platform (OCP) technology, and is hosted on in the government's Data Centers in Kamloops (main operations) and Calgary (disaster recovery only).
+The Private Cloud PaaS is powered by RedHat's OpenShift Container Platform (OCP) technology, and is hosted in the government's Data Centers; Kamloops (main operations) and Calgary (disaster recovery only).
 
 ### Features & Functions
 
