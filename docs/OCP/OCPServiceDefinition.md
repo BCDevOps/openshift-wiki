@@ -38,6 +38,7 @@ BC Gov's Private Cloud as a Platform Service includes:
 
 * a set of four project namespaces with self-serve developer access:  <em>tools</em> (for development of lifecycle support tools such as CI/CD pipelines, automated testing, and code quality tools), <em>dev</em>, <em>test</em>, and <em>prod</em> - each corresponding to a deployment stage in the application life cycle,
 * "small" project resource quota by default (a bundle of CPU, RAM and storage resources) with ability to upgrade to "medium" and "large" as required. (See the project resource quota sizes [here](https://developer.gov.bc.ca/Project-Resource-Quotas-in-BC-Gov's-PaaS-(Openshift-4-Platform)) ),
+* OCIO Standard Backup and restore services for application data. See more detials [here](https://developer.gov.bc.ca/OCP4-Backup-and-Restore),
 * access to the DevSecOps tools to help teams build "Secure by Design" applications:
   * [Sysdig App Monitoring Service](https://developer.gov.bc.ca/BC-Government-Sysdig-Monitoring-Service-Definition) allows building robust dashboards for applications to monitor their health, availability and resource usage
   * [Artifactory Repository Service](https://developer.gov.bc.ca/BC-Government-Artifact-Repository-Service-Definition) provides access to a trusted and secure repository for storing images, packages, libraries and other artifacts
