@@ -107,8 +107,6 @@ If a team believes that an issue with the Private Cloud PaaS and not with the ap
 
 We currently do not offer a Tiered Service Desk model on the Private Cloud PaaS, RocketChat is the primary communication tool to contact Platform Services Team to ask questions and get help.
 
-    
-
 ### Training
 
 Periodic internally-delivered training is provided by the DevOps Platform Services team. The internal training schedule is available [here] (https://developer.gov.bc.ca/ExchangeLab-Course:-Openshift-101). Commercial OpenShift training is also available from Red Hat.  For details on the commercial training, contact [Olena Mitovska](mailto:olena.mitovska@gov.bc.ca), Product Owner for Platform Services.
@@ -126,4 +124,3 @@ Periodic internally-delivered training is provided by the DevOps Platform Servic
 <sub><sup><a name="myfootnote4">4</a>: 99.95% uptime is on par with most Public Cloud Service Providers</sup></sub>
 
 <sub><sup><a name="myfootnote5">5</a>: Product team configures the application with a Global Service Load Balancing service to failover to an application instance in Calgary Data Center</sup></sub>
-
