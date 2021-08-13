@@ -120,9 +120,9 @@ Periodic internally-delivered training is provided by the DevOps Platform Servic
 
 <sub><sup><a name="myfootnote2">2</a>: Product team configured all applications pods to be deployed to a single cluster node within an OpenShift cluster</sup></sub>
 
-<sub><sup><a name="myfootnote3">3</a>:Product team configured applications pods to be deployed to multiple nodes within an OpenShift cluster</sup></sub>
+<sub><sup><a name="myfootnote3">3</a>: Product team configured applications pods to be deployed to multiple nodes within an OpenShift cluster</sup></sub>
 
-<sub><sup><a name="myfootnote4">4</a>:99.95% uptime is on par with most Public Cloud Service Providers</sup></sub>
+<sub><sup><a name="myfootnote4">4</a>: 99.95% uptime is on par with most Public Cloud Service Providers</sup></sub>
 
 <sub><sup><a name="myfootnote5">5</a>: Product team configures the application with a Global Service Load Balancing service to failover to an application instance in Calgary Data Center</sup></sub>
 
