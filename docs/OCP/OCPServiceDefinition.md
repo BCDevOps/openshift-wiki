@@ -28,7 +28,7 @@ Product teams are offered a choice of two hosting tiers on the Private Cloud Pla
 
 |   | Silver  | Gold  |
 |---|---|---|
-| Who should use it?| Recommended for the majority of government services supported by Product teams **with junior to intermediate DevOps skills** |  Recommended for business mission critical government services supported by a fully funded Product team with **advanced DevOps skills** |
+| Who should use it?| Recommended for the majority of government services supported by Product teams **with junior to intermediate DevOps skills** |  Recommended for business mission critical government services supported by a **fully funded Product team with advanced DevOps skills** |
 | How much does it cost? |  Free in 2021/2022 fiscal.  Cost recovery model may be implemented in 2022/2023 fiscal as part of the Enterprise Services cost review directed by Treasury Board, and will continue to consult with clients in that space on <em>whether</em> there will be cost recovery for Private Cloud, as well as  what it will look like if there is one. |  Free in 2021/2022 fiscal. Cost recovery model may be implemented in 2022/2023 fiscal as part of the Enterprise Services cost review directed by Treasury Board, and will continue to consult with clients in that space on <em>whether</em> there will be cost recovery for for Private Cloud, as well as what it will look like if there is one. |
 | Maintenance Schedule | Private Cloud PaaS upgrades and patches will be applied in this production cluster quarterly after testing in LAB clusters	| All Private Cloud PaaS upgrades and patches are applied in Silver first; these will be applied quarterly in Gold a few weeks later. |
 | High Availability | App horizontal scaling within Silver cluster, set up and managed by the Product team.	| App horizontal scaling within Gold Kamloops cluster AND a requirement to set up a geographic failover to Gold Calgary, both set up and managed by the Product team. |
@@ -98,7 +98,7 @@ If you have any questions about the shared responsibilities above, please contac
 
 The diagram below shows the responsibilities that different groups within the government have in supporting the OpenShift 4 Platform, its infrastructure and the Ministry apps .
 
-![image](https://user-images.githubusercontent.com/28309901/127689729-1e98ae3c-8780-4bb0-80ee-4c47a2cccae3.png)
+![BC Gov's Private Cloud Shared Responsibility Model](../../media/BCGov%20DevOps%20Platform%20Shared%20Responsibility%20Model.png)
 
 ### Community-based User Support Model
 
