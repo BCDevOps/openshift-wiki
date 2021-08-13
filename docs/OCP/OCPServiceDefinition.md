@@ -91,7 +91,7 @@ The Platform Services team follows a team of teams model made up of the Platform
 | DevSecOps Tools (AQUA, Artifactory, Sysdig, EnterpriseDB Operator and Vault) | Platform Services Team: Platform Experience and Platform Operations Teams |
 | BC Gov SSO Service | KeyCloak SSO Support Team (contact [Stephanie Bacon](mailto:Stephanie.Bacon@gov.bc.ca) for more details) |
 
-If you have any questions about the shared responsibilities above, please contact Justin Hewitt, Sr Director of DevOps Platform Services at mailto:Justin.Hewitt@gov.bc.ca.
+If you have any questions about the shared responsibilities above, please contact Justin Hewitt, Sr Director of DevOps Platform Services at [Justin.Hewitt@gov.bc.ca](mailto:Justin.Hewitt@gov.bc.ca).
 
 The diagram below shows the responsibilities that different groups within the government have in supporting the OpenShift 4 Platform, its infrastructure and the Ministry apps .
 
