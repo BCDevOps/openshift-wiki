@@ -79,8 +79,8 @@ All non-critical Platform services and DevOps Security services are supported du
 
 The Platform Services team follows a team of teams model made up of the Platform Experience Team, and Platform Operations Team. Have a look at our org chart [here](https://docs.developer.gov.bc.ca/s/bk07fg8i4dscrcq7posg/devops-platform-services/d/bpp916b0acqjm3hnvd10/platform-services-org-chart?currentPageId=bpp91db0acqjm3hnvd1g).  While the Platform Services Team manages infrastructure, OpenShift Container Platform and the Platform critical services as part of the Private Cloud PaaS, the Product Team bears the responsibility for the functionality and operations of their application(s) hosted on the Platform.
 
-| Resource  | Responsibility for: Operational Support, Monitoring, Troubleshooting and Access Management  |
-|---|---|---|
+| Resource | Responsibility for: Operational Support, Monitoring, Troubleshooting and Access Management |
+|---|---|
 | Application data | Product Team | 
 | Application support and operations | Product Team |
 | Application network security | Product Team together with their MISO |
