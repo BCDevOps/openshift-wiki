@@ -47,7 +47,7 @@ BC Gov's Private Cloud as a Platform Service includes:
   * [EnterpriseDB HA service for PostgreSQL](https://developer.gov.bc.ca/BC-Government-EDB-Operator-Service-Definition) – a vendor-supported product for running highly available PostgreSQL clusters (a product team must purchase their own license in order to use this service)
 
 Other security features include:
-* The majority of Private Cloud PaaS maintenance has no/minimal impact on the applications configured as multi-node deployments running on it and is run daily as required in a containerized environment.
+* The majority of Private Cloud PaaS maintenance has no/minimal impact on the applications configured as multi-node deployments running on it and is run during business hours as required in a containerized environment.
 * Multi-tenant hosting model in OpenShift and the build-in software defined network using Kubernetes Network Policies provides isolation between teams' environments so that they can't read or change each other's code, data or logs
 * Developers receive self-serve access to create and manage application's network security rules for their own apps.  The Platform Community has a vast collection of design patterns that follow best security practices, for building integrations between the OpenShift applications and external systems. In addition, new technology and design patterns are being developed in partnership with ministries to ease this work even more.
   * Authenticated SSH access to application containers to debug problems i.e. rsh into a pod
