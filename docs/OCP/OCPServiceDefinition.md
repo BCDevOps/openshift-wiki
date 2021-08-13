@@ -22,7 +22,8 @@ The Private Cloud PaaS is powered by RedHat's OpenShift Container Platform (OCP)
 
 ### Features & Functions
 
-BCGov’s Private Cloud PaaS offers tools to help product teams in the BC Government that are building online services for citizens develop and run modern, cloud native software applications. We maintain and secure the infrastructure, so your team can focus on building and improving your applications!
+BCGov’s Private Cloud PaaS offers tools to help product teams in the BC Government that are building online services for citizens, develop and run modern, cloud native software applications. We, at the Platform Services Team in BCDevExchange, Ministry of Citizen Services, maintain and secure the infrastructure, so your team can focus on building and improving your applications!
+
 Product teams are offered a choice of two hosting tiers on the Private Cloud Platform - Silver and Gold. The Silver tier provides application hosting on the "Silver Kamloops" production cluster. The Gold tier provides application hosting across the pair of “Gold Kamloops” and “Gold Calgary” production clusters.
 
 |   | Silver  | Gold  |
@@ -55,6 +56,15 @@ Other security features include:
   * Single sign-on service for end-user authentication for apps through the BC Gov's Single Sign-On Service based on KeyCloak (https://oidc.gov.bc.ca)
   * The Private Cloud PaaS is piping core Platform log files into the central Security Information and Event Management (SIEM) system in OCIO for additional forensics and security audits.  Application log shipping and developer access to SIEM are coming soon.
 
+### Support and Maintenance
+
+The Platform Services Team with the help from Platform Operations and Data Center support teams monitors the infrastructure, OpenShift Container Platform and the critical DevOps Security services such as Vault and Artifactory, 24/7. All critical incidents that relate to the **availabilty of the Openshift 4 Platform and/or its critical services** outside of the regular business hours should be reported to Shared Services BC Service Desk at 250-387-7000 (aka 7-7000). 
+
+We, at the Platform Services Team, also manage the patching of the platform's operating systems and infrastructure components. When we update the platform, we use zero downtime maintenance, so this won't interfere with the running of your application **if and only if your application is [designed for resiliency](https://developer.gov.bc.ca/Resiliency-Guidelines)**.
+
+All non-critical Platform services and DevOps Security services are supported during business hours 9am-5pm Mon-Fri excluding statutory holidays.
+
+
 ### Requesting Access and Onboarding
 
 Access to the Private Cloud Services is managed through a central application, the [Openshift 4 Platform’s Product Registry](https://registry.developer.gov.bc.ca/public-landing).  This application that we manage as a part of the Platform Service uses automation for the creation of your hosting space.  A team can have an environment created following an approval in as little as 10 minutes.  If you are net new to this service, **you will need to have an onboarding session with us first**.  Please reach out to Olena Mitovska, Product Director of the Private Cloud PaaS to get that started.  If you have any questions around the Platform Project Registry, she can answer those too.   If you are looking to leverage the Private Cloud PaaS, we are looking forward to welcoming you. 
@@ -67,17 +77,10 @@ As a member of the Private Cloud, you must join the [BCDevExchange](https://bcde
 
 We also provide additional communication channels for you to subscribe to for staying up to date on the Private Cloud PaaS offering and learn about major upcoming changes ahead of time.  Please sign up to the [Platform Updates Subscription service](https://subscribe.developer.gov.bc.ca ) to join our email distribution list.  In addition, once you join the community and service offering, we also encourage you to join our monthly Private Cloud PaaS Community Meetup Series where we share platform improvements, demos from ourselves and the community, and opportunities to engage with our service design research team. Please, ping [Olena Mitovska](mailto:Olena.Mitovska@gov.bc.ca) to get a meeting invite.
 
-### Support and Maintenance
-
-The Platform Services Team with the help from Platform Operations and Data Center support teams monitors the infrastructure, OpenShift Container Platform and the critical DevOps Security services such as Vault and Artifactory, 24/7.
-
-We also manage the patching of the platform's operating systems and infrastructure components. When we update the platform, we use zero downtime maintenance, so this won't interfere with the running of your application **if and only if your application is [designed for resiliency](https://developer.gov.bc.ca/Resiliency-Guidelines)**.
-
-All non-critical Platform services and DevOps Security services are supported during business hours 9am-5pm Mon-Fri excluding statutory holidays.
 
 ### Shared Responsibility Model
 
-The Platform Services team follows a team of teams model made up of the Platform Experience Team, and Platform Operations Team. Have a look at our org chart [here](https://docs.developer.gov.bc.ca/s/bk07fg8i4dscrcq7posg/devops-platform-services/d/bpp916b0acqjm3hnvd10/platform-services-org-chart?currentPageId=bpp91db0acqjm3hnvd1g).  While the Platform Services Team manages infrastructure, OpenShift Container Platform and the Platform critical services as part of the Private Cloud PaaS, the Product Team bears the responsibility for the functionality and operations of their application(s) hosted on the Platform.
+The Platform Services Team follows a team of teams model made up of the Platform Experience Team, and Platform Operations Team. Have a look at our org chart [here](https://docs.developer.gov.bc.ca/s/bk07fg8i4dscrcq7posg/devops-platform-services/d/bpp916b0acqjm3hnvd10/platform-services-org-chart?currentPageId=bpp91db0acqjm3hnvd1g).  While the Platform Services Team manages infrastructure, OpenShift Container Platform and the Platform critical services as part of the Private Cloud PaaS, the Product Team bears the responsibility for the functionality and operations of their application(s) hosted on the Platform.
 
 | Resource | Responsibility for: Operational Support, Monitoring, Troubleshooting and Access Management |
 |---|---|
