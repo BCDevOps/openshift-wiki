@@ -109,7 +109,7 @@ We currently do not offer a Tiered Service Desk model on the Private Cloud PaaS,
 
 ### Training
 
-Periodic internally-delivered training is provided by the DevOps Platform Services team. The internal training schedule is available [here] (https://developer.gov.bc.ca/ExchangeLab-Course:-Openshift-101). Commercial OpenShift training is also available from Red Hat.  For details on the commercial training, contact [Olena Mitovska](mailto:olena.mitovska@gov.bc.ca), Product Owner for Platform Services.
+Periodic internally-delivered training is provided by the DevOps Platform Services team. The internal training schedule is available [here](https://developer.gov.bc.ca/ExchangeLab-Course:-Openshift-101). Commercial OpenShift training is also available from Red Hat.  For details on the commercial training, contact [Olena Mitovska](mailto:olena.mitovska@gov.bc.ca), Product Owner for Platform Services.
 
 **Welcome to the DevOps Platform and to the Platform Community!**
 
