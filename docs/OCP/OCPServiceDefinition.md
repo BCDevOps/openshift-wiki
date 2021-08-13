@@ -89,7 +89,7 @@ The Platform Services team follows a team of teams model made up of the Platform
 | Application Integration with KeyCloak SSO Service | Product Team |
 | Platform Physical Infrastructure and OpenShift Software |	Platform Services Team: Operations Team (DXC/Advanced Solutions) |
 | DevSecOps Tools (AQUA, Artifactory, Sysdig, EnterpriseDB Operator and Vault) | Platform Services Team: Platform Experience and Platform Operations Teams |
-| BC Gov SSO Service | KeyCloak SSO Support Team (contact Stephanie.Bacon@gov.bc.ca for more details) |
+| BC Gov SSO Service | KeyCloak SSO Support Team (contact [Stephanie Bacon](mailto:Stephanie.Bacon@gov.bc.ca) for more details) |
 
 If you have any questions about the shared responsibilities above, please contact Justin Hewitt, Sr Director of DevOps Platform Services at mailto:Justin.Hewitt@gov.bc.ca.
 
