@@ -55,6 +55,7 @@ Other security features include:
   * Platform and application namespace access through org-restricted GitHub IDs (2FA required)
   * Single sign-on service for end-user authentication for apps through the BC Gov's Single Sign-On Service based on KeyCloak (https://oidc.gov.bc.ca)
   * The Private Cloud PaaS is piping core Platform log files into the central Security Information and Event Management (SIEM) system in OCIO for additional forensics and security audits.  Application log shipping and developer access to SIEM are coming soon.
+  * Information Security Classification: Protected B.  The Private Cloud PaaS is approved for storage of Protected B information at rest.  However, if an application is designed with appropriate controls to protect data in transit, including the use of their own TLS certificate, an OpenShift application may pass Protected C information via APIs to a system component off-cluster (i.e. legacy system).  However, in this circumstance, DevOps teams should connect with their Ministry Information Security Officer (MISO) prior to collecting/using/storing Protected C information.  Once the VMWare NSX-T solution implementation and testing has completed, the information security classification level for the Private Cloud PaaS will be re-assessed.
 
 ### Support and Maintenance
 
