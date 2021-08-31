@@ -27,7 +27,7 @@ Because this is a shared platform and because we (the Platform Services Team) wa
 1. The maximum number of **concurrent sessions** during load testing must be restricted to 40K
 1. There must be a Platform Team member present during the test
 
-The first two are simply to ensure that your testing doesn't create any undue impact on other applications running on the cluster. This is very unlikely, as OpenShift typically does a good job of isolating each namespace effectively, but there can be unexpected outcomes to some tests, and sometimes tests can impact other shared services in unexpected ways. These requirements are intended to minimize the impact of these sorts of unexpected outcomes!
+The first two are simply to ensure that your testing doesn't create any undue impact on other applications running on the clusters<sup>[^1](#myfootnote1)</sup>. This is very unlikely, as OpenShift typically does a good job of isolating each namespace effectively, but there can be unexpected outcomes to some tests, and sometimes tests can impact other shared services in unexpected ways. These requirements are intended to minimize the impact of these sorts of unexpected outcomes!
 
 The third is for both the benefit of your team and the benefit of the Platform as a whole. We want to be able to keep an eye on the Platform during the test so we can react in case the test does something unexpected which might impact shared services. We also want to have someone around who can provide you with some support if something unexpected happens during the test and you require someone with elevated privileges on the Platform to take action. It also allows us to ensure that we don't have several teams accidentally scheduling their load-tests for the same time!
 
@@ -49,3 +49,8 @@ Providing a comprehensive test plan that includes all abovementioned  informatio
 Second, you'll need to speak to the Platform Services Team about scheduling your test (for after 5:30pm on a weekday, remember!) - we'll need to take a look at your load test plan, make sure we have all the information we need for the test, and make sure that we have someone available during your chosen testing window. We'll work with you if we need to request any alterations to either the time/date or the plan! Contact [@olena.mitovska](https://chat.developer.gov.bc.ca/direct/olena.mitovska) in RocketChat.
 
 Assuming all goes well, your plan will be green-lit, and... that's it! Off you go to perform your load test!
+
+<em>Love, Platform Services Team, xo</em>
+
+<sub><sup><a name="myfootnote1">1</a>: As of spring 2021, the Silver cluster of OpenShift 4 Platform includes 6 router nodes which together can handle 60K **concurrent active connections**. Browsers and other clients will usually hold a connection open for some time and make multiple requests in the same connection or use a long running connection for things like websockets. To keep the cluster stable and healthy, only 2/3 of the overall routing capacity can be targeted by the application load test.</sup></sub>
+
