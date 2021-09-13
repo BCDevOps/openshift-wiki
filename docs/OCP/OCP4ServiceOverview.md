@@ -23,6 +23,7 @@ We help ministries deliver digital services to citizens with ease and speed<sup>
 
 * OpenShift Container Platform Hosting
    * **Silver tier** of the Private Cloud Platform offers application and data hosting for cloud-native apps in the Kamloops Data Centre and is suitable for most government services (up to and including Protected B data classification)  
+   * **Gold Tier** offers an option to configure applications to take advantage of a new disaster recovery environment in Calgary Data Center (geographic failover) and comes with longer testing windows for Platform software and hardware updates
    * Shared automation, security, monitoring and communications tools installed onto the Platform 
 
 ## Support 
@@ -40,12 +41,6 @@ We’re stewards of a community of users who frequently collaborate with us and 
 ### Coming Soon! 
 
 We’re continuously improving our service offering to keep up with the needs of our digital teams: 
-
-**Coming in 2021: Gold Tier** 
-
-Offers an option to configure applications to take advantage of a new disaster recovery environment in Calgary Data Center 
-
-Comes with longer testing windows for Platform software and hardware updates 
 
 **Coming in 2022: New Hosting Tier for the services that span the private cloud and traditional infrastructure** 
 
