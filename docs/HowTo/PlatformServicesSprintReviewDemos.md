@@ -38,6 +38,9 @@ Provincial Identity Information Management Program team demonstrated the use of 
 [Demo #7: Stayin' Alive: PodDisruptionBudgets for Maintenance and Upgrades](https://www.youtube.com/watch?v=0AGZ5no6-yo)
 PodDisruptionBudgets concept in Openshift 4 can be a power tool to aid in building resilient apps but if not used correctly it can disrupt Openshift upgrades. Our own Technical Account Manager (TAM), Matt Robson with RedHat, shares some of the best practices for how to leverage PodDisruptionBudgets effectively and without negatively impacting the Openshift upgrade process.
 
+[Demo #8: Introduction into GitOps and ArgoCD](https://www.youtube.com/watch?v=-Tkqe0lRuE0)
+The Platform Services Team is now offering product teams working on the Openshift 4 Platform access to the ArgoCD GitOps service. ArgoCD is a declarative, GitOps continuous delivery tool for Kubernetes that automates the deployment of the desired application states in the specified target environments. It is now available for products teams working in the Silver and Gold clusters of the BC Gov’s Openshift platform and is recommended as part of a replacement strategy for Jenkins to help reduce resource consumption on the Platform.
+
 We keep adding demos to the collection as they get released to YouTube so keep checking for the new additions time to time.
 
 Love, Your Platform Services Team, xo
