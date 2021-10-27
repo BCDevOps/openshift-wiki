@@ -1,16 +1,15 @@
-Great news for everyone in the BC Government who has closed-source code and still want to leverage the power of GitHub, an online repository hosting service. 
+Great news for everyone in the BC Government who has closed-source code and still wants to leverage the power of GitHub, an online repository hosting service!
+
 On this page you will find the informatiton that will help your team decide whether GitHub Enterprise service is right for your project: note, all code produced by BC Gov's teams should be open-source by default and closed-source e.g. private, by exception. You will also learn how to purchase user licenses for your team to work with the private repos linked to the Province's GitHub Enterprise account.
 
 
-##When does your team need a GitHub Enterprise User License? 
+## When does your team need a GitHub Enterprise User License? 
 
  
-
 As per the Province’s Digital Principles – 5. Work in The Open, OpenSource code base should first and foremost be considered whenever possible for your digital products.  All of the Province’s public code repositories on GitHub.com must live in public bcgov organization, to be consolidated within a central organization.  Github.com/bcgov has been properly procured with legal support, STRA and PIA for all of the Province’s OpenSource code.   
 
- 
 
-The Province also owns a private organization bcgov-c that serves as  temporary holding ground for closed-sourced code and to be for staging the code that’s on its journey to OpenSource.  It is not to be used as a permanent code respository.  This staging environment was procured through a direct award, leveraging the same STRA and PIA for github.com/bcgov, as part of the evolution of the Province’s DevOps Platform, now known as Private Cloud and upcoming Public Cloud Pathfinder.  bcgov-c has a GitHub Teams license and requires a monthly user fee for every user that needs access to the private repos it contains. The GitHub Teams license includes community support (via GitHub Community Forum) + standard support model (via the GitHub Support Portal) 
+The Province also owns a private organization bcgov-c that serves as **temporary holding ground** for closed-sourced code and to be for staging the code that’s on its journey to OpenSource.  It is not to be used as a permanent code respository.  This staging environment was procured through a direct award, leveraging the same STRA and PIA for github.com/bcgov, as part of the evolution of the Province’s DevOps Platform, now known as Private Cloud and upcoming Public Cloud Pathfinder.  bcgov-c has a GitHub Teams license and requires a monthly user fee for every user that needs access to the private repos it contains. The GitHub Teams license includes community support (via GitHub Community Forum) + standard support model (via the GitHub Support Portal) 
 
  
 
@@ -18,7 +17,7 @@ If your code can never be OpenSource, and you are looking to leverage GitHub, yo
 
  
 
-##What benefits do you get with the GitHub Enterprise User License? 
+## What benefits do you get with the GitHub Enterprise User License? 
 
  
 
@@ -43,7 +42,7 @@ The full listing of differences between Free vs Teams vs Enterprise licenses is 
 https://github.com/pricing#compare-features 
 
  
-##What is the total cost of ownership for the GitHub Enterprise User License? 
+## What is the total cost of ownership for the GitHub Enterprise User License? 
 
  
 
@@ -51,7 +50,7 @@ https://github.com/pricing#compare-features
 
  
 
-**Who owns GitHub Enterprise account in BC Gov?**
+## Who owns GitHub Enterprise account in BC Gov?
 
  
 
@@ -59,23 +58,21 @@ GitHub Enterprise account is owned by OCIO and managed by the Platform Services 
 
 
 
-**Who owns organizations linked to the BC Gov’s GitHub Enterprise account?** 
+## Who owns organizations linked to the BC Gov’s GitHub Enterprise account?
 
  
 
 Ministries own GitHub organizations linked to the BC Gov’s GitHub Enterprise accounts and the private repos within their organizations.  
 
  
-
 User licenses for accessing the private repos come from a central pool under the GitHub Enterprise account and must be purchased for each user that needs access to the private repos in the Ministry’s private organizations.   Management of this pool of seats will be done in partnership, with each sector/ministry purchasing their own allocated seat count. 
 
- 
 
 Also, when your private org is linked to the GitHub Enterprise account certain settings become automatically enabled/disabled. For example, the ability to create public repositories within this private org will be removed, as to fall in line with all Provincial Open Source code remaining in bcgov (all opensource code must be stored in bcgov org).  Additional information on settings can be found in ‘Settings’ tab on the organization profile page in GitHub after it is linked to the GitHub Enterprise account.  Further examples, 2MFA is set as mandatory, GitHub Actions is enabled for all, and Code Dependency Insights in enabled for all orgs linked to the GitHub Enterprise account.  Further settings to be shared. 
 
  
 
-##How will you access the GitHub Enterprise account? 
+## How will you access the GitHub Enterprise account? 
 
  
 
@@ -90,7 +87,7 @@ Each Ministry has 1-2 GitHub admin users that manage user licenses purchased by 
 
  
 
-##How to request a purchase of the GitHub Enterprise User Licenses? 
+## How to request a purchase of the GitHub Enterprise User Licenses? 
 
  
 
@@ -108,12 +105,18 @@ the Ministry the request is for:
 
  
 
-##How to pay for the GitHub Enterprise User Licenses? 
+## How to pay for the GitHub Enterprise User Licenses? 
 
  
 Software Central management handles your purchase order, with billing back to your expense authority. Note, the that Ministry will be billed monthly for the GitHub Enterprise User licenses until a request is sent to SoftwareCentral.Management@gov.bc.ca asking to cancel the user licenses.
 
- 
+##Can you help me understand what org should I use for my code?
+
+Can your code be stored in a public space e.g. open-source today? If yes, create a repo in `bcgov`. Anyone with the `bcgov` membership can create repos in this org.
+
+Do you have  code that will be made public within the next 12 months but needs to be kept private for now? If yes, submit a request to the Platform Service Team [here](https://github.com/BCDevOps/devops-requests/issues/new?assignees=caggles%2C+ShellyXueHan%2C+mitovskaol%2C+patricksimonian&labels=github-repo%2C+pending&template=github_repo_request.md&title=).
+
+Do you have code that will never become open-source due to its sensitivity or security considerations? If yes, contact your Ministry GitHub admin to create a private repo for you in your Ministry's private org linked to the Province's GitHub Enterprise account.
 
  
 
