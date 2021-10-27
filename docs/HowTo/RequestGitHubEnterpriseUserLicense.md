@@ -110,7 +110,7 @@ the Ministry the request is for:
  
 Software Central management handles your purchase order, with billing back to your expense authority. Note, the that Ministry will be billed monthly for the GitHub Enterprise User licenses until a request is sent to SoftwareCentral.Management@gov.bc.ca asking to cancel the user licenses.
 
-##Can you help me understand what org should I use for my code?
+## Can you help me understand what GitHub org should I use for my code?
 
 Can your code be stored in a public space e.g. open-source today? If yes, create a repo in `bcgov`. Anyone with the `bcgov` membership can create repos in this org.
 
