@@ -1,3 +1,17 @@
+---
+description: This page provides guidance to the teams in BC Gov that look to leverage the Province's GitHub Enterprise account for their close-sourced code repositories.
+resourceType: Documentation
+title: Use of GitHub Enterprise User Licenses in BC Gov
+tags:
+  - github
+  - Github Enterprise
+  - closed source
+  - private repo
+  - private org
+---
+
+# Use of GitHub Enterprise User Licenses in BC Gov 
+
 Great news for everyone in the BC Government who has closed-source code and still wants to leverage the power of GitHub, an online repository hosting service!
 
 On this page you will find the informatiton that will help your team decide whether GitHub Enterprise service is right for your project: note, all code produced by BC Gov's teams should be open-source by default and closed-source e.g. private, by exception. You will also learn how to purchase user licenses for your team to work with the private repos linked to the Province's GitHub Enterprise account.
