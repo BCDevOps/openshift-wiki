@@ -2,13 +2,29 @@
 
 Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes, which is the foundation of OpenShift.
 
-## Goal
+## Table of Contents
+1. [Goals](#goals)
+2. [Overview](#overview)
+3. [Enable Argo CD for Your Project Set](#enable-argocd)
+    1. [Set access for the GitHub repo](#set-access-github)
+    2. [What style of deployment is used?](#style-of-deployment)
+        1. [Helm](#helm)
+        2. [Kustomize](#kustomize)
+    3. [Controlling the deployment sequence](#controlling-the-deployment-sequence)
+4. [Application Creation in Argo CD](#application-creation)
+    1. [Create the application](#create-the-application)
+    2. [Synchronize the application](#synchronize-the-application)
+    3. [Project access control](#project-access-control)
+5. [Project Configuration](#project-configuration)
+6. [Additional Information](#additional-information)
+
+## Goals <a name="goals"></a>
 A goal of the Platform Services Team is to provide a modern, effective, and well-supported tool for CICD pipelines that will help to reduce resource consumption on the cluster by providing a common service that the community can help to support.  In particular, we seek to:
 * Provide a GitOps-style deployment service
 * Decrease reliance on Jenkins
 * Reduce resource consumption on the clusters by using a shared service
 
-## Overview
+## Overview <a name="overview"></a>
 There are a number of reasons for using Argo CD over familiar tools, such as Jenkins.  Argo CD is designed specifically for Kubernetes.  As a result, it is efficient, well supported, and well documented.  All Kubernetes resources are defined by a YAML manifest; by managing these manifest files in a Git repository that is monitored by Argo CD, it maintains application state on the cluster consistent with the desired state as defined by those manifests.  Updates to applications involve updates to the manifest files.  As a result of this architecture:
 * All application changes are recorded as Git commits, providing a detailed change history.
 * Rollbacks can be achieved by reverting to a previous commit.
@@ -16,10 +32,10 @@ There are a number of reasons for using Argo CD over familiar tools, such as Jen
 * Argo CD can be easily integrated with CICD pipelines.
 * Kustomize and Helm support satisfy the needs of most teams.
 
-## Enable Argo CD for Your Project Set
+## Enable Argo CD for Your Project Set <a name="enable-argocd"></a>
 Coming soon: how to enable argocd for your project...
 
-### Set access for the GitHub repo
+### Set access for the GitHub repo <a name="set-access-github"></a>
 Once your GitHub repo has been created, you need to allow your pipeline to read from and write to it.  Do this by creating an SSH key pair and adding it as a Deploy Key in the repo.
 
 Create an SSH key - the following can be done on a Linux or Mac system.  Use a descriptive name for the key.
@@ -36,12 +52,12 @@ Add the private key as a Secret for your pipeline.  If using GitHub Actions, add
 
 Give the Secret a meaningful name, such as MANIFEST_REPO_DEPLOY_KEY, and copy the entire contents of the PRIVATE key file (having no file extension), **incuding the BEGIN and END lines**, into the value of the secret.
 
-## Migration and Setup
+## Migration and Setup <a name="migration-and-setup"></a>
 As Argo CD reads manifest files from a Git repository, this repo must be prepared before the application is configured in Argo CD.  Depending on the application's current deployment strategy, the repo setup will vary.
 
 Although no particular structure is required in the manifest repo, we suggest creating a directory for each application.  In addition to setting a repo path for each application in Argo CD, you can also specify a branch or tag.
 
-### What style of deployment is used?
+### What style of deployment is used? <a name="style-of-deployment"></a>
 Argo CD supports several deployment strategies, including:
 * Helm
 * Kustomize
@@ -50,12 +66,12 @@ Argo CD supports several deployment strategies, including:
 
 This document focuses on Helm and Kustomize.
 
-#### Helm
+#### Helm <a name="helm"></a>
 [https://argo-cd.readthedocs.io/en/release-2.0/user-guide/helm/](https://argo-cd.readthedocs.io/en/release-2.0/user-guide/helm/)
 
 Helm users will already have a set of files prepared and these are easily migrated to the manifest repo.  Create a top-level directory for your application.  Place all Helm files in this directory.  Also put your values files in the same directory, named according to environment.  When configuring the app in the Argo CD UI, you will specify the path to the values file.
 
-#### Kustomize
+#### Kustomize <a name="kustomize"></a>
 [https://argo-cd.readthedocs.io/en/release-2.0/user-guide/kustomize/](https://argo-cd.readthedocs.io/en/release-2.0/user-guide/kustomize/)
 
 Kustomize is a more generic system, which allows you to declare a default set of resources and then configure just the differences from default for each environment.
@@ -147,7 +163,7 @@ Consult the Kustomize documentation for more information, as this doc is meant t
 [https://kustomize.io/tutorial](https://kustomize.io/tutorial)
 
 
-### Controlling deployment sequence
+### Controlling the deployment sequence <a name="controlling-the-deployment-sequence"></a>
 If you have some resources that should be processed before others, you can use the Argo CD notion of 'sync-waves'.  Resources having sync waves with lower numbers are processed before those having sync waves with higher numbers.  To utilize this, add a sync-wave setting to metadata.annotations.  For example:
 ```
 metadata:
@@ -156,10 +172,10 @@ metadata:
 ```
 
 
-## Application Creation in Argo CD
+## Application Creation in Argo CD <a name="application-creation"></a>
 Once the manifest repo has a deploy key configured and the manifests themselves have been added, you are almost ready to add the application in Argo CD.  **Before you do, make sure that the target namespace can tolerate a disruption.**  Once you create the application in Argo CD and synchronize it, Argo CD will begin updating resources, so if there is a problem with your manifests, existing resources could be affected.
 
-### Create the application
+### Create the application <a name="create-the-application"></a>
 In the Argo CD UI, click the Applications link at the top of the left-side navigation.  Click 'New App'.
 * Application Name - Application names must be unique across all projects.  Give your app a meaningful name that includes the target environment.  A good naming convention would be to put the license plate or project name at the beginning, followed by the app name, followed by the environment, such as `abc123-myapp1-dev`.
 * Project - Select your project from the dropdown menu.
@@ -173,7 +189,7 @@ In the Argo CD UI, click the Applications link at the top of the left-side navig
 
 If you get an error message when trying to create the application, read the error carefully and try to fix it, then recreate the app.
 
-### Synchronize the application
+### Synchronize the application <a name="synchronize-the-application"></a>
 Once the application has been successfully created, and assuming you have not yet enabled automatic synchronization, click on the app on the application list page.  Argo CD will have already scanned the files in the manifest repo at the path and branch/tag specified and will show 'out of sync'.  To begin synchronizing the app, and thus (potentially) altering the resources in your OpenShift namespace, click the 'Sync' button, and then 'Synchronize'.  It will take a little bit of time, depending on how many resources are defined for this app.
 
 If the sync result shows 'failed', click the 'failed' message to view messages explaining why it failed.  There could be a problem with your manifest files or repo configuration, for example.
@@ -183,7 +199,7 @@ If the sync has succeeded, but still shows as "progressing", or if there is an i
 Once you are satisfied with the setup, feel free to enable automatic synchronization.
 
 
-## Project Configuration
+## Project Configuration <a name="project-configuration"></a>
 It should be noted that there are some constraints placed on Projects and Applications in this shared Argo CD instance.
 
 **Source Repository**
@@ -203,13 +219,13 @@ There are a few namespace-scoped resources that you will not be able to modify. 
 * Node
 * ResourceQuota
 
-### Project access
+### Project access control <a name="project-access-control"></a>
 Each Project in Argo CD has an associated Keycloak group.  Access to the Project in the UI is based on membership in that Keycloak group.  The team can manage this group membership themselves by maintaining a list that is read by an OpenShift operator.
 
 *coming soon: details on how to set access*
 
 
-## Additional Information
+## Additional Information <a name="additional-information"></a>
 
 Argo CD: [https://argo-cd.readthedocs.io/en/release-2.0/](https://argo-cd.readthedocs.io/en/release-2.0/)
 
