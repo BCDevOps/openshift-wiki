@@ -53,7 +53,9 @@ Teams wishing to have realms created should follow the steps outlined on the [SS
 
 ### Availability
 
-The SSO solution is deployed in a high-availability configuration within the highly-available BC Government OpenShift cluster.  Support is currently available only during business hours and only on a best efforts basis. If your application is critical, please contact Web Access Management (WAM) and/or Provincial Identity Information Management Program (IDIM).
+The SSO solution is deployed in a high-availability configuration within the highly-available BC Government OpenShift cluster.
+
+This service is available 24/7, with questions and answers addressed during business hours only. Please reach out to us  #sso [RocketChat](https://chat.developer.gov.bc.ca/channel/sso) channel OR [Pathfinder SSO Product Owner](mailto:bcgov.sso@gov.bc.ca).
 
 Client provisioning requests will be reviewed and handled during normal business hours.
 
@@ -93,7 +95,7 @@ Further, if the change is more significant a Technical Information Bulletins (TI
 
 ### Service Level
 
-This service is available 24/7. With questions and answers addressed during business hours only. Please reach out to us  #sso [RocketChat](https://chat.developer.gov.bc.ca/channel/sso) channel OR [Pathfinder SSO Product Owner](mailto:bcgov.sso@gov.bc.ca).
+This service is available 24/7, with questions and answers addressed during business hours only. Please reach out to us  #sso [RocketChat](https://chat.developer.gov.bc.ca/channel/sso) channel OR [Pathfinder SSO Product Owner](mailto:bcgov.sso@gov.bc.ca).
 
 ### Security Reviews
 
