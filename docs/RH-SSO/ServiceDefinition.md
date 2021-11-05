@@ -93,7 +93,7 @@ Further, if the change is more significant a Technical Information Bulletins (TI
 
 ### Service Level
 
-This service is available 24/7 with best efforts support, during business hours only, to restart failed systems and address open issues. 
+This service is available 24/7. With questions and answers addressed during business hours only. Please reach out to us  #sso [RocketChat](https://chat.developer.gov.bc.ca/channel/sso) channel OR [Pathfinder SSO Product Owner](mailto:bcgov.sso@gov.bc.ca).
 
 ### Security Reviews
 
