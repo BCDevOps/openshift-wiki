@@ -65,6 +65,8 @@ We, at the Platform Services Team, also manage the patching of the platform's op
 
 All non-critical Platform services and DevOps Security services are supported during business hours 9am-5pm Mon-Fri excluding statutory holidays.
 
+The Openshift 4 Platform Change Management process can be found in the following [flow chart](https://app.mural.co/t/platformservices5977/m/platformservices5977/1634255277439/1b98fb52f1a179cbc324f525ca343761b26ee8cd?sender=u1b7f725325763913e60b4808).
+
 
 ### Requesting Access and Onboarding
 
