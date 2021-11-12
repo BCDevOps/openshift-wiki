@@ -18,8 +18,8 @@ It is available to any team on the B.C. government's OpenShift platform and can 
 3. [Create Applications in Argo CD](#create-applications)
     1. [Create the application](#create-the-application)
     2. [Synchronize the application](#synchronize-the-application)
-    3. [Project access control](#project-access-control)
 4. [Configure Your Project](#configure-your-project)
+    1. [Project access control](#project-access-control)
 5. [Additional Information](#additional-information)
 
 ## Why Argo CD is Good for You<a name="why-use-argocd"></a>
