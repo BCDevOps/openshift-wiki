@@ -1,36 +1,35 @@
 # Argo CD Usage on the DevExchange OpenShift Platform
 
-Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes, which is the foundation of OpenShift.
+Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes (the foundation of OpenShift).  It is efficient, well supported, and well documented. 
+
+It is available to any team on the B.C. government's OpenShift platform and can help teams:
+* Implement a GitOps-style deployment service
+* Reduce the maintenance overhead of their pipelines
+* Reduce resource consumption by using a shared service
 
 ## Table of Contents
-1. [Goals](#goals)
-2. [Overview](#overview)
-3. [Enable Argo CD for Your Project Set](#enable-argocd)
+1. [Why Argo CD is Good for You](#why-use-argocd)
+2. [Enable Argo CD for Your Project Set](#enable-argocd)
     1. [Set access for the GitHub repo](#set-access-github)
     2. [What style of deployment is used?](#style-of-deployment)
         1. [Helm](#helm)
         2. [Kustomize](#kustomize)
-    3. [Controlling the deployment sequence](#controlling-the-deployment-sequence)
-4. [Application Creation in Argo CD](#application-creation)
+    3. [Control the deployment sequence](#control-the-deployment-sequence)
+3. [Create Applications in Argo CD](#create-applications)
     1. [Create the application](#create-the-application)
     2. [Synchronize the application](#synchronize-the-application)
     3. [Project access control](#project-access-control)
-5. [Project Configuration](#project-configuration)
-6. [Additional Information](#additional-information)
+4. [Configure Your Project](#configure-your-project)
+5. [Additional Information](#additional-information)
 
-## Goals <a name="goals"></a>
-A goal of the Platform Services Team is to provide a modern, effective, and well-supported tool for CICD pipelines that will help to reduce resource consumption on the cluster by providing a common service that the community can help to support.  In particular, we seek to:
-* Provide a GitOps-style deployment service
-* Decrease reliance on Jenkins
-* Reduce resource consumption on the clusters by using a shared service
-
-## Overview <a name="overview"></a>
-There are a number of reasons for using Argo CD over familiar tools, such as Jenkins.  Argo CD is designed specifically for Kubernetes.  As a result, it is efficient, well supported, and well documented.  All Kubernetes resources are defined by a YAML manifest; by managing these manifest files in a Git repository that is monitored by Argo CD, it maintains application state on the cluster consistent with the desired state as defined by those manifests.  Updates to applications involve updates to the manifest files.  As a result of this architecture:
+## Why Argo CD is Good for You<a name="why-use-argocd"></a>
+There are a number of reasons for using Argo CD over other tools, such as Jenkins.  Argo CD is designed specifically for Kubernetes and is efficient, well supported, and well documented.  The YAML manifests that define all Kubernetes resources can be managed in a Git repository.  Argo CD can monitor that repo and maintain application state on the cluster consistent with the desired state as defined by the manifests.  Updates to applications involve updates to the manifest files.  As a result of this architecture:
 * All application changes are recorded as Git commits, providing a detailed change history.
 * Rollbacks can be achieved by reverting to a previous commit.
 * The configuration is portable, in the event the application is moved to another host.
 * Argo CD can be easily integrated with CICD pipelines.
 * Kustomize and Helm support satisfy the needs of most teams.
+* When combined with pipeline tools such as GitHub Actions or OpenShift Pipelines, teams no longer need to maintain their own pipeline infrastructure.
 
 ## Enable Argo CD for Your Project Set <a name="enable-argocd"></a>
 Coming soon: how to enable argocd for your project...
@@ -163,7 +162,7 @@ Consult the Kustomize documentation for more information, as this doc is meant t
 [https://kustomize.io/tutorial](https://kustomize.io/tutorial)
 
 
-### Controlling the deployment sequence <a name="controlling-the-deployment-sequence"></a>
+### Control the deployment sequence <a name="control-the-deployment-sequence"></a>
 If you have some resources that should be processed before others, you can use the Argo CD notion of 'sync-waves'.  Resources having sync waves with lower numbers are processed before those having sync waves with higher numbers.  To utilize this, add a sync-wave setting to metadata.annotations.  For example:
 ```
 metadata:
@@ -172,7 +171,7 @@ metadata:
 ```
 
 
-## Application Creation in Argo CD <a name="application-creation"></a>
+## Create Applications in Argo CD <a name="create-applications"></a>
 Once the manifest repo has a deploy key configured and the manifests themselves have been added, you are almost ready to add the application in Argo CD.  **Before you do, make sure that the target namespace can tolerate a disruption.**  Once you create the application in Argo CD and synchronize it, Argo CD will begin updating resources, so if there is a problem with your manifests, existing resources could be affected.
 
 ### Create the application <a name="create-the-application"></a>
@@ -199,7 +198,7 @@ If the sync has succeeded, but still shows as "progressing", or if there is an i
 Once you are satisfied with the setup, feel free to enable automatic synchronization.
 
 
-## Project Configuration <a name="project-configuration"></a>
+## Configure Your Project<a name="configure-your-project"></a>
 It should be noted that there are some constraints placed on Projects and Applications in this shared Argo CD instance.
 
 **Source Repository**
