@@ -41,6 +41,10 @@ PodDisruptionBudgets concept in Openshift 4 can be a power tool to aid in buildi
 [Demo #8: Introduction into GitOps and ArgoCD](https://www.youtube.com/watch?v=-Tkqe0lRuE0)
 The Platform Services Team is now offering product teams working on the Openshift 4 Platform access to the ArgoCD GitOps service. ArgoCD is a declarative, GitOps continuous delivery tool for Kubernetes that automates the deployment of the desired application states in the specified target environments. It is now available for products teams working in the Silver and Gold clusters of the BC Gov’s Openshift platform and is recommended as part of a replacement strategy for Jenkins to help reduce resource consumption on the Platform.
 
+[Demo #9: .Devcontainers and why developers love them](https://www.youtube.com/watch?v=g3fvDQCEaK0)
+Have you ever been in a situation when you just want to quickly get started working with an existing repo but find a huge list of prerequisites that need to be downloaded and installed first? Or when your development laptop  dies and you need to rebuild your dev environment from scratch? One of the solutions to these problems is the Dev containers. Dev containers are a containerised development environment that allows developers to embed their development environment into a code repository. BC Registries Team has been successfully using Dev containers to ensure that everyone on the team uses a consistent and reliable environment and to help new developers set up the dev environment and get started in minutes, and in this video will share their experience with this technology.
+
+
 We keep adding demos to the collection as they get released to YouTube so keep checking for the new additions time to time.
 
 Love, Your Platform Services Team, xo
