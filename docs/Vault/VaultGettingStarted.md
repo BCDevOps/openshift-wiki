@@ -141,8 +141,6 @@ The Vault KSA takes the form of `licensePlate-vault` in all project set namespac
 
 Check out the [Getting Started Demo/Test](https://github.com/bcgov/how-to-workshops/tree/master/vault/getting-started-demo) to confirm your Project Set is provisioned with support for Vault.
 
-> [Direct Link to Getting Started Demo/Test PR](https://github.com/bcgov/how-to-workshops/tree/vault/getting-started/vault/getting-started-demo)
-
 ## Support
 
 Support is provided via the [#devops-vault](https://chat.developer.gov.bc.ca/channel/devops-vault) channel in RocketChat!
