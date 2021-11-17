@@ -1,6 +1,6 @@
 # HashiCorp Vault Architecture and Design <!-- omit in toc -->
 
-This documentation outlines the HashiCorp Vault Architecture and Design on OpenShift.
+This documentation outlines the implementation details, architecture and design of the HashiCorp Vault installed on the BC Gov's Private Cloud OpenShift Platform.
 
 ## Table of Contents <!-- omit in toc -->
 
