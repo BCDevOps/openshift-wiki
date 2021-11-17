@@ -4,7 +4,7 @@ Here are some steps to take when you encounter errors.
 
 ## Check the status of Vault system in the cluster
 
-- All cluster members should be in either a leader (1) or follower (4) state. Five (5) raft systems total in the Vault cluster
+- All Vault cluster members should be in either a leader (1) or follower (4) state. Five (5) raft systems total in the Vault cluster
 - Should be unsealed and the DR site should be active.
 
 ```bash
