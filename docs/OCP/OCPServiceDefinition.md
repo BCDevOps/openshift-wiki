@@ -46,6 +46,7 @@ BC Gov's Private Cloud as a Platform Service includes:
   * [Vault Secret Management Service](https://developer.gov.bc.ca/BC-Government-Vault-Secrets-Management) provides a secure way to store and manage credentials, API tokens and other sensitive app information
   * [AQUA Container Scanning Service](https://developer.gov.bc.ca/BC-Government-Aqua-Cloud-Service-Definition) allows teams to scan their running containers to find security vulnerabilities
   * [EnterpriseDB HA service for PostgreSQL](https://developer.gov.bc.ca/BC-Government-EDB-Operator-Service-Definition) – a vendor-supported product for running highly available PostgreSQL clusters (a product team must purchase their own license in order to use this service)
+  * CrunchyDB HA service for PostgreSQL (**coming in Dec 2021 for early access in Silver**) – an open-source version of the Postgres operator from Crunchy Data for running highly available PostgreSQL clusters
 
 Other security features include:
 * The majority of Private Cloud PaaS maintenance has no/minimal impact on the applications configured as multi-node deployments running on it and is run during business hours as required in a containerized environment.
@@ -91,11 +92,14 @@ The Platform Services Team follows a team of teams model made up of the Platform
 | Application support and operations | Product Team |
 | Application network security | Product Team together with their MISO |
 | Application monitoring | Product Team |
+| **Efficient use of Platform Resources (CPU, RAM and Storage) by the Application** | **Product Team** |
 | Application Integration with DevSecOps tools | Product Team | 
 | Application Integration with KeyCloak SSO Service | Product Team |
 | Platform Physical Infrastructure and OpenShift Software |	Platform Services Team: Operations Team (DXC/Advanced Solutions) |
 | DevSecOps Tools (AQUA, Artifactory, Sysdig, EnterpriseDB Operator and Vault) | Platform Services Team: Platform Experience and Platform Operations Teams |
-| BC Gov SSO Service | KeyCloak SSO Support Team (contact [Stephanie Bacon](mailto:Stephanie.Bacon@gov.bc.ca) for more details) |
+| BC Gov SSO Service | KeyCloak SSO Support Team (contact [Zorin Samji](mailto:Zorin.Samji@gov.bc.ca) (SSO Product Owner) for more details) |
+
+**Note:We are experiencing a critical situation on the Private Cloud Platform at this moment with a high amount of CPU, RAM and Storage resources being reserved but not used and if not mitigated, this situation will force us to freeze onboarding of new apps onto the Platform in the near future until we find a way to motivate product teams to use resources more efficiently as described in the [Platform App Resource Tuning Guidelines](https://developer.gov.bc.ca/Resource-Tuning-Recommendations). If you an existing product team, please review the resource allocation for your app and make sure they are aligned with the Guidelines.**
 
 If you have any questions about the shared responsibilities above, please contact Justin Hewitt, Sr Director of DevOps Platform Services at [Justin.Hewitt@gov.bc.ca](mailto:Justin.Hewitt@gov.bc.ca).
 
