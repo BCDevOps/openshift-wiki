@@ -29,7 +29,8 @@ The Province also owns a private organization bcgov-c that serves as **temporary
 
 If your code can never be OpenSource, and you are looking to leverage GitHub, you are recommended to use GitHub Enterprise.  It was procured as part of the Master Agreement with Microsoft. 
 
- 
+**If you are unsure what Github org is right for your code, please consult with your Ministry's Information Security Officer (MISO).**
+
 
 ## What benefits do you get with the GitHub Enterprise User License? 
 
