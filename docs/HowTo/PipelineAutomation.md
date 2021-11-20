@@ -2,8 +2,8 @@
 description: This page provides guidance to the teams in BC Gov that look to get started with encorporating Continuous integration (CI) and continuous delivery (CD) into the lifecycle of their application hosted on the Private Cloud Openshift Platform. 
 title: CI/CD with Pipeline Automation
 tags:
-  - continious integration
-  - continious deployment
+  - continuous integration
+  - continuous deployment
   - pipeline
   - template
   - ArgoCD
