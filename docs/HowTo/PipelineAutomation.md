@@ -14,7 +14,7 @@ tags:
 
 # Use of CI/CD Pipeline Templates for Private Cloud teams
 
-So you have now built a new and shiny app and want to deploy it to the BC Gov's Private Cloud Openshift Platform. You also want to take advantage of the Continuous integration (CI) and Continuous delivery (CD) power that can enable your team to automatically build, test, and prepare code changes for release to production so that your software delivery is more efficient, rapid and - **very importantly** - secure.
+So now you have built a new and shiny app and want to deploy it to the BC Gov's Private Cloud Openshift Platform. You also want to take advantage of the Continuous integration (CI) and Continuous delivery (CD) power that can enable your team to automatically build, test, and prepare code changes for release to production so that your software delivery is more efficient, rapid and - **very importantly** - secure.
 To help teams like yours that want to get started with pipeline automation quickly or wonder what the best security practices for pipeline development are, or both!, we have created pipeline templates for the  automation technologies supported<sup>[^1](#myfootnote1)</sup> on the Private Cloud Platform.
 
 ## Who can use these pipeline templates?
