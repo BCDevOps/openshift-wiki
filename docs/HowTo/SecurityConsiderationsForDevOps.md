@@ -47,7 +47,9 @@ Service definition - Silver/Gold - https://developer.gov.bc.ca/Getting-Started-o
 
 Our **_Silver Service_** is our standard DevOps platform offering, with on-cluster resiliencey based on application design.
 
-Our **_Gold Service_** is our enhanced DevOps platform offering, with replication to a secondary cluster for disaster fail-over purposes.
+Our **_Gold Service_** is our enhanced DevOps platform offering, with replication to a secondary cluster for disaster fail-over purposes.  
+
+Please take note of the **_Shared Responsibility Model_**.  While the Platform Services Team manages infrastructure, OpenShift Container Platform and the Platform critical services as part of the Private Cloud PaaS, the Product Team bears the responsibility for the functionality and operations of their application(s) hosted on the Platform.  
 
 Specific details on OpenShift specific secuirty controls can be found here:
 
