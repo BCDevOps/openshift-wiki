@@ -55,11 +55,13 @@ https://www.redhat.com/rhdc/managed-files/cl-openshift-security-guide-ebook-us28
 
 - these are highlighted as part of the OpenShift STRA.
 
+------
 ### <a name="critical-systems-standard"></a>Critical Systems Standard
 
 We are very close to obtaining critical systems standard compliance.  
 Documentation is in final stages of review for submission.
 
+------
 ### <a name="platform-security-assessments"></a>Platform Tools Security Assessments
 
 Many of the platform tools have ***completed*** security assessments.  These include:
@@ -89,6 +91,7 @@ The following security assessments are ***planned***:
 
 For specifics, please contact the platform security architect, nick.corcoran@gov.bc.ca.
 
+------
 ### <a name="platform-registry"></a>Platform Registry
 
 Here, we maintain a listing of all projects with deployments on each OpenShift cluster. 
@@ -98,6 +101,7 @@ https://registry.developer.gov.bc.ca/public-landing?redirect=/dashboard
 
 While access to the registry is currently limited to the OpenShift Platform Services team (full view) and Product Owners/Technical Leads (limited view), we are working on creating roles for Ministry security staff to consume as well.  Until then, you can contact nick.corcoran@gov.bc.ca for details.
 
+------
 ### <a name="communications"></a>Communications
 
 Community sharing, alerts and discussions take place on Rocket Chat, which we host as an app on OpenShift.  Authentication via IDIR or GitHub (in BCGov org or invited by an existing member).
@@ -112,6 +116,7 @@ Mautic has been implemented to allow for subscription based communications for t
 - https://github.com/bcgov/Mautic-Subscription-App
 - https://subscribe.developer.gov.bc.ca/
 
+------
 ### <a name="access-management"></a>Access Management
 
 Access to OpenShift is brokered through our OpenShift SSO Service (currently leveraging KeyCloak).
@@ -133,6 +138,7 @@ Platform Services Roles and Responsibilities can be found here:
 The Platform Services team maintains an Access Control Policy for all platform tools.  
 - https://docs.developer.gov.bc.ca/s/bk07fg8i4dscrcq7posg/devops-platform-services/d/c1ma8i4adqrdud0ff650/access-control-policy-openshift-and-platform-tools-public
 
+------
 ### <a name="kubernetes-network-policies"></a>Kubernetes Network Policies
 
 Network policies help the platform and project teams to better control communications between components.  While KNPs only apply as INGRESS rules (not egress), they help to improve our overall security posture.  KNPs only apply to on-cluster communications (i.e. between pods in a namespace, or between namespaces).  For off-cluster communications, hosting is investigating a VMWare tool called NSX-T.
@@ -142,6 +148,7 @@ This resource is a little out of date, as it was orginially created for migratio
 
 More details on KNPs can be found here: https://kubernetes.io/docs/concepts/services-networking/network-policies/
 
+------
 ### <a name="pipeline-templates"></a>Pipeline Templates (includes static and dynamic analysis)
 
 In order to reduce effort in implementing secure tools into a build pipeline, we have developed pipeline templates that include components for build, aas well as static and dynamic vulnerability scanning.  
@@ -155,6 +162,7 @@ The pipeline templates above make it easier to include the tools described below
   - https://developer.gov.bc.ca/SonarQube-on-OpenShift
   - https://developer.gov.bc.ca/OWASP-ZAP-Security-Vulnerability-Scanning
 
+------
 ### <a name="container-image-scanning"></a>Container image scanning (Aqua, Xray)
 
 Image scanning comes in 2 forms - 1 active (Aqua), 1 passive (XRay).
@@ -172,6 +180,7 @@ Alternatively, Aqua image scans may be requrested by contacting Nick Corcoran vi
 An addon capability to Artifactory, XRay scans images and other artifacts for component vulnerabilities.  Anyone with access to an image or artifact within Artifactory can see the XRay tab as part of the image/artifact details, and see what vulnerable components lie within, and what version will correct that deficiency.
 - https://artifacts.developer.gov.bc.ca/ui/login/
 
+------
 ### <a name="container-runtime-security"></a>Container runtime security
 
 We currently have runtime policies in place for the following using Aqua:
@@ -181,6 +190,7 @@ Additionally, OpenShift uses CoreOS and the CRI-O container engine.
 - https://docs.openshift.com/container-platform/4.1/architecture/architecture-rhcos.html
 - https://docs.openshift.com/container-platform/3.11/crio/crio_runtime.html
 
+------
 ### <a name="tls-certificates"></a>TLS Certificates
 
 OpenShift uses a wildcard certificate for the majority of cluster communications security.  This should be sufficient for dev and test workloads, but for production workloads, each team is required to obtain a dedicated TLS certificate from the Access & Directory Management Services (ADMS) team.  
@@ -200,6 +210,7 @@ Generate a .csr for each site:
 
 ### IMAGE FOR TLS ORDERING
 
+------
 ### <a name="secrets-management"></a>Secrets Management
 **OpenShift Secrets:**
 
@@ -210,11 +221,13 @@ This 'secrets' store should actually only be used for configurations.  Values ar
 The preferred secrets management tool, Vault was recently launched for team use on OpenShift.
 - https://developer.gov.bc.ca/BC-Government-Vault-Secrets-Management
 
+------
 ### <a name="gitops-cluster-configuration-management"></a>GitOps/Cluster Configuration Management
 
 Argo CD provides a GitOps capability for sync'ing a Git repository with an OpenShift configuration (platform or application).
 - https://developer.gov.bc.ca/Argo-CD-Usage-on-the-DevExchange-OpenShift-Platform
 
+------
 ### <a name="api-management"></a>Application Programmable Interface (API) Management
 
 The Data BC team hosts an API Gateway for use by other government clients.  Details can be found here:
@@ -222,12 +235,15 @@ The Data BC team hosts an API Gateway for use by other government clients.  Deta
 - https://developer.gov.bc.ca/BC-Government-API-Guidelines
 - https://developer.gov.bc.ca/BC-Government-OpenAPI-Specifications
 
+------
 ### <a name="application-resource-tuning"></a>Application Resource Tuning Advisor and App Assessment Tool
 **Resource Tuning Advisor**
-- https://github.com/BCDevOps/resource-tuning-advisor-app
+- https://github.com/BCDevOps/resource-tuning-advisor-app 
+
 **App Assessment Tool**
 - https://github.com/bcgov/AppAssessment
 
+------
 ### <a name="logging-monitoring"></a>Logging/Monitoring (EKS, Kibana, Graphana, Sysdig Monitor, SIEM, Uptime, Status)
 
 The Platform Services team provides a number of tools to help ensure our platform and applications are behaving as expected, while allowing us to investigate anomolies.
@@ -262,13 +278,16 @@ This tools help us to observe platform service availability:
 - https://developer.gov.bc.ca/Openshift-4-Platform-Services-Reliability-Dashboard-with-Uptime-Robot
 - https://stats.uptimerobot.com/w28pPSLlZE
 
+------
 ### <a name="backups"></a>Backups
 **OpenShift:**
 - https://developer.gov.bc.ca/OCP4-Backup-and-Restore
 - https://developer.gov.bc.ca/Backup-Container
+
 **GitHub:**
 - https://github.com/bcgov-c/platform-services-docs/blob/main/github-backups.md
 
+------
 ### <a name="change-management"></a>Change Management
 
 Planning for platform and service changes is documented on the Platform Services ZenHub board.  
@@ -277,6 +296,7 @@ Any service change will be communicated via the #devops-alerts RocketChat channe
 
 Strategic level changes are communicated to the DevOps community at regular Community Meetups, as well as to executive groups across government.
 
+------
 ### <a name="github"></a>GitHub
 
 GitHub is the primary git repository for platform application code.  There are some exceptions that use privately hosted GitLab or other source code repositories.  
@@ -302,6 +322,7 @@ Teams may request GitHub apps to be associated with their own or all projects in
 We are currently piloting the use of GitHub Enterprise.  
 - https://developer.gov.bc.ca/Use-of-GitHub-Enterprise-User-Licenses-in-BC-Gov
 
+------
 ### <a name="other-considerations"></a><u>Other considerations</u>
 **Payment Card Industry Compliance (PCI-DSS)**
 
