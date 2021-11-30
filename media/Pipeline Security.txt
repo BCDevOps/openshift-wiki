@@ -1,0 +1,12 @@
+Pipeline
+
+SonarQube - private repos
+SonarCloud - public repos
+
+OWASP ZAP
+
+AQUA scan webhook
+
+I don't think having a pipeline scan integration with whichever repo manager is a good idea.  
+Those should live within those tools as part of the build process anyhow.
+
