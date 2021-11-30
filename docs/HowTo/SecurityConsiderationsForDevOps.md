@@ -194,7 +194,8 @@ Additionally, OpenShift uses CoreOS and the CRI-O container engine.
 ### <a name="tls-certificates"></a>TLS Certificates
 
 OpenShift uses a wildcard certificate for the majority of cluster communications security.  This should be sufficient for dev and test workloads, but for production workloads, each team is required to obtain a dedicated TLS certificate from the Access & Directory Management Services (ADMS) team.  
-***Note:*** by default, the wildcard will be used to protect project workloads.  Obtaining a dedicated TLS cert is currently a manual process.
+***Note:*** by default, the wildcard will be used to protect project workloads.  The Platform Services team worked through the wildcard issuance requriements for use on the OpenShift clusters.  Obtaining a dedicated TLS cert is currently a manual process.  
+Details on these processes can be found here: https://ssbc-client.gov.bc.ca/services/SSLCert/documents.htm
 
 **Pre-requisites:**
 Generate a .csr for each site:
