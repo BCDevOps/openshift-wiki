@@ -55,6 +55,9 @@ https://www.redhat.com/rhdc/managed-files/cl-openshift-security-guide-ebook-us28
 
 - these are highlighted as part of the OpenShift STRA.
 
+**_Penetration Tests_**
+The platform services team outsources for a penetration test annually to ensure the services we provide are configured to protect confidentiality, integrity and availability.  Peneteration tests are procured through the pre-qualified list of vendors (https://www2.gov.bc.ca/gov/content/governments/services-for-government/bc-bid-resources/goods-and-services-catalogue/im-it-security-services).
+
 ------
 ### <a name="critical-systems-standard"></a>Critical Systems Standard
 
