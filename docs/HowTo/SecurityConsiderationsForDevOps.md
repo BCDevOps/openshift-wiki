@@ -109,8 +109,7 @@ For specifics, please contact the platform security architect, nick.corcoran@gov
 ### <a name="platform-registry"></a>Platform Registry
 
 Here, we maintain a listing of all projects with deployments on each OpenShift cluster. 
-### IMAGE of Platform Registry entry
-
+![platformregistryexample](https://user-images.githubusercontent.com/53879638/144318853-104588bc-0db8-4cd7-8616-13c1c137f199.JPG)
 
 https://registry.developer.gov.bc.ca/public-landing?redirect=/dashboard
 
@@ -170,8 +169,7 @@ In order to reduce effort in implementing secure tools into a build pipeline, we
 - https://github.com/bcgov/Security-pipeline-templates/
 
 Here is a representation of what an application build pipeline should look like:
-
-![DevOps Pipeline](https://github.com/BCDevOps/openshift-wiki/tree/master/media/PlatformSec.jpg)
+![PlatformSec drawio](https://user-images.githubusercontent.com/53879638/144318963-fdb5b877-88b8-451d-accf-2d24918c0d62.png)
 
 The pipeline templates above make it easier to include the tools described below:
   - https://developer.gov.bc.ca/SonarQube-on-OpenShift
@@ -199,7 +197,7 @@ An addon capability to Artifactory, XRay scans images and other artifacts for co
 ### <a name="container-runtime-security"></a>Container runtime security
 
 We currently have runtime policies in place for the following using Aqua:
-### IMAGE OF AQUA RUNTIME POLICIES
+![aqua_enforce](https://user-images.githubusercontent.com/53879638/144319023-46c9d915-405f-421f-8ec0-13280b76586b.JPG)
 
 Additionally, OpenShift uses CoreOS and the CRI-O container engine.
 - https://docs.openshift.com/container-platform/4.7/architecture/architecture-rhcos.html
@@ -222,8 +220,7 @@ Generate a .csr for each site:
 -  Order is sent to DXC for fulfillment
 -  Once order is fulfilled/shipped by DXC, Ministry Service Desk sends 'Completed Order' notification to business area
 
-
-### IMAGE FOR TLS ORDERING
+![TLS_Order](https://user-images.githubusercontent.com/53879638/144319065-af4ae9f9-3d61-41b3-977b-36a600e51b0a.png)
 
 ------
 ### <a name="secrets-management"></a>Secrets Management
@@ -265,7 +262,8 @@ The Platform Services team provides a number of tools to help ensure our platfor
 
 **OpenShift UI:**
 Within the OpenShift interface, project teams can view logs associated with a given pod through the Logs tab.  
-### IMAGE of LOG interface in OpenShift UI
+![logging_ui](https://user-images.githubusercontent.com/53879638/144319141-d387a02c-6b9e-4330-ab5b-6e2711e39565.JPG)
+
 **Kibana:**
 
 This tool provides a more wholistic view of logs for an application or at the platform level, as well as providing visualization and alerting capability.
