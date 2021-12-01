@@ -70,7 +70,7 @@ There are a few tools available to help with managing your persistent storage ab
 
 ### What is my quota?
 
-All Storage sizes are in GiB, and backup quotas default to half the storage size. These quotas can be requested in the Project Registry. All Storage Quotas include 60 PVCs and 5 VolumeSnapshots.
+All Storage sizes are in GiB, and backup quotas default to half the storage size. These quotas can be requested in the Project Registry and will require a proof of increased storage needs provided to the Platform Product Director before the request can be approved and more storage is allocated to a namespace. All Storage Quotas include 60 PVCs and 5 VolumeSnapshots.
 
 - storage-1
 - storage-2
