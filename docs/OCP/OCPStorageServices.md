@@ -3,7 +3,6 @@ title: Persistent Storage Services
 description: Documentation regarding persistent storage options supported by the platform.
 tags:
   - netapp
-  - gluster
   - net app
   - nfs
   - storage
@@ -11,71 +10,83 @@ tags:
   - persistent
 ---
 
-## Pathfinder storage solutions
+## OpenShift Storage Solutions
 
 - [Storage Technologies](#storage-technologies)
 - [Tools](#tools)
 - [Storage Class FAQ](#storage-class-faq)
 
-The platform has several different storage technologies in use as we work to provide an ever-improving storage experience.  These storage technologies support in-cluster storage types.  Currently we have 2 types of in-cluster persistent storage that we are able to support:
+The platform has several different storage technologies in use as we work to provide an ever-improving storage experience. Currently we have 3 types of persistent storage that are available:
 
-**FILE** - File storage is a great all-purpose storage type that can be attached to 1 or more containers, and is the recommended storageClass for most general application uses.
+**FILE** - File storage is a great all-purpose storage type that can be attached to 1 or more containers, and is the recommended storageClass for most general application uses. This is powered by NFS.
 
-**BLOCK** - Block storage can offer additional performance and reliability for database or similar workloads, but is only able to be attached to 1 container at a time.
+**BLOCK** - Block storage can offer additional performance and reliability for database or similar workloads, but is only able to be attached to 1 container at a time. This is powered by iSCSI.
 
-**Coming Soon!** **S3 Object Storage** - Object based storage that is available via a web based API instead of through a mounted directory.  A common implementation of this is the Amazon S3 API.  This allows remote access storage over the internet that does not require directly attaching to a running system.  We are targeting late January to have automatically provision-able object storage available to the platform.  The first Object Store integration will be hosted through the On-Prem OCIO object store service and available as S3 compatible buckets.
+**S3 Object Storage** - Object based storage that is available via a web based API instead of through a mounted directory. A common implementation of this is the Amazon S3 API. This allows remote access storage over the internet that does not require directly attaching to a running system.
 
 ## Storage Technologies
 
 ### NetApp
 
-The latest storage solution for the OpenShift platform is backed by a NetApp storage appliance that provides both file and block storage types to the cluster.  This technology is the target for all new FILE and BLOCK storage on the platform.
+The primary storage solution for the OpenShift platform is backed by a NetApp storage appliance that provides both file and block storage types to the cluster.
 
-**NetApp File** - *netapp-file-standard* is the default storage class for the platform and the type of storage you will get if you do not specify a specific storageClass.
+All NetApp storage classes support resizing (bigger only). So you can start with a small volume and just edit your PVC to have a bigger `.spec.resources.requests.storage` later if you need more. You may need to restart the pods attached to let the resize trigger on re-mount.
 
-**NetApp Block** - *netapp-block-standard* is the current block storageClass target and the storageClass you should use for your block storage needs.
+**NetApp File** - `netapp-file-standard` is the default storage class for the platform and the type of storage you will get if you do not specify a specific storageClass.
 
-### Gluster (CNS)
+`netapp-file-backup` is the same as `netapp-file-standard` but its contents are backed up daily by the OCIO backup infrastructure. More details at [Backup and Restore](https://developer.gov.bc.ca/OCP4-Backup-and-Restore)
 
-The cluster has been using a [gluster backed storage solution](CNS.md) for the past 2 years to provide on-demand PVC provisioning for teams.  While this storage solution has helped grow our platform and has provided us with a great developer experience, it has reached the end of it's available capacity and new volume provisioning has been disabled.
+**NetApp Block** - `netapp-block-standard` is the current block storageClass target and the storageClass you should use for your block storage needs.
 
-This storage is **NOT** being decommissioned at this time, however it does mean that **new** provisioning will need to be directed to the current storage solution (NetApp), while all existing gluster storage volumes will remain available and supported on the 3.11 platform.
+There are two additional storage classes not available to dev teams that are just for the operations teams to use for infrastructure components like the ElasticSearch stack or the image registry. They are `netapp-file-extended` and `netapp-block-extended`.
 
-There are 3 CNS storage classes in use:
+### Snapshots
 
-- gluster-file - All purpose storage
-- gluster-file-db - All purpose storage with some tweaks for light DB use
-- gluster-block - targeted workload that requires block access to storage.
+Snapshots can be used to maintain point-in-time copies of volumes. This can empower rapid testing by quickly resetting a PVC to a consistent state between each test run, or getting an atomic view of a volume to run a backup on.
 
-### NFS Netbackup integrated
+Under the hood, they are very quickly created by the NetApp as a copy on write clone which means they are very space efficient.
 
-This storageClass **(nfs-backup)** was created to bridge the gap between in-cluster storage and the BCGov Netbackup infrastructure.  It is currently available as file storage only.  While this solution has provided us with a short term bridge for application backups, there are some caveats for it's use:
+See the [Red Hat docs](https://access.redhat.com/documentation/en-us/red_hat_openshift_container_storage/4.7/html/deploying_and_managing_openshift_container_storage_using_red_hat_openstack_platform/volume-snapshots_osp) for how to create snapshots and how to create PVCs from those snapshots.
 
-- **NOT** highly available storage
-- Custom provisioning process.  *See:* [GUI Provisioning Walkthrough](https://github.com/BCDevOps/provision-nfs-apb/blob/master/docs/usage-gui.md) (no direct provisioning via creating a PVC)
-- Low default quota (for larger quota needs, a discussion and proof of concept implementation are requested before any quota increases are approved)
-- Slower performance
-- Deprecated for the OpenShift 4 environment.
+### Dell EMC Elastic Cloud Storage
 
-### Legacy Gluster (decommissioned)
+The OCIO has an [object store](https://ssbc-client.gov.bc.ca/services/ObjectStorage/overview.htm) service that supports the AWS S3 protocol. The service is aimed at objects typically over 100 KB, updated infrequently, retained longer term, with performance response targets of 100ms or more. This may be a good option if your application needs to store large amounts of archival data that won’t fit in the typical PVC quotas provided. It may also be good for large backup zip files or tarballs.
 
-Our first storage solution was manually managed gluster storage.  While this storage was a decent first storage solution, it was not able to provide automatic PVC provisioning, and had higher costs than were sustainable.  This storage class has since been retired and is no longer available on the platform.
+This service replicates data between the two datacenters and the API endpoints are load balanced between them to ensure uptime even if a datacenter goes offline.
+
+Please contact your Ministry IMB to get access to the Ministry service account that controls access and where a bucket for your app will be provisioned.
+
+[More details](https://github.com/BCDevOps/OpenShift4-Migration/issues/59)
 
 ## Tools
 
 There are a few tools available to help with managing your persistent storage above and beyond the built in OpenShift features.
 
-**Database Backups**: Wade Barnes has curated a community project to help teams implement regular backups of their postgres databases hosted within the platform, please check out the repo here: [BCDevOps/Backup-Container](https://github.com/bcdevops/backup-container)
+**Database Backups**: Wade Barnes has curated a community project to help teams implement regular backups of their databases hosted within the platform, please check out the repo here: [BCDevOps/Backup-Container](https://github.com/bcdevops/backup-container)
 
-**Migrating Storage**: another community supported repository is available to help with migrating data from one PVC to another (moving from one storageClass to another, moving to a larger PVC, etc).  Please check out the repo here: [BCDevOps/StorageMigration](https://github.com/BCDevOps/StorageMigration)
+**Migrating Storage**: another community supported repository is available to help with migrating data from one PVC to another (moving from one storageClass to another, moving to a larger PVC, etc). Please check out the repo here: [BCDevOps/StorageMigration](https://github.com/BCDevOps/StorageMigration)
 
 ## Storage Class FAQ
+
+### What is my quota?
+
+All Storage sizes are in GiB, and backup quotas default to half the storage size. These quotas can be requested in the Project Registry and will require a proof of increased storage needs provided to the Platform Product Director before the request can be approved and more storage is allocated to a namespace. All Storage Quotas include 60 PVCs and 5 VolumeSnapshots.
+
+- storage-1
+- storage-2
+- storage-4
+- storage-16
+- storage-32
+- storage-64
+- storage-128
+- storage-256
+- storage-512
 
 ### Which should I choose
 
 If you don't have a specific need, choose file. Only choose block storage if you have a specific reason to do so, preferably only in your PROD projects.
 
-As this is a shared platform with automatic provisioning enabled for your needs, the urge to provision "more" or "the best available" is contradictory to the best use of the platform.  With re-provisioning available on request, there should be no reason to order more than you know you need *today* (specifically, don't request what you *think* you need, only request what you know you currently need.  If those needs change, then simply update your storage requests.)
+As this is a shared platform with automatic provisioning enabled for your needs, the urge to provision "more" or "the best available" is contradictory to the best use of the platform. With resizing available on request, there should be no reason to order more than you know you need *today*. Specifically, don't request what you *think* you need, only request what you know you currently need. If those needs change, then simply update your storage requests.
 
 ### Mins and Maxes (NetApp storageClasses)
 
@@ -85,7 +96,7 @@ Maximum size is 256Gi, provisioning will fail any bigger. Larger custom quotas w
 
 ### Performance
 
-One question is often "how fast is each", and well, it depends on your workload.  There have been some specific performance tests done by Wade Barnes, and new comparative tests should be available in the https://github.com/bcdevops/backup-container documentation.
+One question is often "how fast is each", and well, it depends on your workload.
 
 ElasticSearch specifically does not work with NFS protocol and needs block storage.
 
@@ -93,12 +104,16 @@ If you have specific performance needs, then we would suggest testing both types
 
 ### Pros and Cons of each
 
-One of the biggest pros of File storage is that it is re-sizeable.  Just edit your PVC to have a bigger `.spec.resources.requests.storage` and give it a few seconds.
+File storage can be mounted by multiple pods at the same time. The protocol is also a bit more robust to maintenance.
 
-Block storage cannot be mounted during maintenance. Any pods already running will failover properly to the secondary NetApp node, but any newly launched pods will fail to start until both NetApp nodes are available.
+Block storage cannot be mounted during maintenance. Any pods already running will failover properly to the secondary NetApp node, but any newly launched pods will fail to start until both NetApp nodes are available. We have an open case with NetApp to see if this can be improved.
 
-File storage ends up being a bit more flexible (re-sizeable, mountable as RWX, etc), while Block storage is generally more performant for database or other small transaction/write intensive application uses.
+Only block volumes support snapshots.
+
+File storage ends up being a bit more flexible (mountable as RWX, etc), while Block storage is generally more performant for database or other small transaction/write intensive application uses.
+
+Object storage is great for storing large volumes of data (many terabytes) for long periods of time very cheaply. But its response time can be quite slow for retrieving individual files.
 
 ### Other fun details
 
-All netapp-*-standard volumes are thin provisioned and have de-duplication and compression enabled.  The de-duplication and compression jobs are currently run during a nightly job at 00:10.
+All netapp-*-standard volumes are thin provisioned and have de-duplication and compression enabled. The de-duplication and compression jobs are currently run during a nightly job at 00:10.
