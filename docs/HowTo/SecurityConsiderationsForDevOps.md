@@ -66,7 +66,7 @@ The platform services team outsources for a penetration test annually to ensure 
 ### <a name="privacy"></a>Privacy
 A Privacy Impact Assessment has been completed for the OpenShift Container Platform service.
 
-Personal Information upto and including Protected B Informaiton Security Classification may be stored on OpenShift.   
+Personal Information upto and including Protected B Information Security Classification may be stored on OpenShift.   
 - https://www2.gov.bc.ca/gov/content/governments/services-for-government/information-management-technology/information-security/information-security-classification
 
 ------
