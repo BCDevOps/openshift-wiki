@@ -342,6 +342,7 @@ We are currently piloting the use of GitHub Enterprise.
 **Payment Card Industry Compliance (PCI-DSS)**
 
 Our OpenShift implementation is **NOT** PCI-DSS compliant.  If you wish to host an application on OpenShift that needs to perform financial transactions, please refer to the following:  https://developer.gov.bc.ca/Payment-Card-Processing-for-OpenShift-Applications
+Some teams have decided to host PCI-scoped applications on-prem (non-OpenShift) or on a cloud based service (AWS, Azure, etc) to avoid linkages with government systems not under their control.
 
 **Training/Support**
 
