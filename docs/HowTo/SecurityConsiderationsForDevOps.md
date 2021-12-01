@@ -4,6 +4,7 @@ resourceType: Documentation
 title: BC Government OpenShift DevOps Security Considerations
 tags:
   - security
+  - privacy
   - secrets
   - tls
   - ssl
@@ -24,6 +25,7 @@ tags:
 There are a number of tools available to developers working on the OpenShift platform to help ensure the confidentiality, integrity and availability of data within those systems.  This is an overview of those tools, with links to specifics on each of the resources.
 
 - [OpenShift Platforrm Security](#openshift-platform-security)
+- [Privacy](#privacy)
 - [Access Management](#access-management)
 - [Kubernetes Network Policies](#kubernetes-network-policies)
 - [Pipeline Templates (includes static and dynamic analysis)](#pipeline-templates)
@@ -59,6 +61,13 @@ https://www.redhat.com/rhdc/managed-files/cl-openshift-security-guide-ebook-us28
 
 **_Penetration Tests_**
 The platform services team outsources for a penetration test annually to ensure the services we provide are configured to protect confidentiality, integrity and availability.  Peneteration tests are procured through the pre-qualified list of vendors (https://www2.gov.bc.ca/gov/content/governments/services-for-government/bc-bid-resources/goods-and-services-catalogue/im-it-security-services).
+
+------
+### <a name="privacy"></a>Privacy
+A Privacy Impact Assessment has been completed for the OpenShift Container Platform service.
+
+Personal Information upto and including Protected B Informaiton Security Classification may be stored on OpenShift.   
+- https://www2.gov.bc.ca/gov/content/governments/services-for-government/information-management-technology/information-security/information-security-classification
 
 ------
 ### <a name="critical-systems-standard"></a>Critical Systems Standard
