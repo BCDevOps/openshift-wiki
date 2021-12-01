@@ -111,6 +111,7 @@ For specifics, please contact the platform security architect, nick.corcoran@gov
 Here, we maintain a listing of all projects with deployments on each OpenShift cluster. 
 ### IMAGE of Platform Registry entry
 
+
 https://registry.developer.gov.bc.ca/public-landing?redirect=/dashboard
 
 While access to the registry is currently limited to the OpenShift Platform Services team (full view) and Product Owners/Technical Leads (limited view), we are working on creating roles for Ministry security staff to consume as well.  Until then, you can contact nick.corcoran@gov.bc.ca for details.
@@ -170,7 +171,7 @@ In order to reduce effort in implementing secure tools into a build pipeline, we
 
 Here is a representation of what an application build pipeline should look like:
 
-### IMAGE OF PIPELINE
+![DevOps Pipeline](https://github.com/BCDevOps/openshift-wiki/tree/master/media/PlatformSec.jpg)
 
 The pipeline templates above make it easier to include the tools described below:
   - https://developer.gov.bc.ca/SonarQube-on-OpenShift
