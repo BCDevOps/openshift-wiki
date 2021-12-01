@@ -201,8 +201,7 @@ We currently have runtime policies in place for the following using Aqua:
 ### IMAGE OF AQUA RUNTIME POLICIES
 
 Additionally, OpenShift uses CoreOS and the CRI-O container engine.
-- https://docs.openshift.com/container-platform/4.1/architecture/architecture-rhcos.html
-- https://docs.openshift.com/container-platform/3.11/crio/crio_runtime.html
+- https://docs.openshift.com/container-platform/4.7/architecture/architecture-rhcos.html
 
 ------
 ### <a name="tls-certificates"></a>TLS Certificates
@@ -306,7 +305,7 @@ This tools help us to observe platform service availability:
 ### <a name="change-management"></a>Change Management
 
 Planning for platform and service changes is documented on the Platform Services ZenHub board.  
-- https://app.zenhub.com/workspaces/platform-experience-5bb7c5ab4b5806bc2beb9d15/board?repos=220104031
+- https://app.zenhub.com/workspaces/platform-experience-5bb7c5ab4b5806bc2beb9d15/board?repos=220104031  
 Any service change will be communicated via the #devops-alerts RocketChat channel.
 
 Strategic level changes are communicated to the DevOps community at regular Community Meetups, as well as to executive groups across government.
