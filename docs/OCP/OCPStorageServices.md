@@ -40,6 +40,14 @@ All NetApp storage classes support resizing (bigger only). So you can start with
 
 There are two additional storage classes not available to dev teams that are just for the operations teams to use for infrastructure components like the ElasticSearch stack or the image registry. They are `netapp-file-extended` and `netapp-block-extended`.
 
+### Snapshots
+
+Snapshots can be used to maintain point-in-time copies of volumes. This can empower rapid testing by quickly resetting a PVC to a consistent state between each test run, or getting an atomic view of a volume to run a backup on.
+
+Under the hood, they are very quickly created by the NetApp as a copy on write clone which means they are very space efficient.
+
+See the [Red Hat docs](https://access.redhat.com/documentation/en-us/red_hat_openshift_container_storage/4.7/html/deploying_and_managing_openshift_container_storage_using_red_hat_openstack_platform/volume-snapshots_osp) for how to create snapshots and how to create PVCs from those snapshots.
+
 ### Dell EMC Elastic Cloud Storage
 
 The OCIO has an [object store](https://ssbc-client.gov.bc.ca/services/ObjectStorage/overview.htm) service that supports the AWS S3 protocol. The service is aimed at objects typically over 100 KB, updated infrequently, retained longer term, with performance response targets of 100ms or more. This may be a good option if your application needs to store large amounts of archival data that won’t fit in the typical PVC quotas provided. It may also be good for large backup zip files or tarballs.
@@ -59,6 +67,20 @@ There are a few tools available to help with managing your persistent storage ab
 **Migrating Storage**: another community supported repository is available to help with migrating data from one PVC to another (moving from one storageClass to another, moving to a larger PVC, etc). Please check out the repo here: [BCDevOps/StorageMigration](https://github.com/BCDevOps/StorageMigration)
 
 ## Storage Class FAQ
+
+### What is my quota?
+
+All Storage sizes are in GiB, and backup quotas default to half the storage size. These quotas can be requested in the Project Registry. All Storage Quotas include 60 PVCs and 5 VolumeSnapshots.
+
+- storage-1
+- storage-2
+- storage-4
+- storage-16
+- storage-32
+- storage-64
+- storage-128
+- storage-256
+- storage-512
 
 ### Which should I choose
 
@@ -82,9 +104,11 @@ If you have specific performance needs, then we would suggest testing both types
 
 ### Pros and Cons of each
 
-File storage can be mounted by multiple pods at the same time. The protocol is also a bit more robust to maintenance and fails over faster to the secondary storage node better.
+File storage can be mounted by multiple pods at the same time. The protocol is also a bit more robust to maintenance.
 
 Block storage cannot be mounted during maintenance. Any pods already running will failover properly to the secondary NetApp node, but any newly launched pods will fail to start until both NetApp nodes are available. We have an open case with NetApp to see if this can be improved.
+
+Only block volumes support snapshots.
 
 File storage ends up being a bit more flexible (mountable as RWX, etc), while Block storage is generally more performant for database or other small transaction/write intensive application uses.
 
