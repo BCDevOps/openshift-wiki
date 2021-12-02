@@ -26,6 +26,24 @@ We help ministries deliver digital services to citizens with ease and speed<sup>
    * **Gold Tier** offers an option to configure applications to take advantage of a new disaster recovery environment in Calgary Data Center (geographic failover) and comes with longer testing windows for Platform software and hardware updates
    * Shared automation, security, monitoring and communications tools installed onto the Platform 
 
+## Who can use our Products
+
+We host B.C. government projects that meet the following criteria:
+
+1. **Have Executive Sponsorship**
+Your executive understands what is required to support continuous service improvement and is committed to resourcing your project so that it can be continuously maintained and improved even after it's been built.
+
+2. **Are Open Source**
+Your project is based on open source code, with custom code hosted in one of the [BCGov GitHub organization repositories](https://github.com/bcgov).
+
+3. **Have a Dedicated Agile Teams**
+Your project will be supported by a **fully funded** team that follows an agile methodology, with explicit roles such as DevOps specialist, Scrum Master and Product Owner — ideally with one or more of these roles filled by dedicated staff. **Note: we require that the role of the Product Owner be filled in by a permanent government employee.**
+
+4. **Collaboration**
+Your team is committed to participate in and contribute to the B.C. government's open development community.
+
+Read more about the services and products that we provide as well as about how to get access to them in [this Private Cloud Service Definition](https://developer.gov.bc.ca/BC-Gov-PaaS-OpenShift-Platform-Service-Definition).
+
 ## Support 
 
 ### Private Cloud Platform as a Services Support 
