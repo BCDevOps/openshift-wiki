@@ -71,7 +71,22 @@ The Openshift 4 Platform Change Management process can be found in the following
 
 ### Requesting Access and Onboarding
 
-Access to the Private Cloud Services is managed through a central application, the [Openshift 4 Platform’s Product Registry](https://registry.developer.gov.bc.ca/public-landing).  This application that we manage as a part of the Platform Service uses automation for the creation of your hosting space.  A team can have an environment created following an approval in as little as 10 minutes.  If you are net new to this service, **you will need to have an onboarding session with us first**.  Please reach out to Olena Mitovska, Product Director of the Private Cloud PaaS to get that started.  If you have any questions around the Platform Project Registry, she can answer those too.   If you are looking to leverage the Private Cloud PaaS, we are looking forward to welcoming you. 
+
+Access to the Private Cloud Platform is available for BC government projects that meet the following criteria:
+
+1. **Have Executive Sponsorship**
+Your executive understands what is required to support continuous service improvement and is committed to resourcing your project so that it can be continuously maintained and improved even after it's been built.
+
+2. **Are Open Source**
+Your project is based on open source code, with custom code hosted in one of the [BCGov GitHub organization repositories](https://github.com/bcgov).
+
+3. **Have a Dedicated Agile Teams**
+Your project will be supported by a **fully funded** team that follows an agile methodology, with explicit roles such as DevOps specialist, Scrum Master and Product Owner — ideally with one or more of these roles filled by dedicated staff. **Note: we require that the role of the Product Owner be filled in by a permanent government employee.**
+
+4. **Collaboration**
+Your team is committed to participate in and contribute to the B.C. government's open development community.
+
+Access to the Private Cloud Services is managed through a central application, the [Openshift 4 Platform’s Product Registry](https://registry.developer.gov.bc.ca/public-landing).  This application that we manage as a part of the Platform Service uses automation for the creation of your hosting space.  A team can have an hosting environment created following an approval in as little as 10 minutes.  If you are net new to this service, **you will need to have an onboarding session with us first**.  Please reach out to Olena Mitovska, Product Director of the Private Cloud PaaS to get that started.  If you have any questions around the Platform Project Registry, she can answer those too.  If **your team meets the criteria above** and is looking to leverage the Private Cloud PaaS, we are looking forward to welcoming you. 
 
 ### Service Availability and Communication
 
