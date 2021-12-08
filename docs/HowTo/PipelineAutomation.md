@@ -28,7 +28,7 @@ Head out to the [Security Pipeline Templates](https://github.com/bcgov/security-
 ## What automation technologies are supported on the Platform?
 
 At this moment, the following technologies are available to the product teams:
-- ArgoCD (Coming Soon!)
+- [ArgoCD](https://github.com/BCDevOps/openshift-wiki/blob/b1a4e6db91932fd3f29705a5c8ee44983abf8763/docs/ArgoCD/argocd_info.md)
 - [GitHub Actions](https://github.com/bcgov/security-pipeline-templates/tree/main/.github/workflows)
 - [Openshift Pipelines (Tekton)](https://github.com/bcgov/security-pipeline-templates/tree/main/tekton) 
 
