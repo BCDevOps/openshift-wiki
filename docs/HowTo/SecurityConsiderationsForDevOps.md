@@ -139,6 +139,8 @@ Access to OpenShift is brokered through our OpenShift SSO Service (currently lev
 - https://developer.gov.bc.ca/How-to-Request-New-User-Access-to-OpenShift
 
 GitHub has been the primary authentication to date on OpenShift, however we are in the process of introducing IDIR (via Azure AD).  Both of these options require an account with 2FA/MFA enabled.
+GitHub - All clusters
+IDIR - KLAB, Silver (Gold, GoldDR to come in early 2022)
 
 - GitHub 2FA - https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication
 - IDIR MFA - https://www2.gov.bc.ca/gov/content/governments/services-for-government/information-management-technology/information-security-mfa
