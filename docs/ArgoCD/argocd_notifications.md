@@ -6,6 +6,7 @@ See the [official documentation](https://argocd-notifications.readthedocs.io/en/
 
 ## Subscribe an application to a notification type
 **RocketChat**
+
 In order to send a notification to RocketChat, you must first [create an Integration](#create-webhook-integration).  This provides a unique webhook token used for posting messages to the given channel or user.
 
 Using the Argo CD UI, edit the Application.
@@ -19,6 +20,7 @@ Using the Argo CD UI, edit the Application.
         * Value: `YOUR-WEBHOOK-TOKEN`
 
 **Email**
+
 To configure an email alert, use the Argo CD UI to edit the Application and add one annotation:
 * Key: `notifications.argoproj.io/subscribe.on-sync-failed.localsmtp`
 * Value: `YOUR-EMAIL-ADDRESS`
