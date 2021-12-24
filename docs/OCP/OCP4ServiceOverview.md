@@ -122,13 +122,15 @@ Skilled people, modern technology and our vendor partners help us do this work, 
 
 ## Funding Our Service 
 
-The Private Cloud Platform as a Service is currently funded through core OCIO funding, with technology improvements funded through capital. Based on requests from ministries, the funding model for all OCIO shared services is currently being reviewed to make sure that it aligns with client needs and supports sustainable service delivery. As part of this review, we’ve explored funding model questions with our team and our users. 
+The Private Cloud Platform as a Service was previously entirely funded through OCIO capital funding as part of a multi-year pathfinder project.  The 2021/2022 fiscal year is the last year of this funding approach, containing a hybrid of remaining project capital and newly supported operational OCIO funding endorsed by Treasury Board and the Digitial Investment Office.  The 2022/2023 fiscal year is fully funded through OCIO operational funding endorsed by both Treasury Board and the Digital Investment Office, forecasted and inclusive of maintaining and building upon deliverables completed in the Private Cloud Platform as a Service Roadmap from the 2021/2022 fiscal year.  There will be no cost recovery in the 2022/2023 fiscal year. 
 
-Our users have told us that, under any funding model, some aspects of the service should continue to be supported by core funding: hosting applications under a certain resource usage threshold, training and documentation, community support, and support for our service’s shared tools. 
+Based on requests from ministries, the IM/IT funding model for all OCIO shared services continues to be reviewed to make sure that it aligns with client needs and supports sustainable service delivery. As part of this review, we will continue to explore funding model questions with our team and our partners. 
 
-Users of our service have also told us that any funding model should be transparent, simple and easy.  
+Our partners have told us that, under any funding model created, some aspects of the service should continue to be supported by central funding and subsidization, including: hosting applications under a certain resource usage threshold, training and documentation, community support, and support for our service’s shared tools. 
 
-OCIO as a whole and the Platform Services Team will continue working with our users to develop funding model options. Our goal is to start consultations with the Platform Community about funding model changes, if any, in late summer 2021, with an implementation target of the fiscal year 2022/2023. 
+Moving forwards, we've been asked by our partners that the cost and funding model of this service to be transparent, simple and easy.  
+
+The OCIO as a whole, inclusive of the the Platform Services Team, will continue working with our partners to develop funding model options.  Any cost recovery of a new funding model, as of the 2021/2022 fiscal year, would not be in place until the 2023/2024 fiscal year.  
 
 ##Links:
 
