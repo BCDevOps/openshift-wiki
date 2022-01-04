@@ -6,8 +6,7 @@ This documentation outlines the implementation details, architecture and design 
 
 ### Vault Architecture and Design
 
-- [Introduction and Architecture](./introduction.md)
-- [Structure within Vault](./StructureWithinVault.md)
+- [Structure and Architecture within Vault](./StructureAndArchitecture.md)
 - [Vault Getting Started Guide](./VaultGettingStarted.md)
 - [Troubleshooting](./Troubleshooting.md)
 - [TLS Cipher Suites](./VaultTLSCipherSuites.md)
