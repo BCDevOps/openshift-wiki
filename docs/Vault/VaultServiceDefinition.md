@@ -92,4 +92,4 @@ TBD
 
 ### **security reviews**
 
-An STRA for Vault is currently under development by the Platform Services team.
+An STRA for Vault has been completed by the Platform Services team.
