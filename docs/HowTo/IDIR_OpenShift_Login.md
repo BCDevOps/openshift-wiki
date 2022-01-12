@@ -1,7 +1,7 @@
 ---
-description: Security considerations for DevOps teams and Ministry information security teams
+description: IDIR Login (via Azure AD) for OpenShift Console
 resourceType: Documentation
-title: BC Government OpenShift DevOps Security Considerations
+title: IDIR Login (via Azure AD) for OpenShift Console
 tags:
   - security
   - privacy
