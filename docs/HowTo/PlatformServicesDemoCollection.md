@@ -47,4 +47,7 @@ Have you ever been in a situation when you just want to quickly get started work
 [Demo #10: Jenkins Resource Allocation Best Practices](https://www.youtube.com/watch?v=npMbAtJZSO0)
 The recommendations shared in this video will help teams configure their Jenkins instances in a way that ensures efficient resource allocation and will also allow Jenkins run successfully within the new reduced resource quota set for the tools namespaces on the Openshift Platform.
 
+[Demo #11: Four Golden Signals for App Monitoring](https://www.youtube.com/watch?v=W9xM5rd9CaQ)
+This video covers some basic principles and best practices for building successful monitoring and alerting systems for apps hosted on the BC Gov’s Private Cloud Openshift Platform using Sysdig Monitoring Services. The presentation is based upon the Four Golden Signals for Monitoring concepts developed by Google’s SRE teams. 
+
 Love, Your Platform Services Team, xo
