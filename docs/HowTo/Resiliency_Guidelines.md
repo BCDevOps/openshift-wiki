@@ -29,7 +29,7 @@ Of course, this is a technical outline for technical users - here's a bit more o
 ### A Monitored App
 
 A app that runs without failing most of the time is great, but things happen. Maintenance, failures, network problems, and sneaky little issues in the design or implementation of your app can cause strange behaviours or outages.
-Our platform is extremely highly available, (check the current SLA for Silver and Gold clusters in the [Private Cloud Platform Service Definition](https://developer.gov.bc.ca/BC-Gov-PaaS-OpenShift-Platform-Service-Definition)) but that doesn't mean you should assume that your application is guaranteed the same - application outages can happen for reasons other than full platform outages.
+Our platform is extremely highly available, (check the current SLA for Silver and Gold clusters in the [Private Cloud Platform Service Definition](https://developer.gov.bc.ca/BC-Gov-PaaS-OpenShift-Platform-Service-Definition) but that doesn't mean you should assume that your application is guaranteed the same - application outages can happen for reasons other than full platform outages.
 
 The best way to keep on top of these issues in a proactive manner is to monitor your application and ensure that there are appropriate notifications of issues. There are tons of ways that such a monitoring can be implemented:
 
@@ -86,7 +86,7 @@ Pods can define [compute resources](https://docs.openshift.com/container-platfor
 
 It is preferable to scale horizontally than vertically. Use smaller Request and Limit values for CPU and Memory and use a [Horizontal Pod Autoscaler](https://docs.openshift.com/container-platform/4.8/nodes/pods/nodes-pods-autoscaling.html) to scale up the number of pods to meet demand.
 
-Read more about Resource Tuning Recommendations in [this article]().
+Read more about Resource Tuning Recommendations in [this article](https://developer.gov.bc.ca/Resource-Tuning-Recommendations).
 
 ### A Well Behaved App
 
