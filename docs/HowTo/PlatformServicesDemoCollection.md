@@ -50,4 +50,12 @@ The recommendations shared in this video will help teams configure their Jenkins
 [Demo #11: Four Golden Signals for App Monitoring](https://www.youtube.com/watch?v=W9xM5rd9CaQ)
 This video covers some basic principles and best practices for building successful monitoring and alerting systems for apps hosted on the BC Gov’s Private Cloud Openshift Platform using Sysdig Monitoring Services. The presentation is based upon the Four Golden Signals for Monitoring concepts developed by Google’s SRE teams. 
 
+[Demo #12: Getting started with the GitHub Actions pipeline template](https://www.youtube.com/watch?v=spUAx_ADhOY)
+ 
+This video includes how-to instructions for helping product teams working on the Private Cloud Openshift Platform get started with using [the pipeline template for GitHub Actions](https://github.com/bcgov/pipeline-templates) to automate their app builds. 
+
+[Demo #13: Getting started with the Openshift Pipelines (Tekton) pipeline template](https://www.youtube.com/watch?v=aO6tLFqstQk)
+ 
+This video includes how-to instructions for helping product teams working on the Private Cloud Openshift Platform get started with using [the pipeline template for Openshift Pipelines (Tekton)](https://github.com/bcgov/pipeline-templates) to automate their app builds. 
+
 Love, Your Platform Services Team, xo
