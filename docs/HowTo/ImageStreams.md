@@ -1,7 +1,12 @@
 ---
 title: Best practices for managing image streams
 description: Image Streams are used to store the outputs of builds and if not managed properly can clutter up the cluster.
+tags:
+  - images
+  - image streams
+  - best practices
 ---
+
 
 Image streams provide a means of creating and updating container images in an on-going way. As improvements are made to an image, tags can be used to assign new version numbers and keep track of changes.
 
