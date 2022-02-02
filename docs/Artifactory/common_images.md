@@ -37,7 +37,9 @@ spec:
 
 ### app-assessment
 [latest image](https://artifacts.developer.gov.bc.ca/artifactory/plat-common-images/app-assessment/latest)
+
 https://github.com/bcgov/AppAssessment
+
 The App Assessment application can be used to identify configuration issues in your namespaces.  Use it to improve resource consumption and health checks.
 [README](https://github.com/bcgov/AppAssessment/README.md)
 
@@ -49,38 +51,46 @@ Original doc: https://developer.gov.bc.ca/Backup-Container
 
 ### backup-container-postgres
 [latest image](https://artifacts.developer.gov.bc.ca/artifactory/plat-common-images/backup-container-postgres/latest)
+
 https://github.com/BCDevOps/backup-container/docker/Dockerfile
 
 ### backup-container-mongo
 [latest image](https://artifacts.developer.gov.bc.ca/artifactory/plat-common-images/backup-container-mongo/latest)
+
 https://github.com/BCDevOps/backup-container/docker/Dockerfile
 
 ### backup-container-mariadb
 [latest image](https://artifacts.developer.gov.bc.ca/artifactory/plat-common-images/backup-container-mariadb/latest)
+
 https://github.com/BCDevOps/backup-container/docker/Dockerfile
 
 ### backup-container-mssql
 [latest image](https://artifacts.developer.gov.bc.ca/artifactory/plat-common-images/backup-container-mssql/latest)
+
 https://github.com/BCDevOps/backup-container/docker/Dockerfile
 
 ### caddy
 [latest image](https://artifacts.developer.gov.bc.ca/artifactory/plat-common-images/caddy-s2i-builder/latest)
-https://github.com/bcgov/s2i-caddy-nodejs.git
 
+https://github.com/bcgov/s2i-caddy-nodejs.git
 
 ### codeql
 [latest image](https://artifacts.developer.gov.bc.ca/artifactory/plat-common-images/codeql/latest)
+
 Referenced in the pipeline templates
+
 https://github.com/bcgov/pipeline-templates.git
 
 
 ### mongodb-36-ha
 [latest image](https://artifacts.developer.gov.bc.ca/artifactory/plat-common-images/mongodb-36-ha/1)
+
 https://github.com/bcgov/mongodb-replicaset-container.git
 
 
 ### patroni-postgres
 [latest image](https://artifacts.developer.gov.bc.ca/artifactory/plat-common-images/patroni-postgres/12.4-latest)
+
 https://github.com/bcgov/patroni-postgres-container.git
 
 
