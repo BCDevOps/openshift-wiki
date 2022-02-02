@@ -9,17 +9,18 @@ Each of the images is available from Artifactory.  You may use the `artifactory-
 - [Managed Images](#managed-images)
     - [app-assessment](#app-assessment)
     - [backup-container](#backup-container)
-        - [backup-container-postgres](#backup-container-postgres)
-        - [backup-container-mongo](#backup-container-mongo)
-        - [backup-container-mariadb](#backup-container-mariadb)
-        - [backup-container-mssql](#backup-container-mssql)
+    - [backup-container-postgres](#backup-container-postgres)
+    - [backup-container-mongo](#backup-container-mongo)
+    - [backup-container-mariadb](#backup-container-mariadb)
+    - [backup-container-mssql](#backup-container-mssql)
     - [caddy](#caddy)
     - [codeql](#codeql)
     - [mongodb-36-ha](#mongodb-36-ha)
     - [patroni-postgres](#patroni-postgres)
+- [Legacy Builds](#legacy-builds)
 
 
-## Credentials(#credentials)
+## Credentials
 All project sets on the platform are provided with a Secret called `artifactory-creds` that can be used to pull images from the local Artifactory service.  Where you have a Deployment or StatefulSet that uses one of these images, include that Secret in your configuration.
 
 ```
@@ -32,54 +33,64 @@ spec:
 ```
 
 
-## Managed Images(#managed-images)
+## Managed Images
 
-### app-assessment(#app-assessment)
+### app-assessment
 [latest image](https://artifacts.developer.gov.bc.ca/artifactory/plat-common-images/app-assessment/latest)
+
 https://github.com/bcgov/AppAssessment
+
 The App Assessment application can be used to identify configuration issues in your namespaces.  Use it to improve resource consumption and health checks.
 [README](https://github.com/bcgov/AppAssessment/README.md)
 
 
-### backup-container(#backup-container)
+### backup-container
 The backup-container repository contains Dockerfiles for four different images, based on database type.  Use the image that matches your own database.
 
 Original doc: https://developer.gov.bc.ca/Backup-Container
 
-#### backup-container-postgres(#backup-container-postgres)
+### backup-container-postgres
 [latest image](https://artifacts.developer.gov.bc.ca/artifactory/plat-common-images/backup-container-postgres/latest)
+
 https://github.com/BCDevOps/backup-container/docker/Dockerfile
 
-#### backup-container-mongo(#backup-container-mongo)
+### backup-container-mongo
 [latest image](https://artifacts.developer.gov.bc.ca/artifactory/plat-common-images/backup-container-mongo/latest)
+
 https://github.com/BCDevOps/backup-container/docker/Dockerfile
 
-#### backup-container-mariadb(#backup-container-mariadb)
+### backup-container-mariadb
 [latest image](https://artifacts.developer.gov.bc.ca/artifactory/plat-common-images/backup-container-mariadb/latest)
+
 https://github.com/BCDevOps/backup-container/docker/Dockerfile
 
-#### backup-container-mssql(#backup-container-mssql)
+### backup-container-mssql
 [latest image](https://artifacts.developer.gov.bc.ca/artifactory/plat-common-images/backup-container-mssql/latest)
+
 https://github.com/BCDevOps/backup-container/docker/Dockerfile
 
-### caddy(#caddy)
+### caddy
 [latest image](https://artifacts.developer.gov.bc.ca/artifactory/plat-common-images/caddy-s2i-builder/latest)
+
 https://github.com/bcgov/s2i-caddy-nodejs.git
 
-
-### codeql(#codeql)
+### codeql
 [latest image](https://artifacts.developer.gov.bc.ca/artifactory/plat-common-images/codeql/latest)
+
 Referenced in the pipeline templates
+
 https://github.com/bcgov/pipeline-templates.git
 
 
-### mongodb-36-ha(#mongodb-36-ha)
+### mongodb-36-ha
 [latest image](https://artifacts.developer.gov.bc.ca/artifactory/plat-common-images/mongodb-36-ha/1)
+
 https://github.com/bcgov/mongodb-replicaset-container.git
 
 
-### patroni-postgres(#patroni-postgres)
+### patroni-postgres
 [latest image](https://artifacts.developer.gov.bc.ca/artifactory/plat-common-images/patroni-postgres/12.4-latest)
+
 https://github.com/bcgov/patroni-postgres-container.git
 
 
