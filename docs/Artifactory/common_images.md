@@ -9,10 +9,10 @@ Each of the images is available from Artifactory.  You may use the `artifactory-
 - [Managed Images](#managed-images)
     - [app-assessment](#app-assessment)
     - [backup-container](#backup-container)
-        - [backup-container-postgres](#backup-container-postgres)
-        - [backup-container-mongo](#backup-container-mongo)
-        - [backup-container-mariadb](#backup-container-mariadb)
-        - [backup-container-mssql](#backup-container-mssql)
+    - [backup-container-postgres](#backup-container-postgres)
+    - [backup-container-mongo](#backup-container-mongo)
+    - [backup-container-mariadb](#backup-container-mariadb)
+    - [backup-container-mssql](#backup-container-mssql)
     - [caddy](#caddy)
     - [codeql](#codeql)
     - [mongodb-36-ha](#mongodb-36-ha)
@@ -46,19 +46,19 @@ The backup-container repository contains Dockerfiles for four different images, 
 
 Original doc: https://developer.gov.bc.ca/Backup-Container
 
-#### backup-container-postgres(#backup-container-postgres)
+### backup-container-postgres(#backup-container-postgres)
 [latest image](https://artifacts.developer.gov.bc.ca/artifactory/plat-common-images/backup-container-postgres/latest)
 https://github.com/BCDevOps/backup-container/docker/Dockerfile
 
-#### backup-container-mongo(#backup-container-mongo)
+### backup-container-mongo(#backup-container-mongo)
 [latest image](https://artifacts.developer.gov.bc.ca/artifactory/plat-common-images/backup-container-mongo/latest)
 https://github.com/BCDevOps/backup-container/docker/Dockerfile
 
-#### backup-container-mariadb(#backup-container-mariadb)
+### backup-container-mariadb(#backup-container-mariadb)
 [latest image](https://artifacts.developer.gov.bc.ca/artifactory/plat-common-images/backup-container-mariadb/latest)
 https://github.com/BCDevOps/backup-container/docker/Dockerfile
 
-#### backup-container-mssql(#backup-container-mssql)
+### backup-container-mssql(#backup-container-mssql)
 [latest image](https://artifacts.developer.gov.bc.ca/artifactory/plat-common-images/backup-container-mssql/latest)
 https://github.com/BCDevOps/backup-container/docker/Dockerfile
 
