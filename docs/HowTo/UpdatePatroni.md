@@ -6,7 +6,7 @@ During the upgrade to Openshift 4.6.25 in the Silver cluster during the week of 
 
 # Updating Patroni from 1.6.5 to 2.0.1
 
-**Please note: while this fix has been testing multiple times in a lab environment, the nature of the bug means that I cannot guarantee that this fix will be completely outage-free. I did repeat the test multiple times and was unable to cause an outage using this method, but this may depend somewhat on your particular deployment. Therefore, please ensure that you test sufficiently in your test environment before applying the upgrade to prod!**
+**Please note: while this fix has been testing multiple times in a lab environment by the Platform Services Team the nature of the bug means that we cannot guarantee that this fix will be completely outage-free. We did repeat the test multiple times and was unable to cause an outage using this method, but this may depend somewhat on your particular deployment. Therefore, please ensure that you test sufficiently in your test environment before applying the upgrade to prod!**
 
 There is a bug in version 1.6.5 of Patroni which can, in some rare circumstances, cause the entire cluser to fall over when one pod goes down, even though other pods may remain up and functioning perfectly. This method for upgrading the patroni version can be used to move past 1.6.5 without triggering this problem during the upgrade.
 
