@@ -20,9 +20,13 @@ You may also wish to switch the leader of your Patroni cluster over to pod 0 in 
 
 This list of steps also requires that the stateful set not automatically redeploy on image change. Please ensure that this is correct before proceeding.
 
+Note that there are some time constraints in these instructions - certain steps which should be performed relatively quickly. None of these time constraints are so tight that you should feel rushed, but you should ensure that you can finish this process in a single sitting and understand the requirements of each step before you begin. As such, **please read all of these instructions from start to finish before you begin.**
+
 Lastly make sure that the current state of your Patroni cluster is healthy, that all members are communicating properly, that you have plenty of space in your PVCs, and that there is a low `Lag in MB` value when you check `patronictl list` to see the status of your cluster. You can run this command from the terminal of any pod in your cluster.
 
 ## Step 2: Put your Patroni cluster into Maintenance Mode
+
+Maintenance mode means that your cluster turns off all Patroni-controlled governance of your database pods - in short, this means no failover in the event that your leader pod goes down. Your app will continue to communicate with the leader pod during the maintenance mode window, but will fail if the leader pod goes down while maintenance mode is on, as a member will not be elected as a new leader. Please aim to reduce the length of time in which your cluster remains in maintenance mode in order to reduce this risk. 
 
 Go to the terminal of any pod in your patroni cluster and run the following command:
 
