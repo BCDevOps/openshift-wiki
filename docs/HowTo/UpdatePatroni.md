@@ -106,9 +106,9 @@ On any pod in the cluster, issue the following command:
 
 `patronictl switchover [cluster-name]`
 
-The prompts will ask you to confirm the current leader of the cluster, and to select a new leader. Select any of the upgraded members. Tell it to upgrade now. It will tell provide you with an overview of th current cluster statues (before switchover) and ask you to confirm that you want the switchover to occur. Ensure that everything you've entered makes sense, and then confirm the switchover.
+The prompts will ask you to confirm the current leader of the cluster, and to select a new leader. Select any of the upgraded members. Tell it to switchover now. It will provide you with an overview of the current cluster state (before switchover) and ask you to confirm that you want the switchover to occur. Ensure that everything you've entered makes sense, and then confirm the switchover.
 
-Once you do so, the original leader's postgres process will stop for a moment. This is expected behaviour. Give it a minute, and then run `patronictl list` - it should indicate that the old leader has recovered on its own and is now functioning as a successful member pod.
+Once you do so, the original leader's postgres process will stop for a moment. This is expected behaviour. Give it a minute, and then run `patronictl list` - it should indicate that the old leader has recovered on its own and is now functioning as a member pod.
 
 ## Step 8: Restart the Remaining Pod
 
