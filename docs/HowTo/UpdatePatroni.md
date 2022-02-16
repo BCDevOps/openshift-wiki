@@ -46,6 +46,8 @@ If your cluster is not in maintenance mode, the bottom line will be missing.
 
 ## Step 3: Build a New Image
 
+**Note: If you are still building from the dockerfile in the BCDevops/platform-services repo, please note that this file is no longer being maintained.** It does contain this particular fix, in order to allow teams using that file to perform this upgrade without having to deal with the additional complication of switching Dockerfiles. However, please note that you should change your buildconfig to point to the dockerfile in bcgov/patroni-postgres-container in take advantage of future file maintenance.
+
 You will need to update your build-config to include the following: 
 
 ```
