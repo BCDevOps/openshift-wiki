@@ -22,7 +22,7 @@ Lastly make sure that the current state of your Patroni cluster is healthy, that
 
 ## Step 2: Put your Patroni cluster into Maintenance Mode
 
-Maintenance mode means that your cluster turns off all Patroni-controlled governance of your database pods - in short, this means no failover in the event that your leader pod goes down. Your app will continue to communicate with the leader pod during the maintenance mode window, but will fail if the leader pod goes down while maintenance mode is on, as a member will not be elected as a new leader. Please aim to reduce the length of time in which your cluster remains in maintenance mode in order to reduce this risk. 
+Maintenance mode means that your cluster turns off all Patroni-controlled governance of your database pods - in short, this means no failover in the event that your leader pod goes down. This is useful for us because, normally, updating the Patroni version of any pod in your cluster forces the other pods to upgrade immediately as well, which would result in an outage. Turning on maintenance mode allows us to control when and how each pod gets restarted, so we can ensure that there is always at least one pod up. Your app will continue to communicate with the leader pod during the maintenance mode window, but will fail if the leader pod goes down while maintenance mode is on, as a member will not be elected as a new leader. Please aim to reduce the length of time in which your cluster remains in maintenance mode in order to reduce this risk. 
 
 Go to the terminal of any pod in your patroni cluster and run the following command:
 
@@ -68,9 +68,9 @@ spec:
                   value: {{ patroni_version }}
 ```
 
-You may already be specifying your own `from` image tag, in which case you should leave it the same. If you are not, you should add one and ensure appropriately that it points to a postgres image that is **the same version as the one you are currently using**. If you do not, you may pull a different image version from the one your cluster currently uses, which may cause unintentional problems.
+You may already be specifying your own `from` image tag, in which case you should leave it the same. If you are not, you should add one and ensure appropriately that it points to a postgres image that is **the same version as the one you are currently using**. If you do not, you may pull a different image version from the one your cluster currently uses. This is not to be a good time to perform a surprise database version upgrade (or downgrade), so please ensure that you specify your postgres version explicitly.
 
-You must also include the `buildArgs` section in order to upgrade the patronio version. If you don't have this line, your image will continue to build as version 1.6.5. This is the default, in order to avoid pushing upgrades to those who are not prepared for them. You must explicitly state your new version in order to upgrade. If you're unsure of which version to select, use 2.0.1 - this is the next version without the bug.
+You must also include the `buildArgs` section in order to upgrade the patroni version. If you don't have this line, your image will continue to build as version 1.6.5. This is the default, in order to avoid pushing upgrades to those who are not prepared for them. You must explicitly state your new version in order to upgrade. If you're unsure of which version to select, use 2.0.1 - this is the next version without the bug.
 
 When you run the build, note that you may see a line in the build logs like this:
 
@@ -84,13 +84,13 @@ This is how you can be sure that you've built an image using version 2.0.1.
 
 ## Step 4: Tagging your Image
 
-Please ensure that you tag your new image with the same tag that your current deployment is using. This is necessary to ensure that you don't need to scale down your stateful set. 
+Please ensure that you tag your new image with the same tag that your current deployment is using. This will allow us to apply the new image by simply restarting each pod one at a time.
 
 ## Step 5: Restart Non-Leader Pods
 
 **Note: Steps 5 and 6 need to be completed within a few minutes of each other.**
 
-Delete one of the member pods (**not the leader**) in your cluster. 
+Kill one of the member pods (**not the leader**) in your cluster. 
 
 When it restarts, it will not enter a ready state. When you check `patronictl list` this member will show as not running, and the log will indicate that postgres has not started. This is all expected behaviour. Run `patronictl version` on the restarted member pod to ensure that it displays the new version of patroni.
 
@@ -102,9 +102,9 @@ On any pod in the cluster, issue the following command:
 
 `patronictl resume`
 
-This will resume patroni's management of the cluster. Check `patronictl list` to see that all member pods are now listed as functioning member pods once more.
+This will resume patroni's management of the cluster. Check `patronictl list` to see that your upgraded member pod is now listed as a functioning member pod once more.
 
-You now have all members operating on an upgraded version of patroni while the leader is operating on the old version.
+You now have member pods operating on an upgraded version of patroni while the leader is operating on the old version.
 
 ## Step 7: Switchover Cluster Leader to an Upgraded Pod
 
@@ -112,7 +112,7 @@ On any pod in the cluster, issue the following command:
 
 `patronictl switchover [cluster-name]`
 
-The prompts will ask you to confirm the current leader of the cluster, and to select a new leader. Select any of the upgraded members. Tell it to switchover now. It will provide you with an overview of the current cluster state (before switchover) and ask you to confirm that you want the switchover to occur. Ensure that everything you've entered makes sense, and then confirm the switchover.
+The prompts will ask you to confirm the current leader of the cluster, and to select a new leader. Select an upgraded member as your new leader. Tell it to switchover now. It will provide you with an overview of the current cluster state (before switchover) and ask you to confirm that you want the switchover to occur. Ensure that everything you've entered makes sense. Make sure the `Lag in MB` listed for your target leader is 0, and then confirm the switchover.
 
 Once you do so, the original leader's postgres process will stop for a moment. This is expected behaviour. Give it a minute, and then run `patronictl list` - it should indicate that the old leader has recovered on its own and is now functioning as a member pod.
 
