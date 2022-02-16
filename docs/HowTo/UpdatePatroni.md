@@ -102,9 +102,9 @@ On any pod in the cluster, issue the following command:
 
 `patronictl resume`
 
-This will resume patroni's management of the cluster. Check `patronictl list` to see that your upgraded member pod is now listed as a functioning member pod once more.
+This will resume patroni's management of the cluster. Check `patronictl list` to see that your upgraded member pods are now listed as functioning member pods once more.
 
-You now have member pods operating on an upgraded version of patroni while the leader is operating on the old version.
+You now have all member pods operating on an upgraded version of patroni while the leader is operating on the old version.
 
 ## Step 7: Switchover Cluster Leader to an Upgraded Pod
 
