@@ -4,13 +4,9 @@ During the upgrade to Openshift 4.8.28 in the Silver cluster during the week of 
 
 **The OCP 4.8.28 upgrade will resume on Wed Feb 23, 2022 at 9am**
 
-# Updating Patroni from 1.6.5 to 2.0.1
+**Please note: while this fix has been testing multiple times in a lab environment by the Platform Services Team the nature of the bug means that we cannot guarantee that this fix will be completely outage-free. We did repeat the test multiple times and were unable to cause an outage using this method, but this may depend somewhat on your particular deployment. Therefore, please ensure that you test sufficiently in your test environment before applying the upgrade to prod!** If this is of particular concern to you, you may wish to consider turning off the readiness probe for the duration of the upgrade (but make sure you turn it back on again once you finish). Note that the method performed by the Platform Team did not involve turning off the readiness probe - even with it on, we were still unable to cause an outage using this method.
 
-**Please note: while this fix has been testing multiple times in a lab environment by the Platform Services Team the nature of the bug means that we cannot guarantee that this fix will be completely outage-free. We did repeat the test multiple times and was unable to cause an outage using this method, but this may depend somewhat on your particular deployment. Therefore, please ensure that you test sufficiently in your test environment before applying the upgrade to prod!**
-
-There is a bug in version 1.6.5 of Patroni which can, in some rare circumstances, cause the entire cluser to fall over when one pod goes down, even though other pods may remain up and functioning perfectly. This method for upgrading the patroni version can be used to move past 1.6.5 without triggering this problem during the upgrade.
-
-We recommend moving from 1.6.5 to 2.0.1. If your team wishes to upgrade further, please feel free to do so.
+We recommend moving from Patroni v1.6.5 to v2.0.1. If your team wishes to upgrade further, please feel free to do so.
 
 ## Step 1: Preparation
 
@@ -18,7 +14,7 @@ Before you begin, as is always best practice, please make sure that you back up 
 
 You may also wish to switch the leader of your Patroni cluster over to pod 0 in your stateful set. This shouldn't be necessary, but will probably make things easier on you.
 
-This list of steps also requires that the stateful set not automatically redeploy on image change. Please ensure that this is correct before proceeding.
+This list of steps requires that the stateful set not automatically redeploy on image change. Please ensure that this is true of your Patroni stateful set before proceeding.
 
 Note that there are some time constraints in these instructions - certain steps which should be performed relatively quickly. None of these time constraints are so tight that you should feel rushed, but you should ensure that you can finish this process in a single sitting and understand the requirements of each step before you begin. As such, **please read all of these instructions from start to finish before you begin.**
 
