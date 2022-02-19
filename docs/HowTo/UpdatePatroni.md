@@ -2,7 +2,7 @@
 
 During the upgrade to Openshift 4.8.28 in the Silver cluster during the week of Feb 7, 2022 we observed that app's Patroni clusters that use Patroni `v1.6.51` experienced outages when the cluster nodes where the PostgreSQL pods were running, were restarted as part of the upgrade. The troubleshooting narrowed down the root cause to the [known bug](https://github.com/zalando/patroni/issues/1508) in this Patroni version. It is highly recommended that the teams apply the fix suggested below **as soon as possible** to minimize the risk of service disruption for their database services. 
 
-**The OCP 4.8.28 upgrade will resume on a date TBD. Please keep an eye on #devops-alerts for further information.**
+**The OCP 4.8.28 upgrade will resume on March 7th, 2022 at 9am PST. Please keep an eye on #devops-alerts for further information.**
 
 **Please note: while this fix has been testing multiple times in a lab environment by the Platform Services Team the nature of the bug means that we cannot guarantee that this fix will be completely outage-free. We did repeat the test multiple times and were unable to cause an outage using this method, but this may depend somewhat on your particular deployment. Therefore, please ensure that you test sufficiently in your test environment before applying the upgrade to prod!** If this is of particular concern to you, you may wish to consider turning off the readiness probe for the duration of the upgrade (but make sure you turn it back on again once you finish). Note that the method performed by the Platform Team did not involve turning off the readiness probe - even with it on, we were still unable to cause an outage using this method.
 
