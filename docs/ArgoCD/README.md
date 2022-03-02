@@ -2,6 +2,8 @@
 
 Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes (the foundation of OpenShift).  It is efficient, well supported, and well documented. 
 
+This document describes how to use Argo CD with your OpenShift project.
+
 It is available to any team on the B.C. government's OpenShift platform and can help teams:
 * Implement a GitOps-style deployment service
 * Reduce the maintenance overhead of their pipelines
@@ -32,7 +34,26 @@ There are a number of reasons for using Argo CD over other tools, such as Jenkin
 * When combined with pipeline tools such as GitHub Actions or OpenShift Pipelines, teams no longer need to maintain their own pipeline infrastructure.
 
 ## Enable Argo CD for Your Project Set <a name="enable-argocd"></a>
-Coming soon: how to enable argocd for your project...
+A self-serve system is in place for the setup of Argo CD for your project set.  To get started, follow these instructions.  (If your project requires a ministry-wide grouping of projects within Argo CD, please contact the Platform Services Team.)
+- Prepare a `GitOpsTeam` CustomResource
+    - Use this template: <a href="gitopsteam_template.yaml">GitOpsTeam Template</a>
+    - Use the inline comments to populate this file
+- Ensure that all users in the 'projectMembers' group have a Keycloak ID in the realm used by Argo CD.  They can do this by attempting to access the Argo CD UI for the given cluster:
+    - Silver
+        - https://argocd-shared.apps.silver.devops.gov.bc.ca
+    - Gold & Gold DR
+        - https://argocd-shared.apps.gold.devops.gov.bc.ca
+        - https://argocd-shared.apps.golddr.devops.gov.bc.ca
+- Create the GitOpsTeam CustomResource in your **tools** namespace
+    - `oc -n myproject-tools create -f gitopsteam.yaml`
+
+After creation of the GitOpsTeam resource, an OpenShift operator will:
+- Create a "gitops" repo for your project
+    - This is the repository that Argo CD will read for your Application manifests.
+    - **Note:** This repo is in the `bcgov-c` GitHub Organization, which has a limited number of seats and requires that users reply to an invitation from GitHub to join the organization.  Please limit access to this repo to just those team members that require access for manual updates.  Most updates will be made by your **pipeline**.
+    - Your gitops repo will be called `bcgov-c/tenant-gitops-licenseplate`
+- Create Keycloak groups used for controlling access to your Project in the ArgoCD UI
+- Create the Argo CD Project
 
 ### Set access for the GitHub repo <a name="set-access-github"></a>
 Once your GitHub repo has been created, you need to allow your pipeline to read from and write to it.  Do this by creating an SSH key pair and adding it as a Deploy Key in the repo.
@@ -45,6 +66,7 @@ In your "tenant-gitops-" repo, add the key as a Deploy Key:
 * Click `Settings` --> `Deploy keys` --> `Add deploy key`
 * Enter a descriptive name for the key, such as "read-write"
 * Copy the contents of the PUBLIC key (the file with the .pub extension) into the key field, **but remove the 'user@host' bit at the very end of the line.**
+* Check the checkbox for "allow write access"
 * Save the deploy key
 
 Add the private key as a Secret for your pipeline.  If using GitHub Actions, add the Secret in the repository where the Action runs; if using OpenShift Pipelines (Tekton), add the Secret in your tools namespace.
@@ -219,9 +241,13 @@ There are a few namespace-scoped resources that you will not be able to modify. 
 * ResourceQuota
 
 ### Project access control <a name="project-access-control"></a>
-Each Project in Argo CD has an associated Keycloak group.  Access to the Project in the UI is based on membership in that Keycloak group.  The team can manage this group membership themselves by maintaining a list that is read by an OpenShift operator.
+Access to the gitops repository and the Argo CD UI is controlled by way of the GitOpsTeam resource in your `-tools` namespace.  After editing this resource, the operator will make any updates shortly after (typically less than a minute).
 
-*coming soon: details on how to set access*
+Access to the Git repository includes five sets of permissions.
+
+Access to the Argo CD UI includes two sets of permissions: read/write and read-only
+
+See the <a href="gitopsteam_template.yaml">GitOpsTeam template</a> for more details.
 
 
 ## Additional Information <a name="additional-information"></a>
