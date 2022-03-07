@@ -106,7 +106,7 @@ The following security assessments are ***planned***:
 For specifics, please contact the platform security architect, nick.corcoran@gov.bc.ca.
 
 ------
-### <a name="platform-registry"></a>Platform Registry
+### <a name="platform-registry"></a>Platform Project Registry
 
 Here, we maintain a listing of all projects with deployments on each OpenShift cluster. 
 ![platformregistryexample](https://user-images.githubusercontent.com/53879638/144318853-104588bc-0db8-4cd7-8616-13c1c137f199.JPG)
@@ -155,12 +155,11 @@ The Platform Services team maintains an Access Control Policy for all platform t
 - https://docs.developer.gov.bc.ca/s/bk07fg8i4dscrcq7posg/devops-platform-services/d/c1ma8i4adqrdud0ff650/access-control-policy-openshift-and-platform-tools-public
 
 ------
-### <a name="kubernetes-network-policies"></a>Kubernetes Network Policies
+### <a name="kubernetes-network-policies"></a>Kubernetes Network Policies (KNPs)
 
 Network policies help the platform and project teams to better control communications between components.  While KNPs only apply as INGRESS rules (not egress), they help to improve our overall security posture.  KNPs only apply to on-cluster communications (i.e. between pods in a namespace, or between namespaces).  For off-cluster communications, hosting is investigating a VMWare tool called NSX-T.
 
-This resource is a little out of date, as it was orginially created for migration of applications from our OpenShift 3.11 cluster to our OpenShift 4.x cluster, but the details on KNPs is still relavent.
-- https://developer.gov.bc.ca/TLDR
+Find our more about using KNPs to control network security for an application hosted on the Private Cloud Openshift Platform in [this document](https://github.com/bcgov/how-to-workshops/blob/65ac9469db92eac86d8e396d9366515cddc15a4b/labs/netpol-quickstart/README.md). 
 
 More details on KNPs can be found here: https://kubernetes.io/docs/concepts/services-networking/network-policies/
 
