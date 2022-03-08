@@ -15,14 +15,14 @@ Each of the images is available from Artifactory.  You may use the `artifactory-
 
 - [How to Use the Managed Builds](#how-to-use-the-builds)
 - [Managed Images](#managed-images)
-    - app-assessment(#app-assessment)
-    - backup-container-mariadb(#backup-container-mariadb)
-    - backup-container-mongo(#backup-container-mongo)
-    - backup-container-mssql(#backup-container-mssql)
-    - backup-container-postgres(#backup-container-postgres)
-    - caddy-s2i(#caddy-s2i)
-    - mongodb-36-ha(#mongodb-36-ha)
-    - patroni-postgres(#patroni-postgres)
+    - [app-assessment](#app-assessment)
+    - [backup-container-mariadb](#backup-container-mariadb)
+    - [backup-container-mongo](#backup-container-mongo)
+    - [backup-container-mssql](#backup-container-mssql)
+    - [backup-container-postgres](#backup-container-postgres)
+    - [caddy-s2i](#caddy-s2i)
+    - [mongodb-36-ha](#mongodb-36-ha)
+    - [patroni-postgres](#patroni-postgres)
 - [Legacy Builds](#legacy-builds)
 
 
