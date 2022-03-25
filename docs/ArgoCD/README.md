@@ -101,7 +101,7 @@ If your application is already set up for Kustomize, then you just need to move 
 
 If moving an existing application to Kustomize and Argo CD for the first time, some effort will have to be made to generate the manifest files.  The live manifests can be fetched from OpenShift using the command line.  Certain fields will have to be removed, however, as OpenShift adds a number of fields for internal resource management.  A shell script has been prepared to help with the manifest creation.
 
-[https://github.com/BCDevOps/openshift-wiki/docs/ArgoCD/get_ns_resources.sh](https://github.com/BCDevOps/openshift-wiki/docs/ArgoCD/get_ns_resources.sh)
+[https://github.com/BCDevOps/openshift-wiki/docs/ArgoCD/get_ns_resources.sh](https://github.com/BCDevOps/openshift-wiki/blob/master/docs/ArgoCD/get_ns_resources.sh)
 
 Once the manifest files have been generated, the repo structure is prepared.  Within the manifest repo, in the top-level directory for the given application, create the following directories:
 * base
