@@ -1,7 +1,6 @@
 ---
 description: Quickly build API-centric applications. Leverage the latest microservice and container design patterns. And tie it all together with the Kong microservice API gateway.
 title: API Gateway (powered by Kong CE)
-image: "https://raw.githubusercontent.com/Kong/docker-official-docs/master/kong/logo.png"
 author: ll911 leo.lou@gov.bc.ca
 ---
 ## API Gateway (powered by Kong CE)
