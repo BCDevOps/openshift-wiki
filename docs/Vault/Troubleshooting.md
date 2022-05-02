@@ -74,3 +74,16 @@ vault write -namespace=platform-services auth/k8s-$CLUSTER_NAME/config kubernete
 ```
 
 Now test again.
+
+### Vault Terraform lock:
+
+This should not happen again, but for any reason if you see `Error: Error locking state: Error acquiring the state lock: workspace already locked (lock ID: "bcgov/xxx-prod")` from the GitHub action output, that means there used to be mutiple processes executing on Vault terraform at the same time and they locked each other. The fix to prevent it from happening has been added [here](https://github.com/bcgov-c/terraform-vault-prod/pull/161).
+
+First make sure there is no running GitHub workflows from the terraform repo. If nothing else is indicating a different error, try to force unlock:
+```shell
+❯ curl \
+--header "Authorization: Bearer $TOKEN" \
+--header "Content-Type: application/vnd.api+json" \
+--Request POST \
+https://app.terraform.io/api/v2/workspaces/ws-uL3nwzQGkoyQzvAX/actions/unlock
+```
