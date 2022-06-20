@@ -7,12 +7,16 @@ There are project sets and sample applications created to test on Vault service 
 ## Where to find the testing resources:
 | cluster | namespaces |
 |---|---|
-| klab | abe3e9-dev |
+| klab | b01faf-dev |
 | clab | dbfa0f-dev |
-| silver | 6e2f55-dev |
-| gold | 87d478-dev |
-| golddr | 87d478-dev |
+| silver | ea8776-dev |
+| gold | b4d659-dev |
+| golddr | b4d659-dev |
+| klab2 | TBD |
 
-In the namespaces of klab and clab, you shall see a deployment called `vault-test`. Manifest can be found [here](./assets/vault-test-klab.yaml) and [here](./assets/vault-test-clab.yaml). Scale up one more pod to test if the init container runs without issues. The deployment is generated from [the vault demo app](https://github.com/bcgov/how-to-workshops/tree/master/vault/getting-started-demo)
-
-In the production clusters, you'll see a RocketChat deployment in the dev namespace. Use that as a test. Please note this is temporary, vault test shall be moved to another project set!
+Things to know about testing setup:
+- There is a Vault Test project set created in each OpenShift cluster by Registry. A `vault-test` deployment is created in the dev namespace in each of the project set
+- We have created an ArgCD application for each testing manifest
+- Manifest can be found [here](https://github.com/bcgov-platform-services/platform-gitops-vault/test)
+- The deployment is generated based on [the vault demo app](https://github.com/bcgov/how-to-workshops/tree/master/vault/getting-started-demo)
+- After each Vault service change, make sure to restart the `vault-test` pod to verify it can pull secrets from Vault properly!
