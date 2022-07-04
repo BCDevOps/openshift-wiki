@@ -252,7 +252,9 @@ See the <a href="gitopsteam_template.yaml">GitOpsTeam template</a> for more deta
 
 ## Additional Information <a name="additional-information"></a>
 
-Argo CD: [https://argo-cd.readthedocs.io/en/release-2.0/](https://argo-cd.readthedocs.io/en/release-2.0/)
+Current version, as of July 2022: v2.2.10
+
+Argo CD: [https://argo-cd.readthedocs.io/en/release-2.0/](https://argo-cd.readthedocs.io/en/release-2.2/)
 
 Kustomize: [https://kustomize.io/](https://kustomize.io)
 
