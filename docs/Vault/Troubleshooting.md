@@ -58,7 +58,7 @@ Sometimes during Vault server restart, this configuration might be reverted back
    backoff=18.22s
 ```
 
-When app teams report this, use [our vault test deployment](./VaultTesting.md) to verify the issue in the same cluster first. If it's Vault wide, do the following:
+When app teams report this, refer to [the tenant repo](https://github.com/bcgov-c/tenant-gitops-ea8776) to verify the issue in the same cluster first. If it's Vault wide, do the following:
 ```shell
 # go to a vault server pod
 export CLUSTER_NAME=<klab,clab,silver,gold,golddr>
