@@ -7,7 +7,7 @@ Vault license expires every year around April. Platform Admins will kick off the
 Steps to update license:
 - first make sure you have the `root token` for the vault instance, in case there is a need for configuration changes!
 - find the `vault-license` secret from klab and gold, take a copy of it
-- run a [vault test deployment](./VaultTesting.md) to verify things are alright
+- refer to [the tenant repo](https://github.com/bcgov-c/tenant-gitops-ea8776) to verify things are alright
 - update the secret with the new vault license value
 - restart vault sts pods:
   - to find the primary pod, look for `vault-active` service. the pod it points to is the primary
