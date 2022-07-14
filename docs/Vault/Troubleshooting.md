@@ -39,6 +39,23 @@ To generate a debug archive, use the following command. Adjust the
 vault debug -interval=1m -duration=10m
 ```
 
+## Using Vault CLI on console
+
+Login to a Vault instance, and open the Vault terminal from console (top right corner).
+
+> Note: this vault command line is limited. For full access, rsh into the vault pod instead!
+
+Here are some common things to check:
+```shell
+# get list of role for a specific auth method
+vault list auth/<auth_name>/role
+# approle - terraform
+# oidc - team access
+
+# get details about a role (this should match the module from vault terraform repos)
+vault read auth/<auth_name>/role/<role_name>
+```
+
 ## Commons issues
 
 ### Vault SA authentication issue:
