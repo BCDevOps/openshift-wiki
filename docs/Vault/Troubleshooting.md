@@ -14,6 +14,11 @@ vault operator raft list-peers
 vault status
 ```
 
+## Test Vault service
+
+We have a project set in each cluster that contain deployment to test pulling secret from Vault. Refer to [the tenant repo](https://github.com/bcgov-c/tenant-gitops-ea8776) to verify the issue first.
+
+
 ## Analyze log messages
 
 - Use the central logging solution to analyze log messages from the erroneous Vault system
