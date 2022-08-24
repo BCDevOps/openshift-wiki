@@ -29,15 +29,16 @@ oc exec -ti vault-0 -- vault operator init -recovery-shares=5 -recovery-threshol
 # NOTE: make sure to capture the Root Token from output!!!!
 
 # create a pod for BD restore usage according the yaml manifest down below
+oc get pod vault-db-restore
 
-# once the pod is up, copy over the db snapshot:
-oc cp <pod_name>:/backup/raft-<timestamp>.snap vault-0:/tmp/raft-<timestamp>.snap
+# once the pod is up, check mount point for raft snapshot:
+oc rsh vault-db-restore
+ls /backup
 
 # start the restore:
-oc rsh vault-0
 export VAULT_TOKEN=<new_root_token>
 vault operator raft snapshot restore /tmp/raft-<timestamp>.snap
-
+exit
 ```
 
 The above command creates a syslog entry on the leader node similar to the following:
