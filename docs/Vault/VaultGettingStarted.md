@@ -60,7 +60,7 @@ User Access is controlled through a combination of RedHat Single-Sign On (Keyclo
 2. Login
 
     ```console
-    ❯ vault login -method=oidc role=vault
+    ❯ vault login -method=oidc role=$LICENSE_PLATE
     Complete the login via your OIDC provider. Launching browser to:
 
         https://oidc.gov.bc.ca/auth/realms/8gyaubgq/protocol/openid-connect/auth?client_id=vault-prod&nonce=n_sQaNVeu5TNuSd2yYa0C6&redirect_uri=http%3A%2F%2Flocalhost%3A8250%2Foidc%2Fcallback&response_type=code&scope=openid+profile+oidc+groups&state=st_xKJX2EEVW6kWAXbsJv7q
