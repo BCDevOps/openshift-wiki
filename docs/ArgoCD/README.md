@@ -36,6 +36,7 @@ There are a number of reasons for using Argo CD over other tools, such as Jenkin
 ## Enable Argo CD for Your Project Set <a name="enable-argocd"></a>
 A self-serve system is in place for the setup of Argo CD for your project set.  To get started, follow these instructions.  (If your project requires a ministry-wide grouping of projects within Argo CD, please contact the Platform Services Team.)
 - Prepare a `GitOpsTeam` CustomResource
+    - Note that GitHub IDs are CASE SENSITIVE...
     - Use this template: <a href="gitopsteam_template.yaml">GitOpsTeam Template</a>
     - Use the inline comments to populate this file
 - Ensure that all users in the 'projectMembers' group have a Keycloak ID in the realm used by Argo CD.  They can do this by attempting to access the Argo CD UI for the given cluster:
