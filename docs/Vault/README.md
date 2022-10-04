@@ -7,7 +7,6 @@ This documentation outlines the implementation details, architecture and design 
 ### Vault Architecture and Design
 
 - [Structure and Architecture within Vault](./StructureAndArchitecture.md)
-- [Vault Getting Started Guide](./VaultGettingStarted.md)
 - [Troubleshooting](./Troubleshooting.md)
 - [TLS Cipher Suites](./VaultTLSCipherSuites.md)
 - [Rotate and Rekey](./VaultRotateAndRekey.md)
@@ -40,7 +39,6 @@ docs/Vault/
 ├── README.md
 ├── StructureAndArchitecture.md
 ├── Troubleshooting.md
-├── VaultGettingStarted.md
 ├── VaultRaftRestore.md
 ├── VaultRaftSnapshot.md
 ├── VaultRotateAndRekey.md
