@@ -37,7 +37,7 @@ There are a number of reasons for using Argo CD over other tools, such as Jenkin
 A self-serve system is in place for the setup of Argo CD for your project set.  To get started, follow these instructions.  (If your project requires a ministry-wide grouping of projects within Argo CD, please contact the Platform Services Team.)
 - Prepare a `GitOpsTeam` CustomResource
     - Note that GitHub IDs are CASE SENSITIVE...
-    - Use this template: <a href="gitopsteam_template.yaml">GitOpsTeam Template</a>
+    - Use the template: https://github.com/BCDevOps/openshift-wiki/blob/master/docs/ArgoCD/gitopsteam_template.yaml
     - Use the inline comments to populate this file
 - Ensure that all users in the 'projectMembers' group have a Keycloak ID in the realm used by Argo CD.  They can do this by attempting to access the Argo CD UI for the given cluster:
     - Silver
@@ -248,7 +248,8 @@ Access to the Git repository includes five sets of permissions.
 
 Access to the Argo CD UI includes two sets of permissions: read/write and read-only
 
-See the <a href="gitopsteam_template.yaml">GitOpsTeam template</a> for more details.
+See the GitOpsTeam template for more details:
+https://github.com/BCDevOps/openshift-wiki/blob/master/docs/ArgoCD/gitopsteam_template.yaml
 
 
 ## Additional Information <a name="additional-information"></a>
