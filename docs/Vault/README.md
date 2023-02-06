@@ -14,4 +14,5 @@ This documentation outlines the implementation details, architecture and design 
 - [Service Definition](./VaultServiceDefinition.md)
 - [Terraform Integration](./vault-terraform.md)
 
-> Note: When Vault server in Gold Cluster fails, follow [this link](https://developer.hashicorp.com/vault/tutorials/enterprise/disaster-recovery#generate-a-dr-operation-token) to start failover to the Vault-DR server in GoldDR cluster.
+### Failover to DR site
+When Vault server in Gold Cluster fails, follow [this link](https://developer.hashicorp.com/vault/tutorials/enterprise/disaster-recovery#generate-a-dr-operation-token) to start failover to the Vault-DR server in GoldDR cluster.
