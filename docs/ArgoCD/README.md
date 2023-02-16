@@ -37,7 +37,7 @@ There are a number of reasons for using Argo CD over other tools, such as Jenkin
 A self-serve system is in place for the setup of Argo CD for your project set.  To get started, follow the instructions below.
 
 Note:
-- **If you are part of the Attorney General team**, <a href="ag_setup_instructions">see these instructions</a>.
+- **If you are part of the Attorney General team**, [see these instructions](#ag_setup_instructions).
 - If you require a sinlge Argo CD Project for a group of OpenShift project sets, please contact the Platform Services Team.
 
 Enable Argo CD:
