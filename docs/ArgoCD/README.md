@@ -34,7 +34,13 @@ There are a number of reasons for using Argo CD over other tools, such as Jenkin
 * When combined with pipeline tools such as GitHub Actions or OpenShift Pipelines, teams no longer need to maintain their own pipeline infrastructure.
 
 ## Enable Argo CD for Your Project Set <a name="enable-argocd"></a>
-A self-serve system is in place for the setup of Argo CD for your project set.  To get started, follow these instructions.  (If your project requires a ministry-wide grouping of projects within Argo CD, please contact the Platform Services Team.)
+A self-serve system is in place for the setup of Argo CD for your project set.  To get started, follow the instructions below.
+
+Note:
+- **If you are part of the Attorney General team**, <a href="ag_setup_instructions">see these instructions</a>.
+- If you require a sinlge Argo CD Project for a group of OpenShift project sets, please contact the Platform Services Team.
+
+Enable Argo CD:
 - Prepare a `GitOpsTeam` CustomResource
     - Note that GitHub IDs are CASE SENSITIVE...
     - Use the template: https://github.com/BCDevOps/openshift-wiki/blob/master/docs/ArgoCD/gitopsteam_template.yaml
@@ -55,6 +61,9 @@ After creation of the GitOpsTeam resource, an OpenShift operator will:
     - Your gitops repo will be called `bcgov-c/tenant-gitops-licenseplate`
 - Create Keycloak groups used for controlling access to your Project in the ArgoCD UI
 - Create the Argo CD Project
+
+#### AG team instructions <a name="ag_setup_instructions"></a>
+The AG team uses a single Project that includes a number of project sets.  We call this a GitOpsAlliance, as opposed to a GitOpsTeam.  Because this team uses a GitOps process to manage any GitOpsTeams in its project sets, you must contact your team lead about the creation of the GitOpsTeam.
 
 ### Set access for the GitHub repo <a name="set-access-github"></a>
 Once your GitHub repo has been created, you need to allow your pipeline to read from and write to it.  Do this by creating an SSH key pair and adding it as a Deploy Key in the repo.
