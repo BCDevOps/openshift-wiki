@@ -6,6 +6,9 @@ tags:
   - client
   - request
 ---
+
+***This is being retained for historical purposes only. SSO-related content in this repository has been superseded by the [SSO Pathfinder Knowledge Base](https://github.com/bcgov/sso-keycloak/wiki).***
+
 # Request Pathfinder SSO Client Creation
 
 ## Available Standard Realms
