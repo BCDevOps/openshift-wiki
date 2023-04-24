@@ -1,6 +1,8 @@
 ---
 description: Overview of Pathfinder's SSO implementation.
 ---
+***This is being retained for historical purposes only. SSO-related content in this repository has been superseded by the [SSO Pathfinder Knowledge Base](https://github.com/bcgov/sso-keycloak/wiki).***
+
 # Pathfinder SSO
 
 Urls: 
