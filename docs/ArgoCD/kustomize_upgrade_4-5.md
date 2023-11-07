@@ -35,7 +35,7 @@ patches:
 ```
 See: https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/patches/
 
-**Note:** Patch should have just one resource in them.  Split them out into multiple files.
+**Note:** Patches should have just one resource in them.  Split them out into multiple files.
 
 
 ### kustomize edit fix
