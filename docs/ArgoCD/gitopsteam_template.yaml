@@ -11,8 +11,10 @@ spec:
   # GitHub to join the bcgov-c GitHub organization if they are not already 
   # members.
   #
-  # Warning: GitHub IDs are CASE SENSITIVE
-  #
+  # Note: 
+  #   You may include IDIR email addresses (UPN) for IDIR-based access
+  #   GitHub IDs are CASE SENSITIVE
+  #   Do not append "@github" to GitHub IDs
   # -----------------------------------------------------------------------
   gitOpsMembers:
 
@@ -40,13 +42,18 @@ spec:
     triage:
 
   # projectMembers defines access to the Argo CD UI
-  # -----------------------------------------------
+  #
+  # Note:
+  #   GitHub IDs must have "@github" appended to the ID
+  #   You may include IDIR email addresses (UPN) for IDIR-based access
+  #   GitHub IDs are not case sensitive in this section
+  # ------------------------------------------------------------------
   projectMembers:
 
     # Project Maintainers have full access to the Argo CD Project, including the
     # ability create, edit, and delete Applications within the Project
     maintainers:
-      - myCaseSensitiveGitHubID@github
+      - myGitHubID@github
 
     # Project Readers have read-only access to the Project in the Argo CD UI
     readers:
