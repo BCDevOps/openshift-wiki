@@ -6,15 +6,16 @@ metadata:
   name: gitopsteam-myproject
   namespace: myproject-tools
 spec:
-  # gitOpsMembers defines the git repo access (tenant-gitops-XYZ)
-  # Note that users with repo access will have to accept an invitation from 
-  # GitHub to join the bcgov-c GitHub organization if they are not already 
-  # members.
+  # gitOpsMembers defines the git repo access (tenant-gitops-LICENSEPLATE)
+  # Note that if users listed here are not already members of the GitHub
+  # 'bcgov-c' organization, they will have to accept an email invitation
+  # to join.
   #
-  # Note: 
-  #   You may include IDIR email addresses (UPN) for IDIR-based access
-  #   GitHub IDs are CASE SENSITIVE
-  #   Do not append "@github" to GitHub IDs
+  # Note:
+  #   GitHub IDs are case sensitive
+  #   Do not append "@github" to GitHub IDs in the gitOpsMembers section
+  #   This section is for GitHub repo access, so only GitHub IDs, no IDIRs
+  #   You may use GitHub teams in this section
   # -----------------------------------------------------------------------
   gitOpsMembers:
 
@@ -41,13 +42,15 @@ spec:
     # without write access.
     triage:
 
-  # projectMembers defines access to the Argo CD UI
+  # projectMembers defines access to the Argo CD UI and is based on Keycloak
+  #   groups
   #
   # Note:
   #   GitHub IDs must have "@github" appended to the ID
   #   You may include IDIR email addresses (UPN) for IDIR-based access
   #   GitHub IDs are not case sensitive in this section
-  # ------------------------------------------------------------------
+  #   Do not use GitHub teams here, just individual IDs
+  # ------------------------------------------------------------------------
   projectMembers:
 
     # Project Maintainers have full access to the Argo CD Project, including the
