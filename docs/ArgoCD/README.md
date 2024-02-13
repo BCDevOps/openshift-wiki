@@ -47,10 +47,12 @@ Enable Argo CD:
     - Use the inline comments to populate this file
 - Ensure that all users in the 'projectMembers' group have a Keycloak ID in the realm used by Argo CD.  They can do this by attempting to access the Argo CD UI for the given cluster:
     - Silver
-        - https://argocd-shared.apps.silver.devops.gov.bc.ca
+        - https://gitops-shared.apps.silver.devops.gov.bc.ca
     - Gold & Gold DR
-        - https://argocd-shared.apps.gold.devops.gov.bc.ca
-        - https://argocd-shared.apps.golddr.devops.gov.bc.ca
+        - https://gitops-shared.apps.gold.devops.gov.bc.ca
+        - https://gitops-shared.apps.golddr.devops.gov.bc.ca
+    - Emerald
+        - https://gitops-shared.apps.emerald.devops.gov.bc.ca
 - Create the GitOpsTeam CustomResource in your **tools** namespace
     - `oc -n myproject-tools create -f gitopsteam.yaml`
 
