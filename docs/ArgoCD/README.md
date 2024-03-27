@@ -231,6 +231,12 @@ If the sync has succeeded, but still shows as "progressing", or if there is an i
 
 Once you are satisfied with the setup, feel free to enable automatic synchronization.
 
+### "Apps in Any Namespace"
+It is now possible to create your ArgoCD Applications from a manifest in your OpenShift namespace in addition to using the UI.  This helps to eliminate a conspicuously manual step from your GitOps setup and allows you to use ArgoCD to manage your ArgoCD Applications!
+
+With this feature, you can create an Application in any of your project's namespaces, meaning any of your dev, test, prod, or tools namespaces.  For details on how to create your Application manifest, see the [ArgoCD documentation for Applications](https://argo-cd.readthedocs.io/en/stable/operator-manual/declarative-setup/#applications)
+
+Once you have the manifest verified, add it to your GitOps repo to manage it along with the rest of your ArgoCD-managed resources.
 
 ## Configure Your Project<a name="configure-your-project"></a>
 It should be noted that there are some constraints placed on Projects and Applications in this shared Argo CD instance.
