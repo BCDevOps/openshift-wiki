@@ -18,3 +18,6 @@ Author: Clécio Varjão
 openssl req -new -passin file:passphrase.txt -key server.key -out server.csr -subj "/C=CA/ST=British Columbia/L=Victoria/O=Government of the Province of British Columbia/OU=FLNRORD/CN=example.gov.bc.ca"
 `
 
+# Remove Passphrase from Key
+`cp server.key server.key.org`  
+`openssl rsa -in server.key.org -passin file:passphrase.txt -out server.key`
